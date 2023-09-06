@@ -546,7 +546,7 @@ To enforce a strict need-to-know (and prevent data from being exposed to non-aut
 
 General conventions for submodel descriptors can be found in the standard [CX-0002 Digital Twins in Catena-X](https://catena-x.net/de/standard-library). This section is based on it and it is recommended to read it first. In this KIT, we extend this standard with some additional conventions.
 
-Submodel descriptors MUST be compliant to the following additional conventions:
+Submodel descriptors must be compliant to the following additional conventions:
 
 - `id`: The submodel ID must be a UUIDv4 in URN format: "urn:uuid:&lt;UUIDv4&gt;";
 - `idShort`: the name of the aspect model in camel case, e.g. for aspect SerialPart: "serialPart".
@@ -557,11 +557,11 @@ The actual access information for the EDC is part of the endpoint attribute in t
 {
     "interface": "SUBMODEL-3.0",
     "protocolInformation": {
-        "href": "https://edc.data.plane/{path}/submodel",
+        "href": "https://edc.data.plane/public/{path}/submodel",
         "endpointProtocol": "HTTP",
         "endpointProtocolVersion": ["1.1"],
         "subprotocol": "DSP",
-        "subprotocolBody": "id=123;dspEndpoint=http://edc.control.plane/",
+        "subprotocolBody": "providerDspBasePath=https://edc.control.plane/api/v1/dsp;dataset=123;",
         "subprotocolBodyEncoding": "plain",
         "securityAttributes": [ 
           { "type": "NONE", "key": "NONE", "value": "NONE" }
@@ -574,15 +574,21 @@ The following conventions apply for the endpoint:
 
 - `interface`, `endpointProtocol`, `endpointProtocolVersion`, `subprotocol`, `subprotocolBodyEncoding`, and `securityAttributes` are set as defined in the CX-0002 standard.
 - `href`: The endpoint address for the logical operation GetSubmodel that is invoked by a data consumer to get the submodel. It must have the following format:
-  - `edc.data.plane`: Server and port of the EDC data plane that is providing the submodel.
+  - `https://edc.data.plane/public`: URL to the EDC data plane that is providing the submodel.
   - `{path}`: This `{path}` string is forwarded to the backend data service by the EDC data plane. Together with the EDC asset information (see below) it must contain all information for the backend data service to return the requested submodel. The actual path depends on the type of backend data service that the data provider uses to handle the request. More details follow below.
   - `/submodel`: This `/submodel` string is also forwarded to the backend data service. As AAS Profile SSP-003 of the Submodel Service Specification is mandatory for release 3.2, `href` must have the suffix "/submodel" representing the invokation of the GetSubmodel operation.
 - `subprotocolBody`: a semicolon-separated list of parameters used to negotiate the required contract agreement.
-  - `id=123`: The ID of the EDC asset for which a contract negitiation should be intiated. This ID is also called dataset ID as it is stored as `https://www.w3.org/ns/dcat/dataset.@id` in a catalog entry. This ID must be set by the data provider when creating the asset. Do not confuse this EDC asset ID (dataset ID) with other IDs that might be defined additionally for an EDC asset, e.g., `https://w3id.org/edc/v0.0.1/ns/id` (often refered to as `edc:id`).
-  - `dspEndpoint`: Server and port of the EDC control plane used for contract negotiation.
+  - `providerDspBasePath`: URL to the DSP endpoint of the EDC. Using the DSP endpoint here allows the data consumer to use
+     - `/catalog/request` to fetch the full catalog and search for the dataset in the catalog or
+     - `/catalog/dataset/{id}` to only fetch offers for the dataset with ID `id`.
+  - `dataset=123`: The ID of the EDC asset for which a contract negitiation should be intiated. This ID is also called dataset ID as it is stored as `https://www.w3.org/ns/dcat/dataset.@id` in a catalog entry. This ID must be set by the data provider when creating the asset. Do not confuse this EDC asset ID (dataset ID) with other IDs that might be defined additionally for an EDC asset, e.g., `https://w3id.org/edc/v0.0.1/ns/id` (often refered to as `edc:id`).
+  - :warning: **Deprecated: Format for subprotocolBody from Release 3.2**
+    The subprotocolBody structure used in release 3.2 is deprecated since this release, but it must still be supported by data consumers to be backwards compatible: `"subprotocolBody": "id=123;dspEndpoint=http://edc.control.plane/"`
+      - `id`: This parameter was renamed to `dataset`.
+      - `dspEndpoint`: Server and port of the EDC control plane used for contract negotiation. Compared to `providerDspBasePath`, the data consumer must append this parameter with `/public/api/v1/dsp` to create the actual DSP endpoint. This leaves room for errors. For example, a data provider can change the DSP base path to something different than `/api/v1/dsp` in the EDC configuration. As a data consumer cannot know about this, fetching the data catalog will result in an error.
 
 > :raised_hand: **Backend Data Service for Submodels**
-According to CX-0002, the backend data service identified via `href`and the filter criteria in `subprotocolBody` MUST be conformant to the Asset Administration Shell Profile SSP-003 of the Submodel Service Specification and must at least support the logical operation GetSubmodel. In release 3.2, only the logical parameter Content=Value must be supported via path suffix "/submodel/$value". This might change in later Catena-X releases.
+According to CX-0002, the backend data service identified via `href`and the filter criteria in `subprotocolBody` must be conformant to the Asset Administration Shell Profile SSP-003 of the Submodel Service Specification and must at least support the logical operation GetSubmodel. Currently, only the logical parameter Content=Value must be supported via path suffix "/submodel/$value". This might change in later Catena-X releases.
 
 With this approach, the EDC asset structure must no longer follow the "one EDC asset per submodel" rule (as in Release 3.1 and before), but gives data providers more flexibility how to create EDC assets for their digital twins and submodels based on how they use `{path}`.
 
@@ -590,8 +596,8 @@ With this approach, the EDC asset structure must no longer follow the "one EDC a
 
 Submodels of digital twins are registered in the EDC the same way as for release 3.1: One EDC asset is created for every submodel of a digital twin.
 
-- `href` must have the following format: `http://edc.data.plane/submodel`
-- `subprotocolBody` must have the following format: `id={edcAssetId};dspEndpoint=http://edc.control.plane`
+- `href` must have the following format: `https://edc.data.plane/public/submodel`
+- `subprotocolBody` must have the following format: `providerDspBasePath=https://edc.control.plane/api/v1/dsp;dataset={edcAssetId}`
 - edcAssetId is the id of the EDC asset for the submodel. It must have the following format "{aasIdentifier}-{submodelIdentifier}" with
   - aasIdentifier: the id of the digital twin (id property in the AAS descriptor)
   - submodelIdentifier: the id of the submodel (id property in the submodel descriptor)
@@ -616,11 +622,11 @@ Here's an example how such a submodel descriptor could look like:
       {
         "interface": "SUBMODEL-3.0",
         "protocolInformation": {
-          "href": "https://edc.data.plane/submodel",
-        "endpointProtocol": "HTTP",
-        "endpointProtocolVersion": ["1.1"],
+          "href": "https://edc.data.plane/public/submodel",
+          "endpointProtocol": "HTTP",
+          "endpointProtocolVersion": ["1.1"],
           "subprotocol": "DSP",
-          "subprotocolBody": "id=urn:uuid:75e98d67-e09e-4388-b2f6-ea0a0a642bfe-urn:uuid:7effd7f4-6353-4401-9547-c54b420a22a0;dspEndpoint=http://edc.control.plane/",
+          "subprotocolBody": "providerDspBasePath=https://edc.control.plane/api/v1/dsp;dataset=urn:uuid:75e98d67-e09e-4388-b2f6-ea0a0a642bfe-urn:uuid:7effd7f4-6353-4401-9547-c54b420a22a0",
           "subprotocolBodyEncoding": "plain",
           "securityAttributes": [ 
             { "type": "NONE", "key": "NONE", "value": "NONE" }
@@ -636,7 +642,7 @@ In this example, the `path` part in the `href` is empty, as the EDC asset refere
 
 ###### Option 2: EDC Asset Structure on Catalog Part Level
 
-A data provider can link several submodel endpoints to the same EDC asset (referenced by its id). This allows to create only one EDC asset (per aspect model) for a catalog part and link all submodels (of the same aspect model) for serialized parts of the catalog part to the same EDC asset. The data provider would still need to create separate EDC assets per aspect model as in most cases different usage policies are used for aspect models.
+A data provider can link several submodel endpoints to the same EDC asset (referenced by its ID). This allows to create only one EDC asset (per aspect model) for a catalog part and link all submodels (of the same aspect model) for serialized parts of the catalog part to the same EDC asset. The data provider would still need to create separate EDC assets per aspect model as in most cases different usage policies are used for aspect models.
 
 If a data provider no longer creates EDC assets on the level of submodels, the EDC can no longer authorize a request on a submodel-level. For example: If EDC assets are created per catalog part, the EDC can only authorize if the requestor is allowed to see parts of these type in general; if the requestor is allowed to see a actual serialized part, must be authorized by the backend data service executing the request.
 
@@ -660,11 +666,11 @@ Here's an example how such a submodel descriptor could look like:
       {
         "interface": "SUBMODEL-3.0",
         "protocolInformation": {
-          "href": "https://edc.data.plane/urn%3Auuid%3A75e98d67-e09e-4388-b2f6-ea0a0a642bfe-urn%3Auuid%3A7effd7f4-6353-4401-9547-c54b420a22a0/submodel",
+          "href": "https://edc.data.plane/public/urn%3Auuid%3A75e98d67-e09e-4388-b2f6-ea0a0a642bfe-urn%3Auuid%3A7effd7f4-6353-4401-9547-c54b420a22a0/submodel",
           "endpointProtocol": "HTTP",
           "endpointProtocolVersion": ["1.1"],
           "subprotocol": "DSP",
-          "subprotocolBody": "id=urn:uuid:1475f313-0a83-4e2b-b705-a100eebcb7d7;dspEndpoint=http://control-plane.edc.catena-x.net/",
+          "subprotocolBody": "providerDspBasePath=https://edc.control.plane/api/v1/dsp;dataset=urn:uuid:1475f313-0a83-4e2b-b705-a100eebcb7d7",
           "subprotocolBodyEncoding": "plain",
           "securityAttributes": [ 
             { "type": "NONE", "key": "NONE", "value": "NONE" }
