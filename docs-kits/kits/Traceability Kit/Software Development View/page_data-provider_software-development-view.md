@@ -561,7 +561,7 @@ The actual access information for the EDC is part of the endpoint attribute in t
         "endpointProtocol": "HTTP",
         "endpointProtocolVersion": ["1.1"],
         "subprotocol": "DSP",
-        "subprotocolBody": "providerDspBasePath=https://edc.control.plane/api/v1/dsp;dataset=123;",
+        "subprotocolBody": "providerDspBasePath=https://edc.control.plane/api/v1/dsp;dataset=123",
         "subprotocolBodyEncoding": "plain",
         "securityAttributes": [ 
           { "type": "NONE", "key": "NONE", "value": "NONE" }
