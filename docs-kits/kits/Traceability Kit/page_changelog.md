@@ -9,6 +9,12 @@ sidebar_position: 0
 
 All notable changes to this Kit will be documented in this file.
 
+## [0.3.0] - UPCOMING
+
+### Changed
+- **Development View:**
+  - Updated format of subprotocolBody field for submodel descriptors to make it unambiguous; the format of release 3.2 is deprecated.
+
 ## [0.2.0] - UPCOMING
 
 Compatible for Catena-X Release 3.2

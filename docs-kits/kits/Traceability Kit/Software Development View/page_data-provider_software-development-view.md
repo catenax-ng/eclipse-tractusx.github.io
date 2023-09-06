@@ -582,8 +582,7 @@ The following conventions apply for the endpoint:
      - `/catalog/request` to fetch the full catalog and search for the dataset in the catalog or
      - `/catalog/dataset/{id}` to only fetch offers for the dataset with ID `id`.
   - `dataset=123`: The ID of the EDC asset for which a contract negitiation should be intiated. This ID is also called dataset ID as it is stored as `https://www.w3.org/ns/dcat/dataset.@id` in a catalog entry. This ID must be set by the data provider when creating the asset. Do not confuse this EDC asset ID (dataset ID) with other IDs that might be defined additionally for an EDC asset, e.g., `https://w3id.org/edc/v0.0.1/ns/id` (often refered to as `edc:id`).
-  - :warning: **Deprecated: Format for subprotocolBody from Release 3.2**
-    The subprotocolBody structure used in release 3.2 is deprecated since this release, but it must still be supported by data consumers to be backwards compatible: `"subprotocolBody": "id=123;dspEndpoint=http://edc.control.plane/"`
+  - :warning: **Deprecated: Format for subprotocolBody from Release 3.2:** The subprotocolBody structure used in release 3.2 is deprecated since this release, but it must still be supported by data consumers to be backwards compatible: `"subprotocolBody": "id=123;dspEndpoint=http://edc.control.plane/"`
       - `id`: This parameter was renamed to `dataset`.
       - `dspEndpoint`: Server and port of the EDC control plane used for contract negotiation. Compared to `providerDspBasePath`, the data consumer must append this parameter with `/public/api/v1/dsp` to create the actual DSP endpoint. This leaves room for errors. For example, a data provider can change the DSP base path to something different than `/api/v1/dsp` in the EDC configuration. As a data consumer cannot know about this, fetching the data catalog will result in an error.
 
