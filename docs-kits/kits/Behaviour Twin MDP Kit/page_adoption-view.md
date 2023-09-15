@@ -12,7 +12,7 @@ sidebar_position: 2
 Adoption View of the Kit.
 -->
 
-## Vision & Mission
+## Vision & Mission -> draft
 
 ### Vision
 
