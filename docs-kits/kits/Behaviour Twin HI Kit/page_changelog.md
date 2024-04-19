@@ -5,7 +5,7 @@ description: 'Health Indicator Kit'
 sidebar_position: 1
 ---
 
-![Health Indicator kit banner](/img/kit-icons/behaviour-hi-kit-icon.svg)
+![Health Indicator kit banner](/img/kit-icons/behaviour-twin-hi-kit-icon.svg)
 
 ### Health Indicator Kit
 

@@ -5,7 +5,7 @@ description: 'Remaining Useful Life Kit'
 sidebar_position: 4
 ---
 
-![Remaining Useful Life kit banner](/img/kit-icons/behaviour-rul-kit-icon.svg)
+![Remaining Useful Life kit banner](/img/kit-icons/behaviour-twin-rul-kit-icon.svg)
 
 <!--
 Development View of the Kit.
