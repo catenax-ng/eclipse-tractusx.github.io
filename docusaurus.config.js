@@ -404,6 +404,10 @@ const config = {
                 label: 'Agents',
               },
               {
+                to: '/docs-kits/next/kits/behaviour-twin-kit/overview',
+                label: 'Behaviour Twin',
+              },
+              {
                 to: '/docs-kits/kits/Business%20Partner%20Kit/Adoption%20View',
                 label: 'Business Partner',
               },
