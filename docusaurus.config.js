@@ -440,10 +440,6 @@ const config = {
                 label: 'Environmental & Social Standards',
               },
               {
-                to: '/docs-kits/kits/Behaviour%20Twin%20HI%20Kit/Adoption%20View%20Health%20Indicator%20Kit',
-                label: 'Health Indicator',
-              },
-              {
                 to: '/docs-kits/kits/Industry%20Core%20Kit/Business%20View%20Industry%20Core%20Kit',
                 label: 'Industry Core',
               },
@@ -470,10 +466,6 @@ const config = {
               {
                 to: '/docs-kits/kits/Quality-Kit/Adoption%20View%20Quality%20Kit',
                 label: 'Quality',
-              },
-              {
-                to: '/docs-kits/kits/Behaviour%20Twin%20RuL%20Kit/Adoption%20View%20Remaining%20Useful%20Life%20Kit',
-                label: 'Remaining Useful Life',
               },
               {
                 to: '/docs-kits/kits/Traceability%20Kit/Business%20View%20Traceability%20Kit',
