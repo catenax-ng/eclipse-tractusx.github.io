@@ -45,13 +45,41 @@ Behaviour Twin KIT
 
 <!-- END OF HEADER -->
 
-What is the KITs scope and direction?
+*This section provides a quick overview over the KIT's scope, its direction and how you can benefit from using it for your own applications and use cases.*
 
 ## VISION & MISSION
 
+### VISION
+
+Aggregating real-world usage data of technical products is state-of-the-art. But only by combining this data with digital twins, simulation models and specialized calculation services, new business opportunities and operational efficiencies become possible across the entire product lifecycle. The key to successfully enabling these opportunities is the scalability of digital solutions, their extension across business boundaries and handling data protection and governance.
+
+### MISSION
+
+The Behavior Twin Kit aims to facilitate the development of scalable and interoperable solutions for connecting service customers, data owners and service providers across organizatorical boundaries in a generic way. It guides business and software developers by explaining key concepts and by directing them to relevant technical resources and examples.
+
+
+## STATUS QUO & CHALLENGE
+
+### Status Quo
+
+Within company limits, the aggregation of use data, monitoring them, e.g. by calculation of health indicators or component damage based on internally available data and models, is already state of the art. However, across company boundaries, there are only individual, complex and not generally available solutions.
+
+### Today’s challenge
+Thus, the following challenges must be addressed:
+
+- Correctly allocating component data and calculation service across organizational boundaries
+- Ensuring data compliance across complex supply chains
+- Enabling secure data sharing while respecting IP and governance
+- Facilitating flexible customization for diverse use cases
+
 ## BUSINESS VALUE
 
-## USE-CASE TYPES
+## USE-CASES AND BENEFITS
+
+### USE-CASE TYPES
+
+
+
 
 <!-- START OF FOOTER -->
 
