@@ -45,7 +45,9 @@ Behaviour Twin KIT
 
 <!-- END OF HEADER -->
 
-To be merged into "To Be Considered"
+Once in a year, Catena-X components may be uptdated to a newer version. The former version must be provided/maintained for at least one year after the update-deadline.
+{TODO}{Link, describe}
+*To be merged into "To Be Considered"*
 
 <!-- START OF FOOTER -->
 

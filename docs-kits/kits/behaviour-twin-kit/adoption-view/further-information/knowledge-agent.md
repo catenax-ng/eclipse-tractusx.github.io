@@ -45,7 +45,18 @@ Behaviour Twin KIT
 
 <!-- END OF HEADER -->
 
-Basics of Knowledge Agent
+## KNOWLEDGE GRAPH BASICS
+
+{TODO}{Simple description, from RuL KIT}
+
+## ARCHITECTURE OF KNOWLEDGE AGENT
+
+{TODO}{Diagram/drawing} Binding-agnets, matchmaking, graph-assets, ...
+{LINK}{KA-KIT}
+
+## BINDINGS
+
+Extra layer of security. Map relational data to graphs.
 
 <!-- START OF FOOTER -->
 

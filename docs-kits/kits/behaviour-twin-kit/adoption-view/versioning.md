@@ -47,6 +47,11 @@ Behaviour Twin KIT
 
 Versioning of data and services
 
+- Ontologies are only extended. The meaning of nodes/edges must not change.
+- New service or data types must have new types in the ontology.
+- Assets can/must be versioned. Asset-definition: properties.cx-common:version {KA}
+- Version attributes in graph? {KA}
+
 <!-- START OF FOOTER -->
 
 <!-- DEACTIVATED FOR DOCUSAURUS FROM HERE -->

@@ -45,13 +45,30 @@ Behaviour Twin KIT
 
 <!-- END OF HEADER -->
 
-Running EDC, Basics
+## TECHNOLOGIES
+
+- EDC, Tractus-X
+- SPARQL
+- RDF
+- OWL
+- SHACL
+- {TODO}{..., from KA-KIT, by role?}
 
 ## YOUR INTERFACE
 
 ## MANDATORY COMPONENTS
 
+{TODO}{Table}
+
+- EDC
+- Knowledge Agent Components
+  - agent plane
+  - matchmaking agent
+  - binding agents
+
 ## KNOWLEDGE GRAPH BASICS
+
+{TODO}{from RuL-KIT}
 
 <!-- START OF FOOTER -->
 
