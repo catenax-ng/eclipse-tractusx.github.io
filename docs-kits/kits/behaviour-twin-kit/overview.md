@@ -34,6 +34,8 @@ Which problem this KIT solves;Hinweis auf Generalisierte Inhalte und existierend
 
 ## PURPOSE
 
+Maximize the potential of usage data through calculation services and simulation.
+
 ## CONTENTS
 
 - [Change Log](changelog.md)

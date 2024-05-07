@@ -31,7 +31,9 @@ VARIANT FOR DOCUSAURUS TO HERE -->
 
 <!-- END OF HEADER -->
 
-HI-KIT-logo?
+## PURPOSE
+
+Provide and get the health condition of technical systems.
 
 ## CONTENTS
 

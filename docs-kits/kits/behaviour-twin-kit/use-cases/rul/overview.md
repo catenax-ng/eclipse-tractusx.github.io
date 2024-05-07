@@ -31,7 +31,9 @@ VARIANT FOR DOCUSAURUS TO HERE -->
 
 <!-- END OF HEADER -->
 
-RuL-KIT-logo?
+## PURPOSE
+
+Provide and get remaining-useful-life values for technical systems.
 
 ## CONTENTS
 
