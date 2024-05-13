@@ -62,7 +62,7 @@ The Behavior Twin Kit aims to facilitate the development of scalable and interop
 
 ### Status Quo
 
-Within company limits, the aggregation of use data, monitoring them, e.g. by calculation of health indicators or component damage based on internally available data and models, is already state of the art. However, across company boundaries, there are only individual, complex and not generally available solutions.
+Within company limits, the aggregation of usage data, monitoring them, e.g. by calculation of health indicators or component damage based on internally available data and models, is already state of the art. However, across company boundaries, there are only individual, complex and not generally available solutions.
 
 ### Today’s challenge
 Thus, the following challenges must be addressed:
@@ -72,11 +72,31 @@ Thus, the following challenges must be addressed:
 - Enabling secure data sharing while respecting IP and governance
 - Facilitating flexible customization for diverse use cases
 
-## BUSINESS VALUE
 
-## USE-CASES AND BENEFITS
+## USE-CASES & USE CASE TYPES
+
+### USE-CASES
+
+Typical scenarios comprise stakeholders acting during a certain phase in the product lifecyle:
+
+- OEM, TIER-X @ Early product development phase: Components can be optimally designed using digital prototypes and simulations based on usage data and models. 
+
+- OEM, TIER-X @ Offer phase: Suppliers can enhance their products with value-added services like health monitoring and remaining useful life calculation making them more attractive for their customers.
+
+- OEM, TIER-X @ Usage phase: Precise monitoring of product health and residuals value helps enable predictive maintenance, optimized operations and end-of-life decision making.
+
+- Car dealers and automotive clubs @ usage phase: Further interpreting the Remaining Useful Life calculation for a vehicle evaluation and offer it as vehicle-related services for their end customers and fleet operators.
+
+- Car dealers and automotive clubs @ Recycling phase: An accurate residual value analysis allows optimal dismantling, reuse and recycling.
+
 
 ### USE-CASE TYPES
+
+Typically these use case fall into only a few categories or use case types:
+
+- Usage data owners (like OEMs) query a calculation services of IP owners (like suppliers) along the supplier chain.
+
+- Service providers (like automobile clubs) gather data or insights along the supplier chain in behalf of their customers.
 
 
 
