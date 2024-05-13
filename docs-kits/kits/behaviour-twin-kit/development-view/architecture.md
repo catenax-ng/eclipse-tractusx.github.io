@@ -45,6 +45,12 @@ Behaviour Twin KIT
 
 <!-- END OF HEADER -->
 
+## Logic
+
+The central logic of a use case is a **skill**.  
+You can use or modify skills from existing use cases to build up a similar use
+case. Skills are written in SPARQL, a query language for federated knowledge graphs.  
+
 ## SKILL VARIANTS
 
 ## OVERVIEW DRAWINGS

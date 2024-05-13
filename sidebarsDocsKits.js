@@ -185,7 +185,7 @@ const sidebars = {
                 },
                 {
                     type: 'category',
-                    label: 'Use-Cases',
+                    label: 'Use Cases',
                     link: {
                          type: 'doc',
                          id: 'kits/behaviour-twin-kit/use-cases/overview',

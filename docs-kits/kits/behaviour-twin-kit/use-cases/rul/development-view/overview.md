@@ -7,7 +7,7 @@ sidebar_position: 48
 
 <!-- DEACTIVATED FOR DOCUSAURUS FROM HERE -->
 
-<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../../../overview.md) > [Use-Cases](../../overview.md) > [Remaining useful Life](../overview.md) > Development View</span>
+<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../../../overview.md) > [Use Cases](../../overview.md) > [Remaining useful Life](../overview.md) > Development View</span>
 
 # Development View
 

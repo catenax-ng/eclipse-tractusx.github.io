@@ -41,7 +41,7 @@ Maximize the potential of usage data through calculation services and simulation
 - [Change Log](changelog.md)
 - [Adoption View](adoption-view/overview.md)
 - [Development View](development-view/overview.md)
-- [Use-Cases](use-cases/overview.md)
+- [Use Cases](use-cases/overview.md)
 
 ## NOTICE
 

@@ -45,7 +45,38 @@ Behaviour Twin KIT
 
 <!-- END OF HEADER -->
 
-BT-ontology
+# Ontologies
+
+## INTRODUCTION
+
+Ontologies are semantic models. They describe objects and their relations in graph form. The notation is usually text based,
+see RDF 1.1 Turtle, see [Turtle on w3.org ![external link](../assets/external-link.svg)](https://www.w3.org/TR/turtle/).
+
+## ONTOLOGIES USED BY BEHAVIOUR TWIN
+
+For the Behaviour Twin (BT) use cases, there are some ontologies, that you may use:
+
+<!-- {TODO} Remove next/ from links. -->
+
+- [core ontology ![external link](../assets/external-link.svg)](https://w3id.org/catenax/next/ontology/core)
+- [common core ontology ![external link](../assets/external-link.svg)](https://w3id.org/catenax/next/ontology/common)
+- [reliability ontology ![external link](../assets/external-link.svg)](https://w3id.org/catenax/next/ontology/reliability)
+- [vehicle ontology ![external link](../assets/external-link.svg)](https://w3id.org/catenax/next/ontology/vehicle)
+- [behaviour ontology ![external link](../assets/external-link.svg)](https://w3id.org/catenax/next/ontology/behaviour)
+
+<!-- {TODO} Remove bundled ontologie as it is no longer suppoerted. -->
+
+All needed ontologies can be bundled in one, see [Behaviour Twin use case ontology ![external link](../assets/external-link.svg)](https://w3id.org/catenax/usecase/behaviour_twin).
+
+<!-- {TODO} Add links to KA-standard and KA-KIT -->
+
+## DETAILS
+
+In Behaviour Twin use cases, you often may find load spectra as inputs for calculation services.
+
+<!-- {TODO} Add short definition of load specta. -->
+
+<!-- {TODO} Add ontology example for load spectrum. -->
 
 <!-- START OF FOOTER -->
 

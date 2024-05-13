@@ -46,11 +46,18 @@ Behaviour Twin KIT
 <!-- END OF HEADER -->
 
 Current ontologies, extensions for test cases
-You can use/share a private extension to an ontology. In this case, you have to provide the ontoloty with the agent's configuration (only statically due to security reasons). {KA}
+You can use/share a private extension to an ontology. In this case, you have to provide the ontoloty with the agent's configuration (only statically due to security reasons). {KA} -> private GitHub (KA-config!)
+
+Credentials?
+
+https://github.com/eclipse-tractusx/knowledge-agents
 
 Common/cx ontologies {TODO}
 Use-case ontologies. {TODO}
 Experts-group? Offical extensions, development, ...
+
+Common ontology references domain ontologies -> private extension?
+matchmaking remoting binding provisioning
 
 <!-- START OF FOOTER -->
 

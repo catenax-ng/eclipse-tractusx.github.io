@@ -53,6 +53,6 @@ How to test, maybe obsolete
 
 | Previous | Next |
 | -------- | ---- |
-| [Skill-Usage](skill-usage.md) | [Use-Cases](../use-cases/overview.md) |
+| [Skill-Usage](skill-usage.md) | [Use Cases](../use-cases/overview.md) |
 
 <!-- DEACTIVATED FOR DOCUSAURUS TO HERE -->

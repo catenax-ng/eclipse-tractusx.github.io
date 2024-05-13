@@ -7,7 +7,7 @@ sidebar_position: 62
 
 <!-- DEACTIVATED FOR DOCUSAURUS FROM HERE -->
 
-<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../../../overview.md) > [Use-Cases](../../overview.md) > [Health Indicator](../overview.md) > [Adoption View](overview.md) > Introduction</span>
+<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../../../overview.md) > [Use Cases](../../overview.md) > [Health Indicator](../overview.md) > [Adoption View](overview.md) > Introduction</span>
 
 # Introduction
 

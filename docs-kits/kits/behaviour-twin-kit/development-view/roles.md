@@ -45,6 +45,14 @@ Behaviour Twin KIT
 
 <!-- END OF HEADER -->
 
+As a developer in Behaviour Twin use cases, you may apply to one or more of the following roles:
+
+- **consumer** (result requester)
+- **skill provider** (provider of the use case logic)
+- **data provider** (provider of usage data, likely an OEM)
+- **delegator** (likely a supplier of a component that is assembled of subcomponents which are providing calculation services)
+- **calculation service provider** (likely a supplier of a part or component)
+
 <!-- START OF FOOTER -->
 
 <!-- DEACTIVATED FOR DOCUSAURUS FROM HERE -->

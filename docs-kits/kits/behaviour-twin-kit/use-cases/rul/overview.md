@@ -7,7 +7,7 @@ sidebar_position: 40
 
 <!-- DEACTIVATED FOR DOCUSAURUS FROM HERE -->
 
-<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../../overview.md) > [Use-Cases](../overview.md) > Remaining useful Life</span>
+<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../../overview.md) > [Use Cases](../overview.md) > Remaining useful Life</span>
 
 # Remaining useful Life
 
@@ -47,6 +47,6 @@ Provide and get remaining-useful-life values for technical systems.
 
 | Previous | Next |
 | -------- | ---- |
-| [Use-Cases](../overview.md) | [Change Log](changelog.md) |
+| [Use Cases](../overview.md) | [Change Log](changelog.md) |
 
 <!-- DEACTIVATED FOR DOCUSAURUS TO HERE -->

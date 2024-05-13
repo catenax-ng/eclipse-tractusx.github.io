@@ -46,6 +46,8 @@ Behaviour Twin KIT
 <!-- END OF HEADER -->
 
 How to start, guidance, development view, checklist
+Policies, Credentials  !!
+
 
 <!-- START OF FOOTER -->
 
