@@ -92,11 +92,20 @@ Typical scenarios comprise stakeholders acting during a certain phase in the pro
 
 ### USE-CASE TYPES
 
-Typically these use case fall into only a few categories or use case types:
+In a more general view these use cases can be categorized dependent on specific criteria:
+
+#### Origin of query
 
 - Usage data owners (like OEMs) query a calculation services of IP owners (like suppliers) along the supplier chain.
 
 - Service providers (like automobile clubs) gather data or insights along the supplier chain in behalf of their customers.
+
+#### Origin of data-processing logic
+
+- The querying party knows how to process data, e.g. how to accumulate acquired data.
+
+- The data processing party knows how to process data, e.g. which simulation model to chose.
+
 
 
 

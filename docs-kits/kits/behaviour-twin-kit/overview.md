@@ -30,20 +30,31 @@ VARIANT FOR DOCUSAURUS TO HERE -->
 
 <!-- END OF HEADER -->
 
-Which problem this KIT solves;Hinweis auf Generalisierte Inhalte und existierende Use-Cases, Only Tractus-X-context
-
 ## PURPOSE
 
-Maximize the potential of usage data through calculation services and simulation.
+Maximize the potential of usage data. Use our spezialized BT Kit (based on KA Kit) to connect heterogeneous and distributed usage data and services seamlessly.
+
+## DISCLAIMER
+
+We are part of the Tractus-X community, the official open-source project within the Catena-X data space.
+In our examples and texts, we exclusively use Tractus-X components. However, there may also be other compatible implementations.
 
 ## CONTENTS
 
 - [Change Log](changelog.md)
-- [Adoption View](adoption-view/overview.md)
-- [Development View](development-view/overview.md)
-- [Use Cases](use-cases/overview.md)
+- [Adoption View](adoption-view/overview.md) - Understand & Decide
+- [Development View](development-view/overview.md) - Develop & Operate
+- [Use Cases](use-cases/overview.md) - Templates for *Health Indicator* and *Remaining useful Life*
 
 ## NOTICE
+This work is licensed under the [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode).
+ 
+- SPDX-License-Identifier: CC-BY-4.0
+- SPDX-FileCopyrightText: 2022-2024 Allgemeine Deutsche Automobil-Club (ADAC) e.V.
+- SPDX-FileCopyrightText: 2022-2024 Bayerische Motoren Werke Aktiengesellschaft (BMW AG)
+- SPDX-FileCopyrightText: 2022-2024 ZF Friedrichshafen AG
+- SPDX-FileCopyrightText: 2022-2024 Contributors to the Eclipse Foundation
+
 
 <!-- START OF FOOTER -->
 
