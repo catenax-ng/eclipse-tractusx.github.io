@@ -45,7 +45,12 @@ Behaviour Twin KIT
 
 <!-- END OF HEADER -->
 
-To be merged into "To Be Considered"
+- reliability and stability (only progress in data)
+- data quality of measurements
+- error propagation
+- accuracy of calculation results
+- data available/missing data/corrupt data?
+- data source (measurement, calculation, const, estimated, ...)
 
 <!-- START OF FOOTER -->
 

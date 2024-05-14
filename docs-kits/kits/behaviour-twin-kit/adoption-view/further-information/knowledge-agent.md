@@ -47,6 +47,38 @@ Behaviour Twin KIT
 
 ## KNOWLEDGE GRAPH BASICS
 
+The Knowledge Agent is a set of federated components that are used to reason over knowledge graphs.
+For detailed information, see the [Agents KIT](../../../knowledge-agents/adoption-view/intro.md).
+
+Knowledge graphs are build up of semantic triplets.
+Those triplets are consisting of a subject, a predicate and an object. Subject and object
+are nodes, the predicate is an unidirectional edge (a relation) between them:
+
+![triplet](triplet.drawio.svg)
+
+For knowledge graphs, there exists a model (ontology) and instances of 
+
+
+
+Ontology / instance
+
+Ontologies support inheritance.
+
+
+ (subject --predicate-> object),
+where subject and object are nodes, the predicate is a unidirectional edge.
+All nodes are object instances, and the edges between them are their relations.
+For more information, see [W3C Resource Description Framework (RDF)](https://www.w3.org/RDF/).  
+Object types and relations are formally defined within ontologies.
+
+![triplet-example-partof](triplet-example-partof.drawio.svg)
+
+Subjects and objects may not be real objects but conceptual ones.
+
+![triplet-example-hasargument](triplet-example-hasargument.drawio.svg)
+
+
+
 {TODO}{Simple description, from RuL KIT}
 
 ## ARCHITECTURE OF KNOWLEDGE AGENT

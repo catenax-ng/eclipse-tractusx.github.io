@@ -32,7 +32,7 @@ VARIANT FOR DOCUSAURUS TO HERE -->
 
 ## PURPOSE
 
-Maximize the potential of usage data. Use our spezialized BT Kit (based on KA Kit) to connect heterogeneous and distributed usage data and services seamlessly.
+Maximize the potential of usage data. Use our spezialized Behaviour Twin KIT (based on [Agents KIT](../knowledge-agents/adoption-view/intro.md)) to connect heterogeneous and distributed usage data and services seamlessly.
 
 ## DISCLAIMER
 
@@ -47,14 +47,14 @@ In our examples and texts, we exclusively use Tractus-X components. However, the
 - [Use Cases](use-cases/overview.md) - Templates for *Health Indicator* and *Remaining useful Life*
 
 ## NOTICE
+
 This work is licensed under the [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode).
- 
+
 - SPDX-License-Identifier: CC-BY-4.0
 - SPDX-FileCopyrightText: 2022-2024 Allgemeine Deutsche Automobil-Club (ADAC) e.V.
 - SPDX-FileCopyrightText: 2022-2024 Bayerische Motoren Werke Aktiengesellschaft (BMW AG)
 - SPDX-FileCopyrightText: 2022-2024 ZF Friedrichshafen AG
 - SPDX-FileCopyrightText: 2022-2024 Contributors to the Eclipse Foundation
-
 
 <!-- START OF FOOTER -->
 

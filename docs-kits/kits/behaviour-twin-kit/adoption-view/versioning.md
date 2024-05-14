@@ -109,6 +109,8 @@ It's up to the use case to handle this type of versioning.
 A good approach would be to use the version nodes in the graph assets (SHACL) and
 the skills (SPARQL). {KA}
 
+{TODO}{Versioning without ontology}
+
 <!-- START OF FOOTER -->
 
 <!-- DEACTIVATED FOR DOCUSAURUS FROM HERE -->

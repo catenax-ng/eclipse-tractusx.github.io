@@ -45,7 +45,17 @@ Behaviour Twin KIT
 
 <!-- END OF HEADER -->
 
-MXD, ...
+Currently, there is no ready-to-use test environment. If you want to test your use case,
+you still have options:
+
+- Have a look at the [Agents KIT](../../../knowledge-agents/adoption-view/intro.md),
+  maybe there is already something regarding testing.
+- Do research at your operating company's website or contact them.
+- Build up your own test environment. As a basis, you could use the official Tractus-X
+  [MXD test environment on GitHub](https://github.com/eclipse-tractusx/tutorial-resources)
+  ![external link](../../assets/external-link.svg).
+  Unfortunately, the Knowledge Agent components were not included into the MXD deployment
+  scripts until release of the current KIT version.
 
 <!-- START OF FOOTER -->
 

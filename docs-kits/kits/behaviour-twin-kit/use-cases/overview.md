@@ -1,6 +1,6 @@
 ---
 id: overview
-title: Use-Cases
+title: Use Cases
 description: Behaviour Twin KIT
 sidebar_position: 39
 ---
@@ -44,6 +44,11 @@ Behaviour Twin KIT
 <!-- DEACTIVATED FOR DOCUSAURUS TO HERE -->
 
 <!-- END OF HEADER -->
+
+## USE CASES
+
+This section contains dedicated use cases within the overarching Behaviour Twin use case.
+The former KITs for those use cases (Remaining useful Life KIT and Health Indicator KIT) are hereby deprecated.
 
 ## CONTENTS
 

@@ -45,9 +45,11 @@ Behaviour Twin KIT
 
 <!-- END OF HEADER -->
 
+## GENERAL
+
 |Term|Description|Comment|
 |---|---|---|
-|Use Case|
+|Use Case|||
 |Business Partner Number (BPN)|
 |Policy|
 |Contract|
@@ -60,21 +62,28 @@ Behaviour Twin KIT
 |data provider|Provides data, makes data available|Either provides own data from own data sources as data owner, likely an OEM, or provides previously received data from other sources|
 |service|Externally accessible service to process data|E.g. calculation or simulation based on internal models|
 |calculation service provider|Provides a calculation service to process result data from input data|Likely a supplier of a part or component|
-|skill|The logic behind a use case|E.g. how to find data or calculation services|
-|ontology||
-|skill provider|Provider of the use case logic|E.g. the knowledge of how to find, access, and process data|
 |delegator|Delegates data or service requests|Likely a supplier of a component that is assembled of subcomponents which are providing calculation services|
 |EDC|
 |Connector|
+|Connector Address|
+|Data Space|
+|Operating Company|
+
+## KNOWLEDGE AGENT
+
 |Knowledge Agent|
 |Matchmaking Agent|
 |Binding Agent|
-|Data Space|
 |Provisioning Agent|
 |Remoting Agent|
 |Semantic Web|
 |Asset|
 |Graph Asset|
+|skill|The logic behind a use case|E.g. how to find data or calculation services|
+|ontology||
+|skill provider|Provider of the use case logic|E.g. the knowledge of how to find, access, and process data|
+
+## TECHNOLOGIES
 
 |Term|Description|Comment|
 |---|---|---|
@@ -86,7 +95,6 @@ Behaviour Twin KIT
 |Web Ontology Language (OWL)|see OWL on w3.org external link|
 |Shapes Constraint Language (SHACL)| see SHACL on w3.org external link|
 |W3C|
-|Operating Company|
 
 
 

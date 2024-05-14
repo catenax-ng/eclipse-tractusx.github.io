@@ -45,6 +45,11 @@ Behaviour Twin KIT
 
 <!-- END OF HEADER -->
 
+For further guidance, refer to the [Catena-X Association ![external link](../../assets/external-link.svg)](https://catena-x.net/). There, expert groups are or will be established.
+For Knowlede Agent and ontologies, the Technical Modelling Committee should be your first stop. {TODO}{Agents-KIT}
+
+{TODO}{Connector KIT, Agent KIT}
+
 <!-- START OF FOOTER -->
 
 <!-- DEACTIVATED FOR DOCUSAURUS FROM HERE -->

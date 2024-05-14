@@ -45,8 +45,6 @@ Behaviour Twin KIT
 
 <!-- END OF HEADER -->
 
-## DISCLAIMER
-
 ## CONTENTS
 
 - [Introduction](introduction.md)

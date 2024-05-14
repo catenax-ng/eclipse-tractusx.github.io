@@ -45,70 +45,66 @@ Behaviour Twin KIT
 
 <!-- END OF HEADER -->
 
-*This section provides a quick overview over the KIT's scope, its direction and how you can benefit from using it for your own applications and use cases.*
+*This section provides a quick overview over the KIT's scope, its direction and
+how you can benefit from using it for your own applications and use cases.*
 
 ## VISION & MISSION
 
 ### VISION
 
-Aggregating real-world usage data of technical products is state-of-the-art. But only by combining this data with digital twins, simulation models and specialized calculation services, new business opportunities and operational efficiencies become possible across the entire product lifecycle. The key to successfully enabling these opportunities is the scalability of digital solutions, their extension across business boundaries and handling data protection and governance.
+Aggregating real-world usage data of technical products is state-of-the-art.
+But only by combining this data with digital twins, simulation models and
+specialized calculation services, new business opportunities and operational
+efficiencies become possible across the entire product lifecycle. The key to
+successfully enabling these opportunities is the scalability of digital solutions,
+their extension across business boundaries and handling data protection and governance.
 
 ### MISSION
 
-The Behavior Twin Kit aims to facilitate the development of scalable and interoperable solutions for connecting service customers, data owners and service providers across organizatorical boundaries in a generic way. It guides business and software developers by explaining key concepts and by directing them to relevant technical resources and examples.
-
+The Behavior Twin KIT aims to facilitate the development of scalable and interoperable
+solutions for connecting service customers, data owners and service providers across
+organizational boundaries in a generic way. It guides business and software developers
+by explaining key concepts and by directing them to relevant technical resources and examples.
 
 ## STATUS QUO & CHALLENGE
 
 ### Status Quo
 
-Within company limits, the aggregation of usage data, monitoring them, e.g. by calculation of health indicators or component damage based on internally available data and models, is already state of the art. However, across company boundaries, there are only individual, complex and not generally available solutions.
+Within company limits, the aggregation of usage data, monitoring them, e.g.
+by calculation of health indicators or component damage based on internally
+available data and models, is already state of the art. However, across company
+boundaries, there are only individual, complex and not generally available solutions.
 
 ### Today’s challenge
+
 Thus, the following challenges must be addressed:
 
-- Correctly allocating component data and calculation service across organizational boundaries
-- Ensuring data compliance across complex supply chains
-- Enabling secure data sharing while respecting IP and governance
-- Facilitating flexible customization for diverse use cases
+- correctly allocating component data and calculation service across organizational boundaries
+- ensuring data compliance across complex supply chains
+- enabling secure data sharing while respecting IP and governance
+- fulfill high data sovereignty standards
+- facilitating flexible customization for diverse use cases
 
+## USE CASE EXAMPLES
 
-## USE-CASES & USE CASE TYPES
+Typical scenarios comprise stakeholders acting during a certain phase in the product lifecycle:
 
-### USE-CASES
+- **OEM, TIER-X @ Early product development phase:** Components can be optimally designed
+  using digital prototypes and simulations based on usage data and models.
 
-Typical scenarios comprise stakeholders acting during a certain phase in the product lifecyle:
+- **OEM, TIER-X @ Offer phase:** Suppliers can enhance their products with
+  value-added services like health monitoring and remaining useful life calculation making
+  them more attractive for their customers.
 
-- OEM, TIER-X @ Early product development phase: Components can be optimally designed using digital prototypes and simulations based on usage data and models. 
+- **OEM, TIER-X @ Usage phase:** Precise monitoring of product health and residuals value
+  helps enable predictive maintenance, optimized operations and end-of-life decision making.
 
-- OEM, TIER-X @ Offer phase: Suppliers can enhance their products with value-added services like health monitoring and remaining useful life calculation making them more attractive for their customers.
+- **Car dealers and automotive clubs @ usage phase:** Further interpreting the
+  Remaining Useful Life calculation for a vehicle evaluation and offer it as
+  vehicle-related services for their end customers and fleet operators.
 
-- OEM, TIER-X @ Usage phase: Precise monitoring of product health and residuals value helps enable predictive maintenance, optimized operations and end-of-life decision making.
-
-- Car dealers and automotive clubs @ usage phase: Further interpreting the Remaining Useful Life calculation for a vehicle evaluation and offer it as vehicle-related services for their end customers and fleet operators.
-
-- Car dealers and automotive clubs @ Recycling phase: An accurate residual value analysis allows optimal dismantling, reuse and recycling.
-
-
-### USE-CASE TYPES
-
-In a more general view these use cases can be categorized dependent on specific criteria:
-
-#### Origin of query
-
-- Usage data owners (like OEMs) query a calculation services of IP owners (like suppliers) along the supplier chain.
-
-- Service providers (like automobile clubs) gather data or insights along the supplier chain in behalf of their customers.
-
-#### Origin of data-processing logic
-
-- The querying party knows how to process data, e.g. how to accumulate acquired data.
-
-- The data processing party knows how to process data, e.g. which simulation model to chose.
-
-
-
-
+- **Car dealers and automotive clubs @ Recycling phase:** An accurate residual value
+  analysis allows optimal dismantling, reuse and recycling.
 
 <!-- START OF FOOTER -->
 

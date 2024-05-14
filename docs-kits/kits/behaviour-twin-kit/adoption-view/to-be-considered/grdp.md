@@ -45,7 +45,23 @@ Behaviour Twin KIT
 
 <!-- END OF HEADER -->
 
-To be merged into "To Be Considered", VIN-VAN-Conversion
+## DATA PROTECTION
+
+- consider data protection requirements
+- data exchange with participants in other regions with different legal frameworks
+
+
+
+- VIN/VAN
+until release of the current KIT version.
+
+## DATA SOVEREIGNTY
+
+- one up/down
+- propagate framework agreement
+- regions
+
+
 
 <!-- START OF FOOTER -->
 

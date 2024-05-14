@@ -48,6 +48,19 @@ Behaviour Twin KIT
 How to start, guidance, development view, checklist
 Policies, Credentials  !!
 
+- join Catena-X (see [participate section on catena-x.net ![external link](../assets/external-link.svg)](https://catena-x.net/en/participate))
+- develop business process
+- define participants and their roles
+- consider data protection requirements
+- identify use case type
+- design data model/ontology (if not already present)
+- design a use case framework agreement (or use *Behaviour Twin Use Case Agreement* if appropriate)
+- define logic (implement skill(s))
+- provide (bind) data
+- provide (bind) calculation services
+- test with partners
+
+The [use case templates](../use-cases/overview.md) within this KIT can be uesd as starting point for the technical development.
 
 <!-- START OF FOOTER -->
 

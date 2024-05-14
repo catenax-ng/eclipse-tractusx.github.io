@@ -45,7 +45,15 @@ Behaviour Twin KIT
 
 <!-- END OF HEADER -->
 
-which experts/technologies?
+In order to understand and develop use cases with the Behaviour Twin KIT, you
+must have at least a basic understanding of the following topics:
+
+- Catena-X Dataspace Architecture
+- SPARQL 1.1 Query Language, see [SPARQL on w3.org ![external link](../../assets/external-link.svg)](https://www.w3.org/TR/sparql11-query/)
+- Resource Description Framework (RDF), see [RDF on w3.org ![external link](../../assets/external-link.svg)](https://www.w3.org/RDF/)
+- RDF 1.1 Turtle, see [Turtle on w3.org ![external link](../../assets/external-link.svg)](https://www.w3.org/TR/turtle/)
+- Web Ontology Language (OWL), see [OWL on w3.org ![external link](../../assets/external-link.svg)](https://www.w3.org/OWL/)
+- Shapes Constraint Language (SHACL), see [SHACL on w3.org ![external link](../../assets/external-link.svg)](https://www.w3.org/TR/shacl/)
 
 <!-- START OF FOOTER -->
 

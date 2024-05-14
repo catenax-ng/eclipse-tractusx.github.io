@@ -35,6 +35,7 @@ VARIANT FOR DOCUSAURUS TO HERE -->
 
 ![Behaviour Twin KIT banner](../../../../static/img/kit-icons/behaviour-twin-kit-icon-mini.png)
 
+
   </div>
   <div style="display:inline-block;font-size:15px;color:rgb(255,166,1);margin-left:7px;vertical-align:top;padding-top:8px;">
 Behaviour Twin KIT

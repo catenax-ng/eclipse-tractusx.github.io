@@ -95,14 +95,6 @@ Depending on your role, you need a combination of the following components:
 | calculation service                       | x |   |   |   |   |
 | remoting agent                            | x |   |   |   |   |
 
-## KNOWLEDGE GRAPH BASICS
-
-Knowledge graphs are buildup of semantic triplets (subject --predicate-> object),
-where subject and object are nodes, the predicate is a unidirectional edge.
-All nodes are object instances, and the edges between them are their relations.
-For more information, see [W3C Resource Description Framework (RDF)](https://www.w3.org/RDF/).  
-Object types and relations are formally defined within ontologies.
-
 <!-- START OF FOOTER -->
 
 <!-- DEACTIVATED FOR DOCUSAURUS FROM HERE -->
