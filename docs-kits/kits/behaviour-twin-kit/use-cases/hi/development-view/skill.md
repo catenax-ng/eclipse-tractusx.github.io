@@ -7,7 +7,7 @@ sidebar_position: 74
 
 <!-- DEACTIVATED FOR DOCUSAURUS FROM HERE -->
 
-<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../../../overview.md) > [Use Cases](../../overview.md) > [Health Indicator](../overview.md) > [Development View](overview.md) > Skill</span>
+<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../../../overview.md) > [Use Cases](../../overview.md) > [Health Indicator](../overview.md) > [Development View](./overview.md) > Skill</span>
 
 # Skill
 
@@ -51,6 +51,6 @@ Behaviour Twin KIT -- Health Indicator
 
 | Previous | Next |
 | -------- | ---- |
-| [Service Bindings](service-bindings.md) | [Assets](assets.md) |
+| [Service Bindings](./service-bindings.md) | [Assets](./assets.md) |
 
 <!-- DEACTIVATED FOR DOCUSAURUS TO HERE -->

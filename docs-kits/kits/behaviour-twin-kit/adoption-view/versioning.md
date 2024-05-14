@@ -7,7 +7,7 @@ sidebar_position: 7
 
 <!-- DEACTIVATED FOR DOCUSAURUS FROM HERE -->
 
-<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../overview.md) > [Adoption View](overview.md) > Versioning</span>
+<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../overview.md) > [Adoption View](./overview.md) > Versioning</span>
 
 # Versioning
 
@@ -62,13 +62,13 @@ a transition period. There are three dates within this periode that must be cons
 
 There may be a period of time where two versions are provided/supported in parallel:
 
-![cx-releases timeline](cx-releases-timeline.drawio.svg)
+![cx-releases timeline](assets/cx-releases-timeline.drawio.svg)
 
 The three dates may coincide on a date. In this case, start of rollout is on same date
 as end of rollout of the previous version, and end of rollout is on same date as end of life
 of the previous version:
 
-![cx-releases timeline](cx-releases-timeline-condensed.drawio.svg)
+![cx-releases timeline](assets/cx-releases-timeline-condensed.drawio.svg)
 
 It is always guaranteed that a version is provided/supported from end of rollout until
 end of life.
@@ -117,6 +117,6 @@ the skills (SPARQL). {KA}
 
 | Previous | Next |
 | -------- | ---- |
-| [Business Process](business-process.md) | [Guidance And Resources](guidance/overview.md) |
+| [Knowledge Agent](./knowledge-agent.md) | [To Be Considered](./to-be-considered.md) |
 
 <!-- DEACTIVATED FOR DOCUSAURUS TO HERE -->

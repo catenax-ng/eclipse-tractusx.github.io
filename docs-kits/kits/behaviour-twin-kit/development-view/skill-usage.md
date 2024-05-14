@@ -7,7 +7,7 @@ sidebar_position: 37
 
 <!-- DEACTIVATED FOR DOCUSAURUS FROM HERE -->
 
-<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../overview.md) > [Development View](overview.md) > Skill-Usage</span>
+<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../overview.md) > [Development View](./overview.md) > Skill-Usage</span>
 
 # Skill-Usage
 
@@ -140,6 +140,6 @@ If the given VAN is not found on OEM side, then we get an empty binding result:
 
 | Previous | Next |
 | -------- | ---- |
-| [Assets](assets.md) | [Test](test.md) |
+| [Assets](./assets.md) | [Test](./test.md) |
 
 <!-- DEACTIVATED FOR DOCUSAURUS TO HERE -->

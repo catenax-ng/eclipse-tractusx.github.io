@@ -51,16 +51,16 @@ Behaviour Twin KIT
 
 ## CONTENTS
 
-- [Requirements](requirements.md)
-- [Architecture](architecture.md)
-- [Roles](roles.md)
-- [Ontologies](ontology.md)
-- [Data Bindings](data-bindings.md)
-- [Service Bindings](service-bindings.md)
-- [Skill](skill.md)
-- [Assets](assets.md)
-- [Skill-Usage](skill-usage.md)
-- [Test](test.md)
+- [Requirements](./requirements.md)
+- [Architecture](./architecture.md)
+- [Roles](./roles.md)
+- [Ontologies](./ontology.md)
+- [Data Bindings](./data-bindings.md)
+- [Service Bindings](./service-bindings.md)
+- [Skill](./skill.md)
+- [Assets](./assets.md)
+- [Skill-Usage](./skill-usage.md)
+- [Test](./test.md)
 
 <!-- START OF FOOTER -->
 
@@ -68,6 +68,6 @@ Behaviour Twin KIT
 
 | Previous | Next |
 | -------- | ---- |
-| [Standards](../adoption-view/standards.md) | [Requirements](requirements.md) |
+| [Terminology](../adoption-view/terminology.md) | [Requirements](./requirements.md) |
 
 <!-- DEACTIVATED FOR DOCUSAURUS TO HERE -->

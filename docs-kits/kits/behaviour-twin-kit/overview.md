@@ -41,7 +41,7 @@ In our examples and texts, we exclusively use Tractus-X components. However, the
 
 ## CONTENTS
 
-- [Change Log](changelog.md)
+- [Change Log](./changelog.md)
 - [Adoption View](adoption-view/overview.md) - Understand & Decide
 - [Development View](development-view/overview.md) - Develop & Operate
 - [Use Cases](use-cases/overview.md) - Templates for *Health Indicator* and *Remaining useful Life*
@@ -62,6 +62,6 @@ This work is licensed under the [CC-BY-4.0](https://creativecommons.org/licenses
 
 | Previous | Next |
 | -------- | ---- |
-|  | [Change Log](changelog.md) |
+|  | [Change Log](./changelog.md) |
 
 <!-- DEACTIVATED FOR DOCUSAURUS TO HERE -->

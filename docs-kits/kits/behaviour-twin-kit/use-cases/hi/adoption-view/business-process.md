@@ -7,7 +7,7 @@ sidebar_position: 65
 
 <!-- DEACTIVATED FOR DOCUSAURUS FROM HERE -->
 
-<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../../../overview.md) > [Use Cases](../../overview.md) > [Health Indicator](../overview.md) > [Adoption View](overview.md) > Business Process</span>
+<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../../../overview.md) > [Use Cases](../../overview.md) > [Health Indicator](../overview.md) > [Adoption View](./overview.md) > Business Process</span>
 
 # Business Process
 
@@ -51,6 +51,6 @@ Behaviour Twin KIT -- Health Indicator
 
 | Previous | Next |
 | -------- | ---- |
-| [Logic & Schema](logic-schema.md) | [Further Information](further-information.md) |
+| [Logic & Schema](./logic-schema.md) | [Further Information](./further-information.md) |
 
 <!-- DEACTIVATED FOR DOCUSAURUS TO HERE -->

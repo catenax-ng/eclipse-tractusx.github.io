@@ -7,7 +7,7 @@ sidebar_position: 31
 
 <!-- DEACTIVATED FOR DOCUSAURUS FROM HERE -->
 
-<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../overview.md) > [Development View](overview.md) > Roles</span>
+<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../overview.md) > [Development View](./overview.md) > Roles</span>
 
 # Roles
 
@@ -59,6 +59,6 @@ As a developer in Behaviour Twin use cases, you may apply to one or more of the 
 
 | Previous | Next |
 | -------- | ---- |
-| [Architecture](architecture.md) | [Ontologies](ontology.md) |
+| [Architecture](./architecture.md) | [Ontologies](./ontology.md) |
 
 <!-- DEACTIVATED FOR DOCUSAURUS TO HERE -->

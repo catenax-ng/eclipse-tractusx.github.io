@@ -111,56 +111,14 @@ const sidebars = {
                     },
                     items: [
                         'kits/behaviour-twin-kit/adoption-view/introduction',
-                        'kits/behaviour-twin-kit/adoption-view/logic-schema',
-                        'kits/behaviour-twin-kit/adoption-view/business-process',
+                        'kits/behaviour-twin-kit/adoption-view/architecture',
+                        'kits/behaviour-twin-kit/adoption-view/knowledge-agent',
                         'kits/behaviour-twin-kit/adoption-view/versioning',
-                        {
-                            type: 'category',
-                            label: 'Guidance And Resources',
-                            link: {
-                                 type: 'doc',
-                                 id: 'kits/behaviour-twin-kit/adoption-view/guidance/overview',
-                            },
-                            items: [
-                                'kits/behaviour-twin-kit/adoption-view/guidance/technologies',
-                                'kits/behaviour-twin-kit/adoption-view/guidance/references',
-                            ]
-                        },
-                        'kits/behaviour-twin-kit/adoption-view/terminology',
-                        {
-                            type: 'category',
-                            label: 'To Be Considered',
-                            link: {
-                                 type: 'doc',
-                                 id: 'kits/behaviour-twin-kit/adoption-view/to-be-considered/overview',
-                            },
-                            items: [
-                                'kits/behaviour-twin-kit/adoption-view/to-be-considered/grdp',
-                                'kits/behaviour-twin-kit/adoption-view/to-be-considered/policies',
-                                'kits/behaviour-twin-kit/adoption-view/to-be-considered/licenses',
-                                'kits/behaviour-twin-kit/adoption-view/to-be-considered/data-quality',
-                                'kits/behaviour-twin-kit/adoption-view/to-be-considered/partner',
-                                'kits/behaviour-twin-kit/adoption-view/to-be-considered/cx-updates',
-                            ]
-                        },
-                        {
-                            type: 'category',
-                            label: 'Further Information And Concepts',
-                            link: {
-                                 type: 'doc',
-                                 id: 'kits/behaviour-twin-kit/adoption-view/further-information/overview',
-                            },
-                            items: [
-                                'kits/behaviour-twin-kit/adoption-view/further-information/tractusx',
-                                'kits/behaviour-twin-kit/adoption-view/further-information/knowledge-agent',
-                                'kits/behaviour-twin-kit/adoption-view/further-information/goal-oriented-skills',
-                                'kits/behaviour-twin-kit/adoption-view/further-information/resolution',
-                                'kits/behaviour-twin-kit/adoption-view/further-information/test',
-                                'kits/behaviour-twin-kit/adoption-view/further-information/ontologies',
-                            ]
-                        },
+                        'kits/behaviour-twin-kit/adoption-view/to-be-considered',
                         'kits/behaviour-twin-kit/adoption-view/new-use-cases',
                         'kits/behaviour-twin-kit/adoption-view/standards',
+                        'kits/behaviour-twin-kit/adoption-view/guidance-and-resources',
+                        'kits/behaviour-twin-kit/adoption-view/terminology',
                     ]
                 },
                 {

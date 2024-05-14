@@ -7,7 +7,7 @@ sidebar_position: 2
 
 <!-- DEACTIVATED FOR DOCUSAURUS FROM HERE -->
 
-<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](overview.md) > Change Log</span>
+<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](./overview.md) > Change Log</span>
 
 # Change Log
 
@@ -69,6 +69,6 @@ Behaviour Twin KIT
 
 | Previous | Next |
 | -------- | ---- |
-| [BEHAVIOUR TWIN KIT](overview.md) | [Adoption View](adoption-view/overview.md) |
+| [BEHAVIOUR TWIN KIT](./overview.md) | [Adoption View](adoption-view/overview.md) |
 
 <!-- DEACTIVATED FOR DOCUSAURUS TO HERE -->

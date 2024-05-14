@@ -7,7 +7,7 @@ sidebar_position: 32
 
 <!-- DEACTIVATED FOR DOCUSAURUS FROM HERE -->
 
-<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../overview.md) > [Development View](overview.md) > Ontologies</span>
+<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../overview.md) > [Development View](./overview.md) > Ontologies</span>
 
 # Ontologies
 
@@ -84,6 +84,6 @@ In Behaviour Twin use cases, you often may find load spectra as inputs for calcu
 
 | Previous | Next |
 | -------- | ---- |
-| [Roles](roles.md) | [Data Bindings](data-bindings.md) |
+| [Roles](./roles.md) | [Data Bindings](./data-bindings.md) |
 
 <!-- DEACTIVATED FOR DOCUSAURUS TO HERE -->

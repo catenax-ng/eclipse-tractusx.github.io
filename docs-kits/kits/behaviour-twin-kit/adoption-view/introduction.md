@@ -7,7 +7,7 @@ sidebar_position: 4
 
 <!-- DEACTIVATED FOR DOCUSAURUS FROM HERE -->
 
-<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../overview.md) > [Adoption View](overview.md) > Introduction</span>
+<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../overview.md) > [Adoption View](./overview.md) > Introduction</span>
 
 # Introduction
 
@@ -112,6 +112,6 @@ Typical scenarios comprise stakeholders acting during a certain phase in the pro
 
 | Previous | Next |
 | -------- | ---- |
-| [Adoption View](overview.md) | [Logic & Schema](logic-schema.md) |
+| [Adoption View](./overview.md) | [Architecture](./architecture.md) |
 
 <!-- DEACTIVATED FOR DOCUSAURUS TO HERE -->

@@ -7,7 +7,7 @@ sidebar_position: 35
 
 <!-- DEACTIVATED FOR DOCUSAURUS FROM HERE -->
 
-<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../overview.md) > [Development View](overview.md) > Skill</span>
+<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../overview.md) > [Development View](./overview.md) > Skill</span>
 
 # Skill
 
@@ -55,7 +55,7 @@ For the RuL calculation of a vehicle part, we have three different "roles" invol
 
 A reference (sample) Agent-Skill for a Gearbox is implemented,
 
-For more information regarding the RuL Skill see [Knowledge Agent KIT](https://bit.ly/tractusx-agents).
+For more information regarding the RuL Skill see [Agents KIT](https://bit.ly/tractusx-agents).
 
 ``` sparql
 ################################################################
@@ -185,6 +185,6 @@ SELECT DISTINCT ?vehicle ?van ?aggregate ?assembly ?supplier ?distanceKm ?timeHo
 
 | Previous | Next |
 | -------- | ---- |
-| [Service Bindings](service-bindings.md) | [Assets](assets.md) |
+| [Service Bindings](./service-bindings.md) | [Assets](./assets.md) |
 
 <!-- DEACTIVATED FOR DOCUSAURUS TO HERE -->

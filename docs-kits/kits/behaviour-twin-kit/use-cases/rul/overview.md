@@ -37,7 +37,7 @@ Provide and get remaining-useful-life values for technical systems.
 
 ## CONTENTS
 
-- [Change Log](changelog.md)
+- [Change Log](./changelog.md)
 - [Adoption View](adoption-view/overview.md)
 - [Development View](development-view/overview.md)
 
@@ -47,6 +47,6 @@ Provide and get remaining-useful-life values for technical systems.
 
 | Previous | Next |
 | -------- | ---- |
-| [Use Cases](../overview.md) | [Change Log](changelog.md) |
+| [Use Cases](../overview.md) | [Change Log](./changelog.md) |
 
 <!-- DEACTIVATED FOR DOCUSAURUS TO HERE -->

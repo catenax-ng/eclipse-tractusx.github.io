@@ -2,12 +2,12 @@
 id: new-use-cases
 title: New Use-Cases
 description: Behaviour Twin KIT
-sidebar_position: 26
+sidebar_position: 10
 ---
 
 <!-- DEACTIVATED FOR DOCUSAURUS FROM HERE -->
 
-<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../overview.md) > [Adoption View](overview.md) > New Use-Cases</span>
+<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../overview.md) > [Adoption View](./overview.md) > New Use-Cases</span>
 
 # New Use-Cases
 
@@ -68,6 +68,6 @@ The [use case templates](../use-cases/overview.md) within this KIT can be uesd a
 
 | Previous | Next |
 | -------- | ---- |
-| [Ontologies](further-information/ontologies.md) | [Standards](standards.md) |
+| [To Be Considered](./to-be-considered.md) | [Standards](./standards.md) |
 
 <!-- DEACTIVATED FOR DOCUSAURUS TO HERE -->

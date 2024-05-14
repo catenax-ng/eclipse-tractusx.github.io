@@ -7,7 +7,7 @@ sidebar_position: 41
 
 <!-- DEACTIVATED FOR DOCUSAURUS FROM HERE -->
 
-<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../../overview.md) > [Use Cases](../overview.md) > [Remaining useful Life](overview.md) > Change Log</span>
+<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../../overview.md) > [Use Cases](../overview.md) > [Remaining useful Life](./overview.md) > Change Log</span>
 
 # Change Log
 
@@ -53,6 +53,6 @@ RuL specific changes, RuL-KIT-logo?
 
 | Previous | Next |
 | -------- | ---- |
-| [Remaining useful Life](overview.md) | [Adoption View](adoption-view/overview.md) |
+| [Remaining useful Life](./overview.md) | [Adoption View](adoption-view/overview.md) |
 
 <!-- DEACTIVATED FOR DOCUSAURUS TO HERE -->

@@ -7,7 +7,7 @@ sidebar_position: 57
 
 <!-- DEACTIVATED FOR DOCUSAURUS FROM HERE -->
 
-<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../../../overview.md) > [Use Cases](../../overview.md) > [Remaining useful Life](../overview.md) > [Development View](overview.md) > Skill-Usage</span>
+<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../../../overview.md) > [Use Cases](../../overview.md) > [Remaining useful Life](../overview.md) > [Development View](./overview.md) > Skill-Usage</span>
 
 # Skill-Usage
 
@@ -51,6 +51,6 @@ Behaviour Twin KIT -- Remaining useful Life
 
 | Previous | Next |
 | -------- | ---- |
-| [Assets](assets.md) | [Test](test.md) |
+| [Assets](./assets.md) | [Test](./test.md) |
 
 <!-- DEACTIVATED FOR DOCUSAURUS TO HERE -->

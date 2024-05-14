@@ -47,16 +47,15 @@ Behaviour Twin KIT
 
 ## CONTENTS
 
-- [Introduction](introduction.md)
-- [Logic & Schema](logic-schema.md)
-- [Business Process](business-process.md)
-- [Versioning](versioning.md)
-- [Guidance And Resources](guidance/overview.md)
-- [Terminology](terminology.md)
-- [To Be Considered](to-be-considered/overview.md)
-- [Further Information And Concepts](further-information/overview.md)
-- [New Use-Cases](new-use-cases.md)
-- [Standards](standards.md)
+- [Introduction](./introduction.md)
+- [Architecture](./architecture.md)
+- [Knowledge Agent](./knowledge-agent.md)
+- [Versioning](./versioning.md)
+- [To Be Considered](./to-be-considered.md)
+- [New Use-Cases](./new-use-cases.md)
+- [Standards](./standards.md)
+- [Guidance And Resources](./guidance-and-resources.md)
+- [Terminology](./terminology.md)
 
 <!-- START OF FOOTER -->
 
@@ -64,6 +63,6 @@ Behaviour Twin KIT
 
 | Previous | Next |
 | -------- | ---- |
-| [Change Log](../changelog.md) | [Introduction](introduction.md) |
+| [Change Log](../changelog.md) | [Introduction](./introduction.md) |
 
 <!-- DEACTIVATED FOR DOCUSAURUS TO HERE -->

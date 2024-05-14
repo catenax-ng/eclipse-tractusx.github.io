@@ -7,7 +7,7 @@ sidebar_position: 38
 
 <!-- DEACTIVATED FOR DOCUSAURUS FROM HERE -->
 
-<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../overview.md) > [Development View](overview.md) > Test</span>
+<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../overview.md) > [Development View](./overview.md) > Test</span>
 
 # Test
 
@@ -53,6 +53,6 @@ How to test, maybe obsolete
 
 | Previous | Next |
 | -------- | ---- |
-| [Skill-Usage](skill-usage.md) | [Use Cases](../use-cases/overview.md) |
+| [Skill-Usage](./skill-usage.md) | [Use Cases](../use-cases/overview.md) |
 
 <!-- DEACTIVATED FOR DOCUSAURUS TO HERE -->

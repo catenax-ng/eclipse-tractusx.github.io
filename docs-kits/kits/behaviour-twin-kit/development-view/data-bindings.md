@@ -7,7 +7,7 @@ sidebar_position: 33
 
 <!-- DEACTIVATED FOR DOCUSAURUS FROM HERE -->
 
-<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../overview.md) > [Development View](overview.md) > Data Bindings</span>
+<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../overview.md) > [Development View](./overview.md) > Data Bindings</span>
 
 # Data Bindings
 
@@ -62,7 +62,7 @@ To bind the relational data to the knowledge graph, you can use a **provisioning
   
 ### Data mapping configuration
 
-To configure the bindings, a config file for the Ontop software has to be created. The file is written in the Ontop mapping language and has the extension **.obda**. For more information, see the Knowledge Agent KIT.
+To configure the bindings, a config file for the Ontop software has to be created. The file is written in the Ontop mapping language and has the extension **.obda**. For more information, see the Knowledge [Agents KIT](../../knowledge-agents/adoption-view/intro.md).
 
 ### Construction of a single data binding
 
@@ -194,7 +194,7 @@ To enable the knowledge agent's matchmaking agent to find the data bindings, a g
             "sh:shapesGraph": "@prefix cx-common: <https://w3id.org/catenax/ontology/common#>. \n@prefix : <GraphAsset?oem=BehaviourTwinReliability#> .\n@prefix cx-tele: <https://w3id.org/catenax/ontology/reliability#> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .@prefix : <urn:cx:Graph:oem:BehaviourTwin> .\n\n:OemLoadSpectrum rdf:type sh:NodeShape ;\n  sh:targetClass cx-tele:LoadSpectrum ;\n  sh:property [\n        sh:path cx-tele:provisionedBy ;\n        sh:hasValue <urn:bpn:legal:BPNL000000000OEM> \n    ] ;\n  sh:property [\n        sh:path cx-tele:Version ;\n        sh:hasValue \"0\"^^xsd:long \n    ] ;\n  sh:property [\n        sh:path cx-tele:component ;\n        sh:class :SupplierParts \n    ] .\n\n:SupplierParts rdf:type sh:NodeShape ;\n  sh:targetClass cx-tele:VehicleComponent ;\n  sh:property [\n        sh:path cx-tele:isProducedBy ;\n        sh:hasValue <urn:bpn:legal:BPNL0000SUPPLIER> \n    ] .\n"
 ```
 
-For more information see the Knowledge Agent KIT.
+For more information see the Knowledge [Agents KIT](../../knowledge-agents/adoption-view/intro.md).
 
 <!-- START OF FOOTER -->
 
@@ -202,6 +202,6 @@ For more information see the Knowledge Agent KIT.
 
 | Previous | Next |
 | -------- | ---- |
-| [Ontologies](ontology.md) | [Service Bindings](service-bindings.md) |
+| [Ontologies](./ontology.md) | [Service Bindings](./service-bindings.md) |
 
 <!-- DEACTIVATED FOR DOCUSAURUS TO HERE -->

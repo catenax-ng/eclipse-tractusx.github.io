@@ -51,16 +51,16 @@ RuL-KIT-logo?
 
 ## CONTENTS
 
-- [Requirements](requirements.md)
-- [Architecture](architecture.md)
-- [Roles](roles.md)
-- [Ontologies](ontology.md)
-- [Data Bindings](data-bindings.md)
-- [Service Bindings](service-bindings.md)
-- [Skill](skill.md)
-- [Assets](assets.md)
-- [Skill-Usage](skill-usage.md)
-- [Test](test.md)
+- [Requirements](./requirements.md)
+- [Architecture](./architecture.md)
+- [Roles](./roles.md)
+- [Ontologies](./ontology.md)
+- [Data Bindings](./data-bindings.md)
+- [Service Bindings](./service-bindings.md)
+- [Skill](./skill.md)
+- [Assets](./assets.md)
+- [Skill-Usage](./skill-usage.md)
+- [Test](./test.md)
 
 <!-- START OF FOOTER -->
 
@@ -68,6 +68,6 @@ RuL-KIT-logo?
 
 | Previous | Next |
 | -------- | ---- |
-| [Further Information](../adoption-view/further-information.md) | [Requirements](requirements.md) |
+| [Further Information](../adoption-view/further-information.md) | [Requirements](./requirements.md) |
 
 <!-- DEACTIVATED FOR DOCUSAURUS TO HERE -->

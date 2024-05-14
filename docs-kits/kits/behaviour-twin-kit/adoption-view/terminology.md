@@ -7,7 +7,7 @@ sidebar_position: 11
 
 <!-- DEACTIVATED FOR DOCUSAURUS FROM HERE -->
 
-<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../overview.md) > [Adoption View](overview.md) > Terminology</span>
+<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../overview.md) > [Adoption View](./overview.md) > Terminology</span>
 
 # Terminology
 
@@ -107,6 +107,6 @@ Behaviour Twin KIT
 
 | Previous | Next |
 | -------- | ---- |
-| [Guidance References](guidance/references.md) | [To Be Considered](to-be-considered/overview.md) |
+| [Guidance And Resources](./guidance-and-resources.md) | [Development View](../development-view/overview.md) |
 
 <!-- DEACTIVATED FOR DOCUSAURUS TO HERE -->

@@ -1,15 +1,15 @@
 ---
-id: logic-schema
-title: Logic & Schema
+id: architecture
+title: Architecture
 description: Behaviour Twin KIT
 sidebar_position: 5
 ---
 
 <!-- DEACTIVATED FOR DOCUSAURUS FROM HERE -->
 
-<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../overview.md) > [Adoption View](overview.md) > Logic & Schema</span>
+<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../overview.md) > [Adoption View](./overview.md) > Architecture</span>
 
-# Logic & Schema
+# Architecture
 
 <!-- DEACTIVATED FOR DOCUSAURUS TO HERE -->
 
@@ -53,15 +53,15 @@ A use case consists of data and calculation services. In addition, a logic is re
 that defines how data and services must interact to produce the desired result.
 This logic is called "skill". It must be invoked directly or indirectly by the consumer.
 
-![logic](logic.drawio.svg)
+![logic](assets/logic.drawio.svg)
 
 Data and services are federated over the dataspace:
 
-![dataspace](dataspace.drawio.svg)
+![dataspace](assets/dataspace.drawio.svg)
 
 A use case may consist of multiple data source and calculation service:
 
-![dataspace-complex](dataspace-complex.drawio.svg)
+![dataspace-complex](assets/dataspace-complex.drawio.svg)
 
 ### ROLES
 
@@ -76,9 +76,8 @@ Each participant in a Behaviour Twin use cases applies to one or more of the fol
 
 ## BUSINESS PROCESS
 
-![architecture-simple](tmp_screenshot_architcture_simple.png)
-![business-process](business-process.drawio.svg)
-
+![architecture-simple](assets/tmp_screenshot_architcture_simple.png)
+![business-process](assets/business-process.drawio.svg)
 
 one up/down
 
@@ -173,6 +172,6 @@ In general view, use cases can be categorized dependent on specific criteria:
 
 | Previous | Next |
 | -------- | ---- |
-| [Introduction](introduction.md) | [Business Process](business-process.md) |
+| [Introduction](./introduction.md) | [Knowledge Agent](./knowledge-agent.md) |
 
 <!-- DEACTIVATED FOR DOCUSAURUS TO HERE -->

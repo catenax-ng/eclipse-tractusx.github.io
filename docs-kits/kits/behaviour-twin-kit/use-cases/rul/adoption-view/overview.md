@@ -51,11 +51,11 @@ RuL-KIT-logo?
 
 ## CONTENTS
 
-- [Introduction](introduction.md)
-- [Terminology](terminology.md)
-- [Logic & Schema](logic-schema.md)
-- [Business Process](business-process.md)
-- [Further Information](further-information.md)
+- [Introduction](./introduction.md)
+- [Terminology](./terminology.md)
+- [Logic & Schema](./logic-schema.md)
+- [Business Process](./business-process.md)
+- [Further Information](./further-information.md)
 
 <!-- START OF FOOTER -->
 
@@ -63,6 +63,6 @@ RuL-KIT-logo?
 
 | Previous | Next |
 | -------- | ---- |
-| [Change Log](../changelog.md) | [Introduction](introduction.md) |
+| [Change Log](../changelog.md) | [Introduction](./introduction.md) |
 
 <!-- DEACTIVATED FOR DOCUSAURUS TO HERE -->

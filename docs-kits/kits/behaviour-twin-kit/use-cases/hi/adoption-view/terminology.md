@@ -7,7 +7,7 @@ sidebar_position: 63
 
 <!-- DEACTIVATED FOR DOCUSAURUS FROM HERE -->
 
-<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../../../overview.md) > [Use Cases](../../overview.md) > [Health Indicator](../overview.md) > [Adoption View](overview.md) > Terminology</span>
+<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../../../overview.md) > [Use Cases](../../overview.md) > [Health Indicator](../overview.md) > [Adoption View](./overview.md) > Terminology</span>
 
 # Terminology
 
@@ -51,6 +51,6 @@ Behaviour Twin KIT -- Health Indicator
 
 | Previous | Next |
 | -------- | ---- |
-| [Introduction](introduction.md) | [Logic & Schema](logic-schema.md) |
+| [Introduction](./introduction.md) | [Logic & Schema](./logic-schema.md) |
 
 <!-- DEACTIVATED FOR DOCUSAURUS TO HERE -->

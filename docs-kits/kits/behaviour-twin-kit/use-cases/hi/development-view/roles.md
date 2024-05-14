@@ -7,7 +7,7 @@ sidebar_position: 70
 
 <!-- DEACTIVATED FOR DOCUSAURUS FROM HERE -->
 
-<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../../../overview.md) > [Use Cases](../../overview.md) > [Health Indicator](../overview.md) > [Development View](overview.md) > Roles</span>
+<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../../../overview.md) > [Use Cases](../../overview.md) > [Health Indicator](../overview.md) > [Development View](./overview.md) > Roles</span>
 
 # Roles
 
@@ -51,6 +51,6 @@ Behaviour Twin KIT -- Health Indicator
 
 | Previous | Next |
 | -------- | ---- |
-| [Architecture](architecture.md) | [Ontologies](ontology.md) |
+| [Architecture](./architecture.md) | [Ontologies](./ontology.md) |
 
 <!-- DEACTIVATED FOR DOCUSAURUS TO HERE -->

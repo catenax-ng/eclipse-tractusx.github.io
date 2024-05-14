@@ -7,7 +7,7 @@ sidebar_position: 49
 
 <!-- DEACTIVATED FOR DOCUSAURUS FROM HERE -->
 
-<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../../../overview.md) > [Use Cases](../../overview.md) > [Remaining useful Life](../overview.md) > [Development View](overview.md) > Requirements</span>
+<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../../../overview.md) > [Use Cases](../../overview.md) > [Remaining useful Life](../overview.md) > [Development View](./overview.md) > Requirements</span>
 
 # Requirements
 
@@ -51,6 +51,6 @@ Behaviour Twin KIT -- Remaining useful Life
 
 | Previous | Next |
 | -------- | ---- |
-| [Development View](overview.md) | [Architecture](architecture.md) |
+| [Development View](./overview.md) | [Architecture](./architecture.md) |
 
 <!-- DEACTIVATED FOR DOCUSAURUS TO HERE -->

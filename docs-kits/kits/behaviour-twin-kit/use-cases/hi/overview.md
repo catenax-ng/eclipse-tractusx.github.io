@@ -37,7 +37,7 @@ Provide and get the health condition of technical systems.
 
 ## CONTENTS
 
-- [Change Log](changelog.md)
+- [Change Log](./changelog.md)
 - [Adoption View](adoption-view/overview.md)
 - [Development View](development-view/overview.md)
 
@@ -47,6 +47,6 @@ Provide and get the health condition of technical systems.
 
 | Previous | Next |
 | -------- | ---- |
-| [Test](../rul/development-view/test.md) | [Change Log](changelog.md) |
+| [Test](../rul/development-view/test.md) | [Change Log](./changelog.md) |
 
 <!-- DEACTIVATED FOR DOCUSAURUS TO HERE -->

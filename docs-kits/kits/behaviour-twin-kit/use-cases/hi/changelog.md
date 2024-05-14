@@ -7,7 +7,7 @@ sidebar_position: 60
 
 <!-- DEACTIVATED FOR DOCUSAURUS FROM HERE -->
 
-<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../../overview.md) > [Use Cases](../overview.md) > [Health Indicator](overview.md) > Change Log</span>
+<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../../overview.md) > [Use Cases](../overview.md) > [Health Indicator](./overview.md) > Change Log</span>
 
 # Change Log
 
@@ -53,6 +53,6 @@ HI specific changes, HI-KIT-logo?
 
 | Previous | Next |
 | -------- | ---- |
-| [Health Indicator](overview.md) | [Adoption View](adoption-view/overview.md) |
+| [Health Indicator](./overview.md) | [Adoption View](adoption-view/overview.md) |
 
 <!-- DEACTIVATED FOR DOCUSAURUS TO HERE -->
