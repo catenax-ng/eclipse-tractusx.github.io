@@ -50,19 +50,28 @@ Behaviour Twin KIT
 In order to understand and develop use cases with the Behaviour Twin KIT, you
 must have at least a basic understanding of the following topics:
 
-- Catena-X Dataspace Architecture
-- SPARQL 1.1 Query Language, see [SPARQL on w3.org ![external link](../assets/external-link.svg)](https://www.w3.org/TR/sparql11-query/)
-- Resource Description Framework (RDF), see [RDF on w3.org ![external link](../assets/external-link.svg)](https://www.w3.org/RDF/)
-- RDF 1.1 Turtle, see [Turtle on w3.org ![external link](../assets/external-link.svg)](https://www.w3.org/TR/turtle/)
-- Web Ontology Language (OWL), see [OWL on w3.org ![external link](../assets/external-link.svg)](https://www.w3.org/OWL/)
-- Shapes Constraint Language (SHACL), see [SHACL on w3.org ![external link](../assets/external-link.svg)](https://www.w3.org/TR/shacl/)
+- Catena-X Dataspace architecture
+- Knowledge Agent, see
+  [Agents KIT](../../knowledge-agents/adoption-view/intro.md)
+  - SPARQL 1.1 Query Language, see
+  [SPARQL on w3.org ![external link](../assets/external-link.svg)](https://www.w3.org/TR/sparql11-query/)
+  - Resource Description Framework (RDF), see
+  [RDF on w3.org ![external link](../assets/external-link.svg)](https://www.w3.org/RDF/)
+  - RDF 1.1 Turtle, see
+  [Turtle on w3.org ![external link](../assets/external-link.svg)](https://www.w3.org/TR/turtle/)
+  - Web Ontology Language (OWL), see
+  [OWL on w3.org ![external link](../assets/external-link.svg)](https://www.w3.org/OWL/)
+  - Shapes Constraint Language (SHACL), see
+  [SHACL on w3.org ![external link](../assets/external-link.svg)](https://www.w3.org/TR/shacl/)
 
 ## REFERENCES
 
-For further guidance, refer to the [Catena-X Association ![external link](../assets/external-link.svg)](https://catena-x.net/). There, expert groups are or will be established.
-For Knowlede Agent and ontologies, within the Technical Modelling Committee, the ontology expert group should be your first stop.
+For further guidance, refer to the [Catena-X Association ![external link](../assets/external-link.svg)](https://catena-x.net/).
+There, expert groups are or will be established. For Knowlede Agent and
+ontologies, within the Technical Modelling Committee, the ontology
+expert group should be your first stop.
 
-{TODO}{Connector KIT, Agents KIT}
+Your operating company may also be a great resource for guidance.
 
 <!-- START OF FOOTER -->
 

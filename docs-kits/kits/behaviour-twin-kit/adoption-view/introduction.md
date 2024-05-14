@@ -62,7 +62,7 @@ their extension across business boundaries and handling data protection and gove
 ### MISSION
 
 The Behavior Twin KIT aims to facilitate the development of scalable and interoperable
-solutions for connecting service customers, data owners and service providers across
+solutions for connecting service customers, data providers and service providers across
 organizational boundaries in a generic way. It guides business and software developers
 by explaining key concepts and by directing them to relevant technical resources and examples.
 

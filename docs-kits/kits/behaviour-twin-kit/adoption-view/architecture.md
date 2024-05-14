@@ -79,13 +79,11 @@ Each participant in a Behaviour Twin use cases applies to one or more of the fol
 ![architecture-simple](assets/tmp_screenshot_architcture_simple.png)
 ![business-process](assets/business-process.drawio.svg)
 
-one up/down
-
-Info: component "owner" is also usage data owner
+Info: component provider is also usage data provider
 
 consumer invokes skill (at it's EDC)
 
-  -> skill goes to the component+data owner
+  -> skill goes to the component+data provider
 
   -> skill resolves component instance for given parameters (e.g. VIN, serial number, ...)
 
@@ -147,13 +145,13 @@ In general view, use cases can be categorized dependent on specific criteria:
 
 ### GENERAL USE CASE TYPES
 
-- Data owner is also consumer and wants result (must implement logic),  starts logic.
-- External consumer wants result (must implement logic), first address is data owner.
+- Data proivder is also consumer and wants result (must implement logic),  starts logic.
+- External consumer wants result (must implement logic), first address is data provider.
 - Third party implements logic and offers it to consumer.
 
 #### Origin of query
 
-- Usage data owners (like OEMs) query a calculation services of IP owners (like suppliers) along the supplier chain.
+- Usage data provider (like OEMs) query a calculation services of IP owners (like suppliers) along the supplier chain.
 - Service providers (like automobile clubs) gather data or insights along the supplier chain in behalf of their customers.
 
 #### Origin of data-processing logic

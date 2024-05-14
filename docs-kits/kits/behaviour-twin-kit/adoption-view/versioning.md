@@ -85,7 +85,7 @@ the use case specific components are not affected.
 
 All EDC assets must be decorated by the `cx-common:version` within the `properties` list
 of the asset definitions. This is required by the standard {TODO}. This applies to
-graph assets (data and service binding assets) and skill assets.
+graph assets (data and service binding assets) as well as to skill assets.
 
 ## ONTOLOGY CHANGES
 
@@ -103,13 +103,16 @@ your partners and requiring them to provide the extended data.
 ## DATA AND SERVICE VERSIONS
 
 Versioning of services, but also data is especially helpful if you want to harmonize
-versions within a use case. This must be done within the corresponding ontologies.
-It's up to the use case to handle this type of versioning.
+versions within a use case. The attribute `cx-common:version` within the `properties`
+list of the asset definitions can be used for this purpose. Using semantic versioning,
+the feature version number can be harmonized by all participants (e.g. by agreements or
+standards).
 
-A good approach would be to use the version nodes in the graph assets (SHACL) and
-the skills (SPARQL). {KA}
+A second option would be an extension of the corresponding ontologies and taxonomies.
+Then, the version information can be a part of the SHACL description in the graph assets.
 
-{TODO}{Versioning without ontology}
+It's up to the use case to handle the versioning. In skills, both options can be
+used to determine the desired data and service versions.
 
 <!-- START OF FOOTER -->
 
