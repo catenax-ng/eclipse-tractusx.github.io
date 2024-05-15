@@ -1,19 +1,9 @@
----
+﻿---
 id: terminology
 title: Terminology
 description: Behaviour Twin KIT
 sidebar_position: 11
 ---
-
-<!-- DEACTIVATED FOR DOCUSAURUS FROM HERE -->
-
-<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../overview) > [Adoption View](./overview) > Terminology</span>
-
-# Terminology
-
-<!-- DEACTIVATED FOR DOCUSAURUS TO HERE -->
-
-<!-- VARIANT FOR DOCUSAURUS FROM HERE
 
 <div style={{display:'block'}}>
   <div style={{display:'inline-block', verticalAlign:'top'}}>
@@ -26,31 +16,12 @@ Behaviour Twin KIT
   </div>
 </div>
 
-VARIANT FOR DOCUSAURUS TO HERE -->
-
-<!-- DEACTIVATED FOR DOCUSAURUS FROM HERE -->
-
-<div style="display:block;">
-  <div style="display:inline-block;vertical-align:top;">
-
-![Behaviour Twin KIT banner](../../../../static/img/kit-icons/behaviour-twin-kit-icon-mini.png)
-
-  </div>
-  <div style="display:inline-block;font-size:15px;color:rgb(255,166,1);margin-left:7px;vertical-align:top;padding-top:8px;">
-Behaviour Twin KIT
-  </div>
-</div>
-
-<!-- DEACTIVATED FOR DOCUSAURUS TO HERE -->
-
-<!-- END OF HEADER -->
-
 ## GENERAL
 
 |Term|Description|Comment|
 |---|---|---|
-|Catena-X|Association, dataspace, automotive network|Open and interoperable data ecosystem of the automotive sector, see [https://catena-x.net/ ![external link](../assets/external-link.svg)](https://catena-x.net/)|
-|Tractus-X|Official open-source project in the Catena-X data space|see [https://eclipse-tractusx.github.io/ ![external link](../assets/external-link.svg)](https://eclipse-tractusx.github.io/)|
+|Catena-X|Association, dataspace, automotive network|Open and interoperable data ecosystem of the automotive sector, see [https://catena-x.net/ ![(external link)](../assets/external-link.svg)](https://catena-x.net/)|
+|Tractus-X|Official open-source project in the Catena-X data space|see [https://eclipse-tractusx.github.io/ ![(external link)](../assets/external-link.svg)](https://eclipse-tractusx.github.io/)|
 |EDC|Eclipse Dataspace Components|Set of components like the Eclipse Dataspace Connector and it's extensions|
 |Tractus-X EDC|Tractus-X Eclipse Dataspace Components|EDC, adapted and released for the Tractus-X project|
 |Connector|Dataspace Connector|Tractus-X Eclipse Dataspace Connector or compatible connector implementation|
@@ -81,13 +52,13 @@ Behaviour Twin KIT
 |Knowledge Graph|A semantic graph|Describes relation between subjects and objects|
 |Knowledge Agent||see [Agents KIT](../../knowledge-agents/adoption-view/intro)|
 |Matchmaking Agent|Resolves federated sub-graphs for the Knowledge Agent|Fits requested sub-graphs with existing graph assets|
-|Binding Agent|A component thad bind instances to the knowledge graph|Binds instances of data or services to the knowledge graph|
+|Binding Agent|A component that binds instances to the knowledge graph|Binds instances of data or services to the knowledge graph|
 |Provisioning Agent|Binding agent for data bindings|Binds instances of data to the knowledge graph|
 |Remoting Agent|Binding agent for service bindings|Binds instances of services to the knowledge graph|
 |Semantic Web|Concept of a machine-readable world wide web|(Web 3.0)|
 |Asset|A requestable data set|A formal described data set, that can be requested via EDC|
 |Graph Asset|A special type of asset that describes a graph|The graph description is written in SHACL|
-|Ontology|Semantic model for concepts andin a specific domain|Defines classes, properties and their relations|
+|Ontology|Semantic model for concepts and in a specific domain|Defines classes, properties and their relations|
 |Skill|The logic behind a use case|E.g. how to find data or calculation services|
 |Skill Provider|Provider of the use case logic|E.g. the knowledge of how to find, access, and process data|
 
@@ -96,19 +67,9 @@ Behaviour Twin KIT
 |Term|Description|Comment|
 |---|---|---|
 |Catena-X Dataspace Architecture|Architecture defined by Catena-X|see [Tractus-X KITs](https://eclipse-tractusx.github.io/Kits)|
-|SPARQL|SPARQL 1.1 Query Language|see [SPARQL on w3.org ![external link](../assets/external-link.svg)](https://www.w3.org/TR/sparql11-query/)
-|RDF|Resource Description Framework|see [RDF on w3.org ![external link](../assets/external-link.svg)](https://www.w3.org/RDF/)
-|ttl (Turtle)|RDF 1.1 Turtle|see [Turtle on w3.org ![external link](../assets/external-link.svg)](https://www.w3.org/TR/turtle/)
-|OWL|Web Ontology Language|see [OWL on w3.org ![external link](../assets/external-link.svg)](https://www.w3.org/OWL/)
-|SHACL|Shapes Constraint Language|see [SHACL on w3.org ![external link](../assets/external-link.svg)](https://www.w3.org/TR/shacl/)
-|W3C|World Wide Web Consortium|see [w3.org ![external link](../assets/external-link.svg)](https://www.w3.org/)
-
-<!-- START OF FOOTER -->
-
-<!-- DEACTIVATED FOR DOCUSAURUS FROM HERE -->
-
-| Previous | Next |
-| -------- | ---- |
-| [Guidance And Resources](./guidance-and-resources) | [Development View](../development-view/overview) |
-
-<!-- DEACTIVATED FOR DOCUSAURUS TO HERE -->
+|SPARQL|SPARQL 1.1 Query Language|see [SPARQL on w3.org ![(external link)](../assets/external-link.svg)](https://www.w3.org/TR/sparql11-query/)
+|RDF|Resource Description Framework|see [RDF on w3.org ![(external link)](../assets/external-link.svg)](https://www.w3.org/RDF/)
+|ttl (Turtle)|RDF 1.1 Turtle|see [Turtle on w3.org ![(external link)](../assets/external-link.svg)](https://www.w3.org/TR/turtle/)
+|OWL|Web Ontology Language|see [OWL on w3.org ![(external link)](../assets/external-link.svg)](https://www.w3.org/OWL/)
+|SHACL|Shapes Constraint Language|see [SHACL on w3.org ![(external link)](../assets/external-link.svg)](https://www.w3.org/TR/shacl/)
+|W3C|World Wide Web Consortium|see [w3.org ![(external link)](../assets/external-link.svg)](https://www.w3.org/)

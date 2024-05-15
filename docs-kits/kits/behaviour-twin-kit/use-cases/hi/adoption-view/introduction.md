@@ -1,19 +1,9 @@
----
+﻿---
 id: introduction
 title: Introduction
 description: Behaviour Twin KIT
 sidebar_position: 62
 ---
-
-<!-- DEACTIVATED FOR DOCUSAURUS FROM HERE -->
-
-<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../../../overview) > [Use Cases](../../overview) > [Health Indicator](../overview) > [Adoption View](./overview) > Introduction</span>
-
-# Introduction
-
-<!-- DEACTIVATED FOR DOCUSAURUS TO HERE -->
-
-<!-- VARIANT FOR DOCUSAURUS FROM HERE
 
 <div style={{display:'block'}}>
   <div style={{display:'inline-block', verticalAlign:'top'}}>
@@ -26,25 +16,6 @@ Behaviour Twin KIT -- Health Indicator
   </div>
 </div>
 
-VARIANT FOR DOCUSAURUS TO HERE -->
-
-<!-- DEACTIVATED FOR DOCUSAURUS FROM HERE -->
-
-<div style="display:block;">
-  <div style="display:inline-block;vertical-align:top;">
-
-![Behaviour Twin KIT -- Health Indicator banner](../../../../../../static/img/kit-icons/behaviour-twin-hi-kit-icon-mini.png)
-
-  </div>
-  <div style="display:inline-block;font-size:15px;color:rgb(255,166,1);margin-left:7px;vertical-align:top;padding-top:8px;">
-Behaviour Twin KIT -- Health Indicator
-  </div>
-</div>
-
-<!-- DEACTIVATED FOR DOCUSAURUS TO HERE -->
-
-<!-- END OF HEADER -->
-
 ## VISION & MiSSION
 
 ### VISION
@@ -55,7 +26,6 @@ The *Behaviour Twin KIT* efficiently supports the planning, design, construction
 
 Based on the calculation of health indicators, the performance and condition of products and components in the field can be continuously monitored, recorded and transmitted along the supply chain. During the usage phase, abnormalities, possible defects or failures are reliably and identified early on, so that measures can be taken in good time.
 
-
 ### MISSION
 
 This use-case-specific part of the *Behavior Twin KIT* aims further to facilitate the development of scalable and interoperable
@@ -63,10 +33,8 @@ solutions for *health monitoring* of products by connecting the data providers, 
 within the supply chain in a generic way. It guides business and software developers
 by explaining key concepts and by directing them to relevant technical resources and code examples.
 
-
 ## STATUS QUO & CHALLENGES
 see [*Status quo & challenges in general part of the KIT*](../../../adoption-view/introduction.md#status-quo--challenge)
-
 
 ## USE CASES
 
@@ -75,14 +43,3 @@ see [*Status quo & challenges in general part of the KIT*](../../../adoption-vie
 **Tier-X**: The overall product range becomes more attractive in the offer phase, when the definition of health indicators as a product-related service is included.
 
 **Workshops**: In case of failure analysis and repair, workshops benefit from an extended range of data on vehicle condition and its components. In return, service providers can standardize and facilitate access to the OEM.
-
-
-<!-- START OF FOOTER -->
-
-<!-- DEACTIVATED FOR DOCUSAURUS FROM HERE -->
-
-| Previous | Next |
-| -------- | ---- |
-| [Adoption View](./overview) | [Terminology](./terminology) |
-
-<!-- DEACTIVATED FOR DOCUSAURUS TO HERE -->

@@ -1,19 +1,9 @@
----
+﻿---
 id: ontology
 title: Ontologies
 description: Behaviour Twin KIT
 sidebar_position: 71
 ---
-
-<!-- DEACTIVATED FOR DOCUSAURUS FROM HERE -->
-
-<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../../../overview) > [Use Cases](../../overview) > [Health Indicator](../overview) > [Development View](./overview) > Ontologies</span>
-
-# Ontologies
-
-<!-- DEACTIVATED FOR DOCUSAURUS TO HERE -->
-
-<!-- VARIANT FOR DOCUSAURUS FROM HERE
 
 <div style={{display:'block'}}>
   <div style={{display:'inline-block', verticalAlign:'top'}}>
@@ -25,32 +15,3 @@ sidebar_position: 71
 Behaviour Twin KIT -- Health Indicator
   </div>
 </div>
-
-VARIANT FOR DOCUSAURUS TO HERE -->
-
-<!-- DEACTIVATED FOR DOCUSAURUS FROM HERE -->
-
-<div style="display:block;">
-  <div style="display:inline-block;vertical-align:top;">
-
-![Behaviour Twin KIT -- Health Indicator banner](../../../../../../static/img/kit-icons/behaviour-twin-hi-kit-icon-mini.png)
-
-  </div>
-  <div style="display:inline-block;font-size:15px;color:rgb(255,166,1);margin-left:7px;vertical-align:top;padding-top:8px;">
-Behaviour Twin KIT -- Health Indicator
-  </div>
-</div>
-
-<!-- DEACTIVATED FOR DOCUSAURUS TO HERE -->
-
-<!-- END OF HEADER -->
-
-<!-- START OF FOOTER -->
-
-<!-- DEACTIVATED FOR DOCUSAURUS FROM HERE -->
-
-| Previous | Next |
-| -------- | ---- |
-| [Roles](./roles) | [Data Bindings](./data-bindings) |
-
-<!-- DEACTIVATED FOR DOCUSAURUS TO HERE -->

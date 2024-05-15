@@ -118,7 +118,6 @@ const sidebars = {
                         'kits/behaviour-twin-kit/adoption-view/versioning',
                         'kits/behaviour-twin-kit/adoption-view/to-be-considered',
                         'kits/behaviour-twin-kit/adoption-view/new-use-cases',
-                        'kits/behaviour-twin-kit/adoption-view/standards',
                         'kits/behaviour-twin-kit/adoption-view/guidance-and-resources',
                         'kits/behaviour-twin-kit/adoption-view/terminology',
                     ]

@@ -1,19 +1,9 @@
----
+﻿---
 id: architecture
 title: Architecture
 description: Behaviour Twin KIT
 sidebar_position: 5
 ---
-
-<!-- DEACTIVATED FOR DOCUSAURUS FROM HERE -->
-
-<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../overview) > [Adoption View](./overview) > Architecture</span>
-
-# Architecture
-
-<!-- DEACTIVATED FOR DOCUSAURUS TO HERE -->
-
-<!-- VARIANT FOR DOCUSAURUS FROM HERE
 
 <div style={{display:'block'}}>
   <div style={{display:'inline-block', verticalAlign:'top'}}>
@@ -26,32 +16,11 @@ Behaviour Twin KIT
   </div>
 </div>
 
-VARIANT FOR DOCUSAURUS TO HERE -->
-
-<!-- DEACTIVATED FOR DOCUSAURUS FROM HERE -->
-
-<div style="display:block;">
-  <div style="display:inline-block;vertical-align:top;">
-
-![Behaviour Twin KIT banner](../../../../static/img/kit-icons/behaviour-twin-kit-icon-mini.png)
-
-  </div>
-  <div style="display:inline-block;font-size:15px;color:rgb(255,166,1);margin-left:7px;vertical-align:top;padding-top:8px;">
-Behaviour Twin KIT
-  </div>
-</div>
-
-<!-- DEACTIVATED FOR DOCUSAURUS TO HERE -->
-
-<!-- END OF HEADER -->
-
 ## BASIC ARCHITECTURE
 
 ### OVERVIEW
 
-A use case consists of data and calculation services. In addition, a logic is required,
-that defines how data and services must interact to produce the desired result.
-This logic is called "skill". It must be invoked directly or indirectly by the consumer.
+A use case consists of data and calculation services. In addition, a logic is required, that defines how data and services must interact to produce the desired result. This logic is called "skill". It must be invoked directly or indirectly by the consumer.
 
 ![logic](assets/logic.drawio.svg)
 
@@ -76,17 +45,11 @@ Each participant in a Behaviour Twin use cases applies to one or more of the fol
 
 ## BUSINESS PROCESS
 
-A request is initiated by the consumer. A skill is utilized to define
-what to to. The skill can be either sent directly with the request or
-registered at an connector (EDC) and referenced within the request.
+A request is initiated by the consumer. A skill is utilized to define what to to. The skill can be either sent directly with the request or registered at an connector (EDC) and referenced within the request.
 
-The EDC has registered a Knowledge Agent plane (KA), which matches and
-delegats sub-graphs as well as sub-skills and provides data and service
-bindings.
+The EDC connector has registered a Knowledge Agent plane (KA), which matches and delegats sub-graphs as well as sub-skills and provides data and service bindings.
 
 ![business-process](assets/business-process.drawio.svg)
-
-
 
 Info: component provider is also usage data provider
 
@@ -141,8 +104,7 @@ federated catalog / ontology
 |---------|-----------|
 |Eclipse Dataspace Components (EDC)|The Connector of the Eclipse Dataspace Components provides a framework for sovereign, inter-organizational data exchange. It implements the International Data Spaces standard (IDS) as well as relevant protocols associated with GAIA-X. The connector is designed in an extensible way in order to support alternative protocols and integrate in various ecosystems.|
 
-A more detailed a more detailed view of how the Knowledge Agent works is given in
-the section [Knowledge Agent](./knowledge-agent) (which comes next to this section).
+A more detailed a more detailed view of how the Knowledge Agent works is given in the section [Knowledge Agent](./knowledge-agent) (which comes next to this section).
 
 ## USE CASE TYPES
 
@@ -165,16 +127,4 @@ In general view, use cases can be categorized dependent on specific criteria:
 - The data processing party knows how to process data, e.g. which simulation model to chose.
 - A third party offers logic for processing data.
 
-
 {TODO}{images/roles}
-
-
-<!-- START OF FOOTER -->
-
-<!-- DEACTIVATED FOR DOCUSAURUS FROM HERE -->
-
-| Previous | Next |
-| -------- | ---- |
-| [Introduction](./introduction) | [Knowledge Agent](./knowledge-agent) |
-
-<!-- DEACTIVATED FOR DOCUSAURUS TO HERE -->

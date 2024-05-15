@@ -1,19 +1,9 @@
----
+﻿---
 id: guidance-and-resources
 title: Guidance And Resources
 description: Behaviour Twin KIT
 sidebar_position: 8
 ---
-
-<!-- DEACTIVATED FOR DOCUSAURUS FROM HERE -->
-
-<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../overview) > [Adoption View](./overview) > Guidance And Resources</span>
-
-# Guidance And Resources
-
-<!-- DEACTIVATED FOR DOCUSAURUS TO HERE -->
-
-<!-- VARIANT FOR DOCUSAURUS FROM HERE
 
 <div style={{display:'block'}}>
   <div style={{display:'inline-block', verticalAlign:'top'}}>
@@ -26,62 +16,24 @@ Behaviour Twin KIT
   </div>
 </div>
 
-VARIANT FOR DOCUSAURUS TO HERE -->
+## KNOWLEDGE AGENT
 
-<!-- DEACTIVATED FOR DOCUSAURUS FROM HERE -->
-
-<div style="display:block;">
-  <div style="display:inline-block;vertical-align:top;">
-
-![Behaviour Twin KIT banner](../../../../static/img/kit-icons/behaviour-twin-kit-icon-mini.png)
-
-  </div>
-  <div style="display:inline-block;font-size:15px;color:rgb(255,166,1);margin-left:7px;vertical-align:top;padding-top:8px;">
-Behaviour Twin KIT
-  </div>
-</div>
-
-<!-- DEACTIVATED FOR DOCUSAURUS TO HERE -->
-
-<!-- END OF HEADER -->
-
-## USED TECHNOLOGIES
-
-In order to understand and develop use cases with the Behaviour Twin KIT, you
-must have at least a basic understanding of the following topics:
+The Behaviour Twin KIT builds up on top of the [Agents KIT](../../knowledge-agents/adoption-view/intro). Therefore, at least a basic understanding of the following topics is mandatory:
 
 - Catena-X Dataspace architecture
-- Knowledge Agent, see
-  [Agents KIT](../../knowledge-agents/adoption-view/intro)
-  - SPARQL 1.1 Query Language, see
-  [SPARQL on w3.org ![external link](../assets/external-link.svg)](https://www.w3.org/TR/sparql11-query/)
-  - Resource Description Framework (RDF), see
-  [RDF on w3.org ![external link](../assets/external-link.svg)](https://www.w3.org/RDF/)
-  - RDF 1.1 Turtle, see
-  [Turtle on w3.org ![external link](../assets/external-link.svg)](https://www.w3.org/TR/turtle/)
-  - Web Ontology Language (OWL), see
-  [OWL on w3.org ![external link](../assets/external-link.svg)](https://www.w3.org/OWL/)
-  - Shapes Constraint Language (SHACL), see
-  [SHACL on w3.org ![external link](../assets/external-link.svg)](https://www.w3.org/TR/shacl/)
+- SPARQL 1.1 Query Language, see [SPARQL on w3.org ![(external link)](../assets/external-link.svg)](https://www.w3.org/TR/sparql11-query/)
+- Resource Description Framework (RDF), see [RDF on w3.org ![(external link)](../assets/external-link.svg)](https://www.w3.org/RDF/)
+- RDF 1.1 Turtle, see [Turtle on w3.org ![(external link)](../assets/external-link.svg)](https://www.w3.org/TR/turtle/)
+- Web Ontology Language (OWL), see [OWL on w3.org ![(external link)](../assets/external-link.svg)](https://www.w3.org/OWL/)
+- Shapes Constraint Language (SHACL), see [SHACL on w3.org ![(external link)](../assets/external-link.svg)](https://www.w3.org/TR/shacl/)
 
-## REFERENCES
+Standard regarding Knowledge Agents are:
 
-A great resource for support will be the
-[Tractus-X Community](/community/intro).
+- [CX-0084 Federated Queries in Dataspaces (V1.2.0)](https://catena-x.net/de/standard-library/Update_Mai_2024/CX-0084-FederatedQueriesInDataSpaces-v1.2.0.pdf)
+- [CX-0067 Ontology Models to Realize Federated Queries in Catena-X (V1.1.0)](https://catena-x.net/de/standard-library/Update_Mai_2024/CX-0067-OntologyModelsinCatenaX-v1.1.0.pdf)
 
-For further guidance, refer to the [Catena-X Association ![external link](../assets/external-link.svg)](https://catena-x.net/).
-There, expert groups for different topics are or will be established.
-For Knowlede Agent and ontologies, within the Technical Modelling Committee,
-the ontology expert group should be your first stop.
+## FURTHER GUIDANCE
 
-Your operating company may also be a great resource for guidance.
+A great resource for support might be the [Tractus-X Community](/community/intro).
 
-<!-- START OF FOOTER -->
-
-<!-- DEACTIVATED FOR DOCUSAURUS FROM HERE -->
-
-| Previous | Next |
-| -------- | ---- |
-| [Standards](./standards) | [Terminology](./terminology) |
-
-<!-- DEACTIVATED FOR DOCUSAURUS TO HERE -->
+For further guidance, refer to the [Catena-X Association ![(external link)](../assets/external-link.svg)](https://catena-x.net/). Topics like Knowledge Agent and ontologies (also ontology extensions) are by the Technical Committee for Modelling (see [Organization of Catena-X Automotive Network e.V. ![(external link)](../assets/external-link.svg)](https://catena-x.net/en/about-us/the-association/organization-of-the-association)).
