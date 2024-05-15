@@ -47,7 +47,7 @@ Behaviour Twin KIT
 
 ## [0.1.0] - 2024-05-15
 
-### Added
+### ADDED
 
 - Initial version of the (generalized) Behaviour Twin KIT.
 - This KIT additionally contains the use cases [Remaining useful Life](use-cases/rul/overview.md)
@@ -55,11 +55,11 @@ Behaviour Twin KIT
   The dedicated KITs of these use cases (Remaining useful Life KIT and Health Indicator KIT)
   are hereby deprecated.
 
-### Changed
+### CHANGED
 
 - ./.
 
-### Removed
+### REMOVED
 
 - ./.
 

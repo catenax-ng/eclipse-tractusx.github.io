@@ -68,14 +68,14 @@ by explaining key concepts and by directing them to relevant technical resources
 
 ## STATUS QUO & CHALLENGE
 
-### Status Quo
+### STATUS QUO
 
 Within company limits, the aggregation of usage data, monitoring them, e.g.
 by calculation of health indicators or component damage based on internally
 available data and models, is already state of the art. However, across company
 boundaries, there are only individual, complex and not generally available solutions.
 
-### Today’s challenge
+### TODAY'S CHALLENGE
 
 Thus, the following challenges must be addressed:
 

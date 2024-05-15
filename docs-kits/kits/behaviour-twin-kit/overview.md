@@ -32,12 +32,16 @@ VARIANT FOR DOCUSAURUS TO HERE -->
 
 ## PURPOSE
 
-Maximize the potential of usage data. Use our spezialized Behaviour Twin KIT (based on [Agents KIT](../knowledge-agents/adoption-view/intro.md)) to connect heterogeneous and distributed usage data and services seamlessly.
+Maximize the potential of usage data. Use our spezialized Behaviour Twin KIT
+(based on [Agents KIT](../knowledge-agents/adoption-view/intro.md)) to connect
+heterogeneous and distributed usage data and services seamlessly.
 
 ## DISCLAIMER
 
-We are part of the Tractus-X community, the official open-source project within the Catena-X data space.
-In our examples and texts, we exclusively use Tractus-X components. However, there may also be other compatible implementations.
+This KIT is a part of the Tractus-X community, the official open-source
+project within the Catena-X data space. In examples and texts, it uses
+exclusively Tractus-X components. However, there may also be other
+compatible implementations.
 
 ## CONTENTS
 

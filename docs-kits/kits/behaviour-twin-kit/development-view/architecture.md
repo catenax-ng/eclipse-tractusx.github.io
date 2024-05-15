@@ -45,7 +45,7 @@ Behaviour Twin KIT
 
 <!-- END OF HEADER -->
 
-## Logic
+## LOGIC
 
 The central logic of a use case is a **skill**.  
 You can use or modify skills from existing use cases to build up a similar use

@@ -76,8 +76,17 @@ Each participant in a Behaviour Twin use cases applies to one or more of the fol
 
 ## BUSINESS PROCESS
 
-![architecture-simple](assets/tmp_screenshot_architcture_simple.png)
+A request is initiated by the consumer. A skill is utilized to define
+what to to. The skill can be either sent directly with the request or
+registered at an connector (EDC) and referenced within the request.
+
+The EDC has registered a Knowledge Agent plane (KA), which matches and
+delegats sub-graphs as well as sub-skills and provides data and service
+bindings.
+
 ![business-process](assets/business-process.drawio.svg)
+
+
 
 Info: component provider is also usage data provider
 
@@ -109,7 +118,7 @@ federated catalog / ontology
 
 ### COMPONENTS
 
-#### Behaviour Twin Components
+#### BEHAVIOUR TWIN COMPONENTS
 
 |Subsystem|Description|
 |---------|-----------|
@@ -117,7 +126,7 @@ federated catalog / ontology
 |Loading Data | A data source at the Data Provider that provides the loading data and other vehicle data that are needed for the RuL calculation. <BR/> It can be accessed by the knowledge agent via data bindings.|
 |RuL Service| A RuL calculation service at the Service Provider. It accepts input data from the Data Provider, calculates the RuL value and returns it.|
 
-#### Knowledge Agent components
+#### KNOWLEDGE AGENT COMPONENTS
 
 |Subsystem|Description|
 |---------|-----------|
@@ -126,18 +135,14 @@ federated catalog / ontology
 |Ontology|The ontology is a formal representation of knowledge that captures concepts, relationships, and properties. It allows a shared understanding and reasoning about the respective domain. <BR/> It must be hosted in a way that all participants can access it. Currently, the ontology is hosted at GitHub.|
 |Skill/Sub-Skill| The Skill describes, what to do (which data have to be connected, transferred and so on).|
 
-#### CATENA-X CORE SERVICES (except Knowledge Agent components)
+#### CATENA-X CORE SERVICES (EXCEPT KNOWLEDGE AGENT COMPONENTS)
 
 |Subsystem|Description|
 |---------|-----------|
 |Eclipse Dataspace Components (EDC)|The Connector of the Eclipse Dataspace Components provides a framework for sovereign, inter-organizational data exchange. It implements the International Data Spaces standard (IDS) as well as relevant protocols associated with GAIA-X. The connector is designed in an extensible way in order to support alternative protocols and integrate in various ecosystems.|
 
-
-
-
-
-
-
+A more detailed a more detailed view of how the Knowledge Agent works is given in
+the section [Knowledge Agent](./knowledge-agent.md) (which comes next to this section).
 
 ## USE CASE TYPES
 
@@ -149,12 +154,12 @@ In general view, use cases can be categorized dependent on specific criteria:
 - External consumer wants result (must implement logic), first address is data provider.
 - Third party implements logic and offers it to consumer.
 
-#### Origin of query
+#### ORIGIN OF QUERY
 
 - Usage data provider (like OEMs) query a calculation services of IP owners (like suppliers) along the supplier chain.
 - Service providers (like automobile clubs) gather data or insights along the supplier chain in behalf of their customers.
 
-#### Origin of data-processing logic
+#### ORIGIN OF DATA-PROCESSING LOGIC
 
 - The querying party knows how to process data, e.g. how to accumulate acquired data.
 - The data processing party knows how to process data, e.g. which simulation model to chose.

@@ -45,22 +45,32 @@ Behaviour Twin KIT
 
 <!-- END OF HEADER -->
 
-How to start, guidance, development view, checklist
-Policies, Credentials  !!
+If you start to build up an very new use case within the overarching
+Behaviour Twin use case, you may first read the [Adoption View](./overview.md)
+of this KIT. It provides additional information for quick understanding of
+the used technologies.
+In particular, see also the [To Be Considered](./to-be-considered.md)
+section.
+
+To build up the use case, follow the following steps:
 
 - join Catena-X (see [participate section on catena-x.net ![external link](../assets/external-link.svg)](https://catena-x.net/en/participate))
-- develop business process
+- develop a business process
 - define participants and their roles
 - consider data protection requirements
-- identify use case type
-- design data model/ontology (if not already present)
-- design a use case framework agreement (or use *Behaviour Twin Use Case Agreement* if appropriate)
+- identify the use case type (who initiates requests, who is data provider, where are skills located)
+- design data model/ontology (maybe, existing ontologies are already sufficient or can be extended)
+- design a use case framework agreement (or use the *Behaviour Twin Use Case Agreement* if appropriate)
 - define logic (implement skill(s))
+- deploy dataspace components (EDC and Knowledge Agent components)
 - provide (bind) data
 - provide (bind) calculation services
-- test with partners
+- test the skill(s) with partners
 
-The [use case templates](../use-cases/overview.md) within this KIT can be uesd as starting point for the technical development.
+The [Use Case Templates](../use-cases/overview.md) within this KIT can be uesd as
+starting point for the technical development.
+
+For further guidance, refer also to [Guidance And Resources](./guidance-and-resources.md).
 
 <!-- START OF FOOTER -->
 
