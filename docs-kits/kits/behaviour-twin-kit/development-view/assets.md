@@ -7,7 +7,7 @@ sidebar_position: 36
 
 <!-- DEACTIVATED FOR DOCUSAURUS FROM HERE -->
 
-<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../overview.md) > [Development View](./overview.md) > Assets</span>
+<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../overview) > [Development View](./overview) > Assets</span>
 
 # Assets
 
@@ -53,6 +53,6 @@ Skill, graph assets, ...
 
 | Previous | Next |
 | -------- | ---- |
-| [Skill](./skill.md) | [Skill-Usage](./skill-usage.md) |
+| [Skill](./skill) | [Skill-Usage](./skill-usage) |
 
 <!-- DEACTIVATED FOR DOCUSAURUS TO HERE -->

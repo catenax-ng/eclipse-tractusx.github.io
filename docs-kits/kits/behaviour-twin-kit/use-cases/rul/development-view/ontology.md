@@ -7,7 +7,7 @@ sidebar_position: 52
 
 <!-- DEACTIVATED FOR DOCUSAURUS FROM HERE -->
 
-<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../../../overview.md) > [Use Cases](../../overview.md) > [Remaining useful Life](../overview.md) > [Development View](./overview.md) > Ontologies</span>
+<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../../../overview) > [Use Cases](../../overview) > [Remaining useful Life](../overview) > [Development View](./overview) > Ontologies</span>
 
 # Ontologies
 
@@ -51,6 +51,6 @@ Behaviour Twin KIT -- Remaining useful Life
 
 | Previous | Next |
 | -------- | ---- |
-| [Roles](./roles.md) | [Data Bindings](./data-bindings.md) |
+| [Roles](./roles) | [Data Bindings](./data-bindings) |
 
 <!-- DEACTIVATED FOR DOCUSAURUS TO HERE -->

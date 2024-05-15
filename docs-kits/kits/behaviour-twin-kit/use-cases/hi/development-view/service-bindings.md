@@ -7,7 +7,7 @@ sidebar_position: 73
 
 <!-- DEACTIVATED FOR DOCUSAURUS FROM HERE -->
 
-<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../../../overview.md) > [Use Cases](../../overview.md) > [Health Indicator](../overview.md) > [Development View](./overview.md) > Service Bindings</span>
+<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../../../overview) > [Use Cases](../../overview) > [Health Indicator](../overview) > [Development View](./overview) > Service Bindings</span>
 
 # Service Bindings
 
@@ -51,6 +51,6 @@ Behaviour Twin KIT -- Health Indicator
 
 | Previous | Next |
 | -------- | ---- |
-| [Data Bindings](./data-bindings.md) | [Skill](./skill.md) |
+| [Data Bindings](./data-bindings) | [Skill](./skill) |
 
 <!-- DEACTIVATED FOR DOCUSAURUS TO HERE -->

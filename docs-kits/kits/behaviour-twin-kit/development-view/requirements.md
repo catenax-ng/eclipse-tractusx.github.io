@@ -7,7 +7,7 @@ sidebar_position: 29
 
 <!-- DEACTIVATED FOR DOCUSAURUS FROM HERE -->
 
-<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../overview.md) > [Development View](./overview.md) > Requirements</span>
+<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../overview) > [Development View](./overview) > Requirements</span>
 
 # Requirements
 
@@ -101,6 +101,6 @@ Depending on your role, you need a combination of the following components:
 
 | Previous | Next |
 | -------- | ---- |
-| [Development View](./overview.md) | [Architecture](./architecture.md) |
+| [Development View](./overview) | [Architecture](./architecture) |
 
 <!-- DEACTIVATED FOR DOCUSAURUS TO HERE -->

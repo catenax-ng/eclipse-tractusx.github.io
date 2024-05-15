@@ -7,7 +7,7 @@ sidebar_position: 66
 
 <!-- DEACTIVATED FOR DOCUSAURUS FROM HERE -->
 
-<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../../../overview.md) > [Use Cases](../../overview.md) > [Health Indicator](../overview.md) > [Adoption View](./overview.md) > Further Information</span>
+<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../../../overview) > [Use Cases](../../overview) > [Health Indicator](../overview) > [Adoption View](./overview) > Further Information</span>
 
 # Further Information
 
@@ -51,6 +51,6 @@ Behaviour Twin KIT -- Health Indicator
 
 | Previous | Next |
 | -------- | ---- |
-| [Business Process](./business-process.md) | [Development View](../development-view/overview.md) |
+| [Business Process](./business-process) | [Development View](../development-view/overview) |
 
 <!-- DEACTIVATED FOR DOCUSAURUS TO HERE -->

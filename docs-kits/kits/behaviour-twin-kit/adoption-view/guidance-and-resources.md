@@ -7,7 +7,7 @@ sidebar_position: 8
 
 <!-- DEACTIVATED FOR DOCUSAURUS FROM HERE -->
 
-<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../overview.md) > [Adoption View](./overview.md) > Guidance And Resources</span>
+<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../overview) > [Adoption View](./overview) > Guidance And Resources</span>
 
 # Guidance And Resources
 
@@ -52,7 +52,7 @@ must have at least a basic understanding of the following topics:
 
 - Catena-X Dataspace architecture
 - Knowledge Agent, see
-  [Agents KIT](../../knowledge-agents/adoption-view/intro.md)
+  [Agents KIT](../../knowledge-agents/adoption-view/intro)
   - SPARQL 1.1 Query Language, see
   [SPARQL on w3.org ![external link](../assets/external-link.svg)](https://www.w3.org/TR/sparql11-query/)
   - Resource Description Framework (RDF), see
@@ -66,10 +66,13 @@ must have at least a basic understanding of the following topics:
 
 ## REFERENCES
 
+A great resource for support will be the
+[Tractus-X Community](/community/intro).
+
 For further guidance, refer to the [Catena-X Association ![external link](../assets/external-link.svg)](https://catena-x.net/).
-There, expert groups are or will be established. For Knowlede Agent and
-ontologies, within the Technical Modelling Committee, the ontology
-expert group should be your first stop.
+There, expert groups for different topics are or will be established.
+For Knowlede Agent and ontologies, within the Technical Modelling Committee,
+the ontology expert group should be your first stop.
 
 Your operating company may also be a great resource for guidance.
 
@@ -79,6 +82,6 @@ Your operating company may also be a great resource for guidance.
 
 | Previous | Next |
 | -------- | ---- |
-| [Standards](./standards.md) | [Terminology](./terminology.md) |
+| [Standards](./standards) | [Terminology](./terminology) |
 
 <!-- DEACTIVATED FOR DOCUSAURUS TO HERE -->

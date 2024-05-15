@@ -7,7 +7,7 @@ sidebar_position: 28
 
 <!-- DEACTIVATED FOR DOCUSAURUS FROM HERE -->
 
-<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../overview.md) > Development View</span>
+<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../overview) > Development View</span>
 
 # Development View
 
@@ -51,16 +51,16 @@ Behaviour Twin KIT
 
 ## CONTENTS
 
-- [Requirements](./requirements.md)
-- [Architecture](./architecture.md)
-- [Roles](./roles.md)
-- [Ontologies](./ontology.md)
-- [Data Bindings](./data-bindings.md)
-- [Service Bindings](./service-bindings.md)
-- [Skill](./skill.md)
-- [Assets](./assets.md)
-- [Skill-Usage](./skill-usage.md)
-- [Test](./test.md)
+- [Requirements](./requirements)
+- [Architecture](./architecture)
+- [Roles](./roles)
+- [Ontologies](./ontology)
+- [Data Bindings](./data-bindings)
+- [Service Bindings](./service-bindings)
+- [Skill](./skill)
+- [Assets](./assets)
+- [Skill-Usage](./skill-usage)
+- [Test](./test)
 
 <!-- START OF FOOTER -->
 
@@ -68,6 +68,6 @@ Behaviour Twin KIT
 
 | Previous | Next |
 | -------- | ---- |
-| [Terminology](../adoption-view/terminology.md) | [Requirements](./requirements.md) |
+| [Terminology](../adoption-view/terminology) | [Requirements](./requirements) |
 
 <!-- DEACTIVATED FOR DOCUSAURUS TO HERE -->

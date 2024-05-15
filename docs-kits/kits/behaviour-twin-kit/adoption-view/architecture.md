@@ -7,7 +7,7 @@ sidebar_position: 5
 
 <!-- DEACTIVATED FOR DOCUSAURUS FROM HERE -->
 
-<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../overview.md) > [Adoption View](./overview.md) > Architecture</span>
+<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../overview) > [Adoption View](./overview) > Architecture</span>
 
 # Architecture
 
@@ -142,7 +142,7 @@ federated catalog / ontology
 |Eclipse Dataspace Components (EDC)|The Connector of the Eclipse Dataspace Components provides a framework for sovereign, inter-organizational data exchange. It implements the International Data Spaces standard (IDS) as well as relevant protocols associated with GAIA-X. The connector is designed in an extensible way in order to support alternative protocols and integrate in various ecosystems.|
 
 A more detailed a more detailed view of how the Knowledge Agent works is given in
-the section [Knowledge Agent](./knowledge-agent.md) (which comes next to this section).
+the section [Knowledge Agent](./knowledge-agent) (which comes next to this section).
 
 ## USE CASE TYPES
 
@@ -175,6 +175,6 @@ In general view, use cases can be categorized dependent on specific criteria:
 
 | Previous | Next |
 | -------- | ---- |
-| [Introduction](./introduction.md) | [Knowledge Agent](./knowledge-agent.md) |
+| [Introduction](./introduction) | [Knowledge Agent](./knowledge-agent) |
 
 <!-- DEACTIVATED FOR DOCUSAURUS TO HERE -->

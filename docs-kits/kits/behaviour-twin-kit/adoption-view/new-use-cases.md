@@ -7,7 +7,7 @@ sidebar_position: 10
 
 <!-- DEACTIVATED FOR DOCUSAURUS FROM HERE -->
 
-<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../overview.md) > [Adoption View](./overview.md) > New Use-Cases</span>
+<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../overview) > [Adoption View](./overview) > New Use-Cases</span>
 
 # New Use-Cases
 
@@ -46,10 +46,10 @@ Behaviour Twin KIT
 <!-- END OF HEADER -->
 
 If you start to build up an very new use case within the overarching
-Behaviour Twin use case, you may first read the [Adoption View](./overview.md)
+Behaviour Twin use case, you may first read the [Adoption View](./overview)
 of this KIT. It provides additional information for quick understanding of
 the used technologies.
-In particular, see also the [To Be Considered](./to-be-considered.md)
+In particular, see also the [To Be Considered](./to-be-considered)
 section.
 
 To build up the use case, follow the following steps:
@@ -67,10 +67,10 @@ To build up the use case, follow the following steps:
 - provide (bind) calculation services
 - test the skill(s) with partners
 
-The [Use Case Templates](../use-cases/overview.md) within this KIT can be uesd as
+The [Use Case Templates](../use-cases/overview) within this KIT can be uesd as
 starting point for the technical development.
 
-For further guidance, refer also to [Guidance And Resources](./guidance-and-resources.md).
+For further guidance, refer also to [Guidance And Resources](./guidance-and-resources).
 
 <!-- START OF FOOTER -->
 
@@ -78,6 +78,6 @@ For further guidance, refer also to [Guidance And Resources](./guidance-and-reso
 
 | Previous | Next |
 | -------- | ---- |
-| [To Be Considered](./to-be-considered.md) | [Standards](./standards.md) |
+| [To Be Considered](./to-be-considered) | [Standards](./standards) |
 
 <!-- DEACTIVATED FOR DOCUSAURUS TO HERE -->

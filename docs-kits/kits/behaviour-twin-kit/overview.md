@@ -33,7 +33,7 @@ VARIANT FOR DOCUSAURUS TO HERE -->
 ## PURPOSE
 
 Maximize the potential of usage data. Use our spezialized Behaviour Twin KIT
-(based on [Agents KIT](../knowledge-agents/adoption-view/intro.md)) to connect
+(based on [Agents KIT](../knowledge-agents/adoption-view/intro)) to connect
 heterogeneous and distributed usage data and services seamlessly.
 
 ## DISCLAIMER
@@ -45,18 +45,20 @@ compatible implementations.
 
 ## CONTENTS
 
-- [Change Log](./changelog.md)
-- [Adoption View](adoption-view/overview.md) - Understand & Decide
-- [Development View](development-view/overview.md) - Develop & Operate
-- [Use Cases](use-cases/overview.md) - Templates for *Health Indicator* and *Remaining useful Life*
+- [Change Log](./changelog)
+- [Adoption View](adoption-view/overview) - Understand & Decide
+- [Development View](development-view/overview) - Develop & Operate
+- [Use Cases](use-cases/overview) - Templates for *Health Indicator* and *Remaining useful Life*
 
 ## NOTICE
 
 This work is licensed under the [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode).
 
 - SPDX-License-Identifier: CC-BY-4.0
-- SPDX-FileCopyrightText: 2022-2024 Allgemeine Deutsche Automobil-Club (ADAC) e.V.
+- SPDX-FileCopyrightText: 2022-2024 Allgemeiner Deutscher Automobil-Club e.V. (ADAC)
 - SPDX-FileCopyrightText: 2022-2024 Bayerische Motoren Werke Aktiengesellschaft (BMW AG)
+- SPDX-FileCopyrightText: 2021-2024 T-Systems International GmbH
+- SPDX-FileCopyrightText: 2021-2023 Mercedes-Benz AG
 - SPDX-FileCopyrightText: 2022-2024 ZF Friedrichshafen AG
 - SPDX-FileCopyrightText: 2022-2024 Contributors to the Eclipse Foundation
 
@@ -66,6 +68,6 @@ This work is licensed under the [CC-BY-4.0](https://creativecommons.org/licenses
 
 | Previous | Next |
 | -------- | ---- |
-|  | [Change Log](./changelog.md) |
+|  | [Change Log](./changelog) |
 
 <!-- DEACTIVATED FOR DOCUSAURUS TO HERE -->

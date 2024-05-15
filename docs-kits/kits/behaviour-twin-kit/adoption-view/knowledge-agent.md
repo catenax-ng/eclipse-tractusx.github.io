@@ -7,7 +7,7 @@ sidebar_position: 6
 
 <!-- DEACTIVATED FOR DOCUSAURUS FROM HERE -->
 
-<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../overview.md) > [Adoption View](./overview.md) > Knowledge Agent</span>
+<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../overview) > [Adoption View](./overview) > Knowledge Agent</span>
 
 # Knowledge Agent
 
@@ -48,7 +48,7 @@ Behaviour Twin KIT
 ## KNOWLEDGE GRAPH BASICS
 
 The Knowledge Agent is a set of federated components that are used to reason over knowledge graphs.
-For detailed information, see the [Agents KIT](../../knowledge-agents/adoption-view/intro.md).
+For detailed information, see the [Agents KIT](../../knowledge-agents/adoption-view/intro).
 
 Knowledge graphs are build up of semantic triplets.
 Those triplets are consisting of a subject, a predicate and an object. Subject and object
@@ -124,7 +124,7 @@ Extra layer of security. Map relational data to graphs.
 Currently, there is no ready-to-use test environment. If you want to test your use case,
 you still have options:
 
-- Have a look at the [Agents KIT](../../knowledge-agents/adoption-view/intro.md),
+- Have a look at the [Agents KIT](../../knowledge-agents/adoption-view/intro),
   maybe there is already something regarding testing.
 - Do research at your operating company's website or contact them.
 - Build up your own test environment. As a basis, you could use the official Tractus-X
@@ -139,6 +139,6 @@ you still have options:
 
 | Previous | Next |
 | -------- | ---- |
-| [Architecture](./architecture.md) | [Versioning](./versioning.md) |
+| [Architecture](./architecture) | [Versioning](./versioning) |
 
 <!-- DEACTIVATED FOR DOCUSAURUS TO HERE -->

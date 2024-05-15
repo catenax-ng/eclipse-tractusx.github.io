@@ -7,7 +7,7 @@ sidebar_position: 34
 
 <!-- DEACTIVATED FOR DOCUSAURUS FROM HERE -->
 
-<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../overview.md) > [Development View](./overview.md) > Service Bindings</span>
+<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../overview) > [Development View](./overview) > Service Bindings</span>
 
 # Service Bindings
 
@@ -59,7 +59,7 @@ To bind a service to the knowledge graph, you must use a **remoting agent**, als
 ### Service mapping configuration
 
 For RDF4J, a configuration must be provided that formally describes the service binding.  
-The configuration is written in Turtle (Terse RDF Triple Language) and has the extension **.ttl**. For more information, see the [Agents KIT](../../knowledge-agents/adoption-view/intro.md).  
+The configuration is written in Turtle (Terse RDF Triple Language) and has the extension **.ttl**. For more information, see the [Agents KIT](../../knowledge-agents/adoption-view/intro).  
 
 #### RDF4J repository
 
@@ -531,7 +531,7 @@ To enable the knowledge agent's matchmaking agent to find the service binding, a
             "sh:shapesGraph": "@prefix cx-common: <https://w3id.org/catenax/ontology/common#>. \n@prefix : <GraphAsset?supplier=BehaviourTwinRUL#> .\n@prefix cx-prognosis: <https://w3id.org/catenax/ontology/behaviour#> .\n@prefix cx-fx: <https://w3id.org/catenax/ontology/function#> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n\n:Tier1LifetimePrognosis rdf:type sh:NodeShape ;\n  sh:targetClass cx-prognosis:Function ;\n  sh:property [\n        sh:path cx-prognosis:provisionedBy ;\n        sh:hasValue <urn:bpn:legal:BPNL000000000000> ]."
 ```
 
-For more information see the [Agents KIT](../../knowledge-agents/adoption-view/intro.md).
+For more information see the [Agents KIT](../../knowledge-agents/adoption-view/intro).
 
 <!-- START OF FOOTER -->
 
@@ -539,6 +539,6 @@ For more information see the [Agents KIT](../../knowledge-agents/adoption-view/i
 
 | Previous | Next |
 | -------- | ---- |
-| [Data Bindings](./data-bindings.md) | [Skill](./skill.md) |
+| [Data Bindings](./data-bindings) | [Skill](./skill) |
 
 <!-- DEACTIVATED FOR DOCUSAURUS TO HERE -->

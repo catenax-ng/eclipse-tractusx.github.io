@@ -7,7 +7,7 @@ sidebar_position: 3
 
 <!-- DEACTIVATED FOR DOCUSAURUS FROM HERE -->
 
-<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../overview.md) > Adoption View</span>
+<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../overview) > Adoption View</span>
 
 # Adoption View
 
@@ -47,15 +47,15 @@ Behaviour Twin KIT
 
 ## CONTENTS
 
-- [Introduction](./introduction.md)
-- [Architecture](./architecture.md)
-- [Knowledge Agent](./knowledge-agent.md)
-- [Versioning](./versioning.md)
-- [To Be Considered](./to-be-considered.md)
-- [New Use-Cases](./new-use-cases.md)
-- [Standards](./standards.md)
-- [Guidance And Resources](./guidance-and-resources.md)
-- [Terminology](./terminology.md)
+- [Introduction](./introduction)
+- [Architecture](./architecture)
+- [Knowledge Agent](./knowledge-agent)
+- [Versioning](./versioning)
+- [To Be Considered](./to-be-considered)
+- [New Use-Cases](./new-use-cases)
+- [Standards](./standards)
+- [Guidance And Resources](./guidance-and-resources)
+- [Terminology](./terminology)
 
 <!-- START OF FOOTER -->
 
@@ -63,6 +63,6 @@ Behaviour Twin KIT
 
 | Previous | Next |
 | -------- | ---- |
-| [Change Log](../changelog.md) | [Introduction](./introduction.md) |
+| [Change Log](../changelog) | [Introduction](./introduction) |
 
 <!-- DEACTIVATED FOR DOCUSAURUS TO HERE -->

@@ -7,7 +7,7 @@ sidebar_position: 59
 
 <!-- DEACTIVATED FOR DOCUSAURUS FROM HERE -->
 
-<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../../overview.md) > [Use Cases](../overview.md) > Health Indicator</span>
+<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../../overview) > [Use Cases](../overview) > Health Indicator</span>
 
 # Health Indicator
 
@@ -37,9 +37,9 @@ Provide and get the health condition of technical systems.
 
 ## CONTENTS
 
-- [Change Log](./changelog.md)
-- [Adoption View](adoption-view/overview.md)
-- [Development View](development-view/overview.md)
+- [Change Log](./changelog)
+- [Adoption View](adoption-view/overview)
+- [Development View](development-view/overview)
 
 <!-- START OF FOOTER -->
 
@@ -47,6 +47,6 @@ Provide and get the health condition of technical systems.
 
 | Previous | Next |
 | -------- | ---- |
-| [Test](../rul/development-view/test.md) | [Change Log](./changelog.md) |
+| [Test](../rul/development-view/test) | [Change Log](./changelog) |
 
 <!-- DEACTIVATED FOR DOCUSAURUS TO HERE -->

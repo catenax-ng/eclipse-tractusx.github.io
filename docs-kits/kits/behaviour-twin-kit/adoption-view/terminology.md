@@ -7,7 +7,7 @@ sidebar_position: 11
 
 <!-- DEACTIVATED FOR DOCUSAURUS FROM HERE -->
 
-<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../overview.md) > [Adoption View](./overview.md) > Terminology</span>
+<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../overview) > [Adoption View](./overview) > Terminology</span>
 
 # Terminology
 
@@ -70,7 +70,7 @@ Behaviour Twin KIT
 |Service|Service to process data|E.g. calculation or simulation based on internal models|
 |Service Provider|Provides a calculation service to process result data from input data|Likely a supplier of a part or component|
 |Delegator|Delegates data or service requests|Likely a supplier of a component that is assembled of subcomponents which are providing calculation services|
-|Semantic Versioning|Versioning scheme for software|Using meaningful version numbers like `1.3.12`|
+|Semantic Versioning|Versioning scheme for software|Using meaningful version numbers in the format `[0-9]+.[0-9]+.[0-9]+(-SNAPSHOT)?` (e.g. `1.3.12`, )|
 |Component Provider|Manufacturer of a component|Provides services or delegates data|
 |VIN|Vehicle Identification Number|A standardized number to identify a vehicle|
 
@@ -79,7 +79,7 @@ Behaviour Twin KIT
 |Term|Description|Comment|
 |---|---|---|
 |Knowledge Graph|A semantic graph|Describes relation between subjects and objects|
-|Knowledge Agent||see [Agents KIT](../../knowledge-agents/adoption-view/intro.md)|
+|Knowledge Agent||see [Agents KIT](../../knowledge-agents/adoption-view/intro)|
 |Matchmaking Agent|Resolves federated sub-graphs for the Knowledge Agent|Fits requested sub-graphs with existing graph assets|
 |Binding Agent|A component thad bind instances to the knowledge graph|Binds instances of data or services to the knowledge graph|
 |Provisioning Agent|Binding agent for data bindings|Binds instances of data to the knowledge graph|
@@ -109,6 +109,6 @@ Behaviour Twin KIT
 
 | Previous | Next |
 | -------- | ---- |
-| [Guidance And Resources](./guidance-and-resources.md) | [Development View](../development-view/overview.md) |
+| [Guidance And Resources](./guidance-and-resources) | [Development View](../development-view/overview) |
 
 <!-- DEACTIVATED FOR DOCUSAURUS TO HERE -->

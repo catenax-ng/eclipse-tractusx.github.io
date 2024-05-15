@@ -7,7 +7,7 @@ sidebar_position: 67
 
 <!-- DEACTIVATED FOR DOCUSAURUS FROM HERE -->
 
-<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../../../overview.md) > [Use Cases](../../overview.md) > [Health Indicator](../overview.md) > Development View</span>
+<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../../../overview) > [Use Cases](../../overview) > [Health Indicator](../overview) > Development View</span>
 
 # Development View
 
@@ -51,16 +51,16 @@ HI-KIT-logo?
 
 ## CONTENTS
 
-- [Requirements](./requirements.md)
-- [Architecture](./architecture.md)
-- [Roles](./roles.md)
-- [Ontologies](./ontology.md)
-- [Data Bindings](./data-bindings.md)
-- [Service Bindings](./service-bindings.md)
-- [Skill](./skill.md)
-- [Assets](./assets.md)
-- [Skill-Usage](./skill-usage.md)
-- [Test](./test.md)
+- [Requirements](./requirements)
+- [Architecture](./architecture)
+- [Roles](./roles)
+- [Ontologies](./ontology)
+- [Data Bindings](./data-bindings)
+- [Service Bindings](./service-bindings)
+- [Skill](./skill)
+- [Assets](./assets)
+- [Skill-Usage](./skill-usage)
+- [Test](./test)
 
 <!-- START OF FOOTER -->
 
@@ -68,6 +68,6 @@ HI-KIT-logo?
 
 | Previous | Next |
 | -------- | ---- |
-| [Further Information](../adoption-view/further-information.md) | [Requirements](./requirements.md) |
+| [Further Information](../adoption-view/further-information) | [Requirements](./requirements) |
 
 <!-- DEACTIVATED FOR DOCUSAURUS TO HERE -->

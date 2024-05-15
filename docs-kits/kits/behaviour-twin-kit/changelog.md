@@ -7,7 +7,7 @@ sidebar_position: 2
 
 <!-- DEACTIVATED FOR DOCUSAURUS FROM HERE -->
 
-<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](./overview.md) > Change Log</span>
+<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](./overview) > Change Log</span>
 
 # Change Log
 
@@ -50,8 +50,8 @@ Behaviour Twin KIT
 ### ADDED
 
 - Initial version of the (generalized) Behaviour Twin KIT.
-- This KIT additionally contains the use cases [Remaining useful Life](use-cases/rul/overview.md)
-  and [Health Indicator](use-cases/hi/overview.md), see section [Use Cases](use-cases/overview.md).
+- This KIT additionally contains the use cases [Remaining useful Life](use-cases/rul/overview)
+  and [Health Indicator](use-cases/hi/overview), see section [Use Cases](use-cases/overview).
   The dedicated KITs of these use cases (Remaining useful Life KIT and Health Indicator KIT)
   are hereby deprecated.
 
@@ -69,6 +69,6 @@ Behaviour Twin KIT
 
 | Previous | Next |
 | -------- | ---- |
-| [BEHAVIOUR TWIN KIT](./overview.md) | [Adoption View](adoption-view/overview.md) |
+| [Behaviour Twin KIT](./overview) | [Adoption View](adoption-view/overview) |
 
 <!-- DEACTIVATED FOR DOCUSAURUS TO HERE -->

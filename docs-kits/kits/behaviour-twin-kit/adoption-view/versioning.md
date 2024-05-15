@@ -7,7 +7,7 @@ sidebar_position: 7
 
 <!-- DEACTIVATED FOR DOCUSAURUS FROM HERE -->
 
-<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../overview.md) > [Adoption View](./overview.md) > Versioning</span>
+<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../overview) > [Adoption View](./overview) > Versioning</span>
 
 # Versioning
 
@@ -106,7 +106,8 @@ Versioning of services, but also data is especially helpful if you want to harmo
 versions within a use case. The attribute `cx-common:version` within the `properties`
 list of the asset definitions can be used for this purpose. Using semantic versioning,
 the feature version number can be harmonized by all participants (e.g. by agreements or
-standards).
+standards). Semantic versioning is expressed in the following format:
+`[0-9]+.[0-9]+.[0-9]+(-SNAPSHOT)?`
 
 A second option would be an extension of the corresponding ontologies and taxonomies.
 Then, the version information can be a part of the SHACL description in the graph assets.
@@ -120,6 +121,6 @@ used to determine the desired data and service versions.
 
 | Previous | Next |
 | -------- | ---- |
-| [Knowledge Agent](./knowledge-agent.md) | [To Be Considered](./to-be-considered.md) |
+| [Knowledge Agent](./knowledge-agent) | [To Be Considered](./to-be-considered) |
 
 <!-- DEACTIVATED FOR DOCUSAURUS TO HERE -->

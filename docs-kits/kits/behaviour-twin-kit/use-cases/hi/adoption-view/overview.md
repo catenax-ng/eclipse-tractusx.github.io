@@ -7,7 +7,7 @@ sidebar_position: 61
 
 <!-- DEACTIVATED FOR DOCUSAURUS FROM HERE -->
 
-<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../../../overview.md) > [Use Cases](../../overview.md) > [Health Indicator](../overview.md) > Adoption View</span>
+<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../../../overview) > [Use Cases](../../overview) > [Health Indicator](../overview) > Adoption View</span>
 
 # Adoption View
 
@@ -51,11 +51,11 @@ HI-KIT-logo?
 
 ## CONTENTS
 
-- [Introduction](./introduction.md)
-- [Terminology](./terminology.md)
-- [Logic & Schema](./logic-schema.md)
-- [Business Process](./business-process.md)
-- [Further Information](./further-information.md)
+- [Introduction](./introduction)
+- [Terminology](./terminology)
+- [Logic & Schema](./logic-schema)
+- [Business Process](./business-process)
+- [Further Information](./further-information)
 
 <!-- START OF FOOTER -->
 
@@ -63,6 +63,6 @@ HI-KIT-logo?
 
 | Previous | Next |
 | -------- | ---- |
-| [Change Log](../changelog.md) | [Introduction](./introduction.md) |
+| [Change Log](../changelog) | [Introduction](./introduction) |
 
 <!-- DEACTIVATED FOR DOCUSAURUS TO HERE -->

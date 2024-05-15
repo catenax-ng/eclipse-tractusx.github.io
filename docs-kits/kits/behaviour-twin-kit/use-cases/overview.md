@@ -7,7 +7,7 @@ sidebar_position: 39
 
 <!-- DEACTIVATED FOR DOCUSAURUS FROM HERE -->
 
-<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../overview.md) > Use-Cases</span>
+<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../overview) > Use-Cases</span>
 
 # Use-Cases
 
@@ -52,8 +52,8 @@ The former KITs for those use cases (Remaining useful Life KIT and Health Indica
 
 ## CONTENTS
 
-- [Remaining useful Life](rul/overview.md)
-- [Health Indicator](hi/overview.md)
+- [Remaining useful Life](rul/overview)
+- [Health Indicator](hi/overview)
 
 <!-- START OF FOOTER -->
 
@@ -61,6 +61,6 @@ The former KITs for those use cases (Remaining useful Life KIT and Health Indica
 
 | Previous | Next |
 | -------- | ---- |
-| [Test](../development-view/test.md) | [Remaining useful Life](rul/overview.md) |
+| [Test](../development-view/test) | [Remaining useful Life](rul/overview) |
 
 <!-- DEACTIVATED FOR DOCUSAURUS TO HERE -->

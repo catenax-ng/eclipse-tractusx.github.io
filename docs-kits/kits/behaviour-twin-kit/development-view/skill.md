@@ -7,7 +7,7 @@ sidebar_position: 35
 
 <!-- DEACTIVATED FOR DOCUSAURUS FROM HERE -->
 
-<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../overview.md) > [Development View](./overview.md) > Skill</span>
+<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../overview) > [Development View](./overview) > Skill</span>
 
 # Skill
 
@@ -185,6 +185,6 @@ SELECT DISTINCT ?vehicle ?van ?aggregate ?assembly ?supplier ?distanceKm ?timeHo
 
 | Previous | Next |
 | -------- | ---- |
-| [Service Bindings](./service-bindings.md) | [Assets](./assets.md) |
+| [Service Bindings](./service-bindings) | [Assets](./assets) |
 
 <!-- DEACTIVATED FOR DOCUSAURUS TO HERE -->

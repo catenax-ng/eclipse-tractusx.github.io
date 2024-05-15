@@ -7,7 +7,7 @@ sidebar_position: 9
 
 <!-- DEACTIVATED FOR DOCUSAURUS FROM HERE -->
 
-<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../overview.md) > [Adoption View](./overview.md) > To Be Considered</span>
+<span style="font-size:14px;color:rgb(222,140,0);">[Behaviour Twin KIT](../overview) > [Adoption View](./overview) > To Be Considered</span>
 
 # To Be Considered
 
@@ -116,6 +116,6 @@ Some aspects should be kept in mind:
 
 | Previous | Next |
 | -------- | ---- |
-| [Versioning](./versioning.md) | [New Use-Cases](./new-use-cases.md) |
+| [Versioning](./versioning) | [New Use-Cases](./new-use-cases) |
 
 <!-- DEACTIVATED FOR DOCUSAURUS TO HERE -->
