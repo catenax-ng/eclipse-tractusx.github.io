@@ -7,7 +7,7 @@ description: Behaviour Twin KIT
 <div style={{display:'block'}}>
   <div style={{display:'inline-block', verticalAlign:'top'}}>
 
-![Behaviour Twin KIT -- Remaining useful Life banner](@site/static/img/kit-icons/behaviour-twin-rul-kit-icon-mini.png)
+![Behaviour Twin KIT -- Remaining useful Life banner](@site/static/img/kit-icons/behaviour-twin-rul-kit-icon-mini.svg)
 
   </div>
   <div style={{display:'inline-block', fontSize:17, color:'rgb(255,166,1)', marginLeft:7, verticalAlign:'top', paddingTop:6}}>
@@ -15,19 +15,11 @@ Behaviour Twin KIT -- Remaining useful Life
   </div>
 </div>
 
-RuL-KIT-logo?
-
 ## DISCLAIMER
 
 ## CONTENTS
 
-- [Requirements](./requirements)
 - [Architecture](./architecture)
-- [Roles](./roles)
-- [Ontologies](./ontology)
 - [Data Bindings](./data-bindings)
 - [Service Bindings](./service-bindings)
 - [Skill](./skill)
-- [Assets](./assets)
-- [Skill-Usage](./skill-usage)
-- [Test](./test)

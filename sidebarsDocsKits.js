@@ -128,16 +128,10 @@ const sidebars = {
                          id: 'kits/behaviour-twin-kit/development-view/overview',
                     },
                     items: [
-                        'kits/behaviour-twin-kit/development-view/requirements',
                         'kits/behaviour-twin-kit/development-view/architecture',
-                        'kits/behaviour-twin-kit/development-view/roles',
-                        'kits/behaviour-twin-kit/development-view/ontology',
                         'kits/behaviour-twin-kit/development-view/data-bindings',
                         'kits/behaviour-twin-kit/development-view/service-bindings',
                         'kits/behaviour-twin-kit/development-view/skill',
-                        'kits/behaviour-twin-kit/development-view/assets',
-                        'kits/behaviour-twin-kit/development-view/skill-usage',
-                        'kits/behaviour-twin-kit/development-view/test',
                     ]
                 },
                 {
@@ -156,7 +150,6 @@ const sidebars = {
                                  id: 'kits/behaviour-twin-kit/use-cases/rul/overview',
                             },
                             items: [
-                                'kits/behaviour-twin-kit/use-cases/rul/changelog',
                                 {
                                     type: 'category',
                                     label: 'Adoption View',
@@ -166,10 +159,8 @@ const sidebars = {
                                     },
                                     items: [
                                         'kits/behaviour-twin-kit/use-cases/rul/adoption-view/introduction',
+                                        'kits/behaviour-twin-kit/use-cases/rul/adoption-view/architecture',
                                         'kits/behaviour-twin-kit/use-cases/rul/adoption-view/terminology',
-                                        'kits/behaviour-twin-kit/use-cases/rul/adoption-view/logic-schema',
-                                        'kits/behaviour-twin-kit/use-cases/rul/adoption-view/business-process',
-                                        'kits/behaviour-twin-kit/use-cases/rul/adoption-view/further-information',
                                     ]
                                 },
                                 {
@@ -180,16 +171,10 @@ const sidebars = {
                                          id: 'kits/behaviour-twin-kit/use-cases/rul/development-view/overview',
                                     },
                                     items: [
-                                        'kits/behaviour-twin-kit/use-cases/rul/development-view/requirements',
                                         'kits/behaviour-twin-kit/use-cases/rul/development-view/architecture',
-                                        'kits/behaviour-twin-kit/use-cases/rul/development-view/roles',
-                                        'kits/behaviour-twin-kit/use-cases/rul/development-view/ontology',
                                         'kits/behaviour-twin-kit/use-cases/rul/development-view/data-bindings',
                                         'kits/behaviour-twin-kit/use-cases/rul/development-view/service-bindings',
                                         'kits/behaviour-twin-kit/use-cases/rul/development-view/skill',
-                                        'kits/behaviour-twin-kit/use-cases/rul/development-view/assets',
-                                        'kits/behaviour-twin-kit/use-cases/rul/development-view/skill-usage',
-                                        'kits/behaviour-twin-kit/use-cases/rul/development-view/test',
                                     ]
                                 },
                             ]
@@ -202,7 +187,6 @@ const sidebars = {
                                  id: 'kits/behaviour-twin-kit/use-cases/hi/overview',
                             },
                             items: [
-                                'kits/behaviour-twin-kit/use-cases/hi/changelog',
                                 {
                                     type: 'category',
                                     label: 'Adoption View',
@@ -212,10 +196,8 @@ const sidebars = {
                                     },
                                     items: [
                                         'kits/behaviour-twin-kit/use-cases/hi/adoption-view/introduction',
+                                        'kits/behaviour-twin-kit/use-cases/hi/adoption-view/architecture',
                                         'kits/behaviour-twin-kit/use-cases/hi/adoption-view/terminology',
-                                        'kits/behaviour-twin-kit/use-cases/hi/adoption-view/logic-schema',
-                                        'kits/behaviour-twin-kit/use-cases/hi/adoption-view/business-process',
-                                        'kits/behaviour-twin-kit/use-cases/hi/adoption-view/further-information',
                                     ]
                                 },
                                 {
@@ -226,16 +208,10 @@ const sidebars = {
                                          id: 'kits/behaviour-twin-kit/use-cases/hi/development-view/overview',
                                     },
                                     items: [
-                                        'kits/behaviour-twin-kit/use-cases/hi/development-view/requirements',
                                         'kits/behaviour-twin-kit/use-cases/hi/development-view/architecture',
-                                        'kits/behaviour-twin-kit/use-cases/hi/development-view/roles',
-                                        'kits/behaviour-twin-kit/use-cases/hi/development-view/ontology',
                                         'kits/behaviour-twin-kit/use-cases/hi/development-view/data-bindings',
                                         'kits/behaviour-twin-kit/use-cases/hi/development-view/service-bindings',
                                         'kits/behaviour-twin-kit/use-cases/hi/development-view/skill',
-                                        'kits/behaviour-twin-kit/use-cases/hi/development-view/assets',
-                                        'kits/behaviour-twin-kit/use-cases/hi/development-view/skill-usage',
-                                        'kits/behaviour-twin-kit/use-cases/hi/development-view/test',
                                     ]
                                 },
                             ]
