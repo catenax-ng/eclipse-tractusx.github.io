@@ -2,12 +2,11 @@
 id: overview
 title: Health Indicator
 description: Behaviour Twin KIT
-sidebar_position: 59
 ---
 
 <div style={{fontSize:30, color:'rgb(255,166,1)', marginBottom:13}}>Behaviour Twin KIT -- Health Indicator</div>
 
-![Behaviour Twin KIT -- Health Indicator banner](/img/kit-icons/behaviour-twin-hi-kit-icon.svg)
+![Behaviour Twin KIT -- Health Indicator banner](@site/static/img/kit-icons/behaviour-twin-hi-kit-icon.svg)
 
 ## PURPOSE
 

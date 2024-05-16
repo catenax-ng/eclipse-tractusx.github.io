@@ -3,12 +3,11 @@ id: overview
 title: BEHAVIOUR TWIN KIT
 hide_title: true
 description: Behaviour Twin KIT
-sidebar_position: 1
 ---
 
 <div style={{fontSize:60, color:'rgb(255,166,1)', marginBottom:8, marginTop:0, paddingTop:0}}>BEHAVIOUR TWIN KIT</div>
 
-![Behaviour Twin KIT banner](/img/kit-icons/behaviour-twin-kit-icon.svg)
+![Behaviour Twin KIT banner](@site/static/img/kit-icons/behaviour-twin-kit-icon.svg)
 
 ## PURPOSE
 

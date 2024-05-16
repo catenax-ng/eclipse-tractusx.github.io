@@ -2,12 +2,11 @@
 id: overview
 title: Remaining useful Life
 description: Behaviour Twin KIT
-sidebar_position: 40
 ---
 
 <div style={{fontSize:30, color:'rgb(255,166,1)', marginBottom:13}}>Behaviour Twin KIT -- Remaining useful Life</div>
 
-![Behaviour Twin KIT -- Remaining useful Life banner](/img/kit-icons/behaviour-twin-rul-kit-icon.svg)
+![Behaviour Twin KIT -- Remaining useful Life banner](@site/static/img/kit-icons/behaviour-twin-rul-kit-icon.svg)
 
 ## PURPOSE
 

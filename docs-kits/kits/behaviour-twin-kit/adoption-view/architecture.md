@@ -2,13 +2,12 @@
 id: architecture
 title: Architecture
 description: Behaviour Twin KIT
-sidebar_position: 5
 ---
 
 <div style={{display:'block'}}>
   <div style={{display:'inline-block', verticalAlign:'top'}}>
 
-![Behaviour Twin KIT banner](../../../../static/img/kit-icons/behaviour-twin-kit-icon-mini.png)
+![Behaviour Twin KIT banner](@site/static/img/kit-icons/behaviour-twin-kit-icon-mini.png)
 
   </div>
   <div style={{display:'inline-block', fontSize:17, color:'rgb(255,166,1)', marginLeft:7, verticalAlign:'top', paddingTop:6}}>
@@ -43,66 +42,62 @@ Each participant in a Behaviour Twin use cases applies to one or more of the fol
   is assembled of subcomponents which are providing calculation services)
 - **calculation service provider** (likely a supplier of a part or component)
 
-## BUSINESS PROCESS
+## DETAILED ARCHITECTURE
 
-A request is initiated by the consumer. A skill is utilized to define what to to. The skill can be either sent directly with the request or registered at an connector (EDC) and referenced within the request.
+### BUSINESS PROCESS
 
-The EDC connector has registered a Knowledge Agent plane (KA), which matches and delegats sub-graphs as well as sub-skills and provides data and service bindings.
+In Behaviour Twin use cases, the fist step into the federated logic is usually the data provider. There, dependencies of the targeted vehicle or component are known. Therefore, registring predefined skills at the data provider is preferred. Such skills then can be initiated by external partners as well as internally.
 
 ![business-process](assets/business-process.drawio.svg)
 
-Info: component provider is also usage data provider
+0. **0.1 Register skill asset, 0.2 sync federated catalog:** <BR /> The predefined skill is registered as an asset at the data provider's EDC connector. The federated catalogs are synchronized periodically.
 
-consumer invokes skill (at it's EDC)
+1. **Invoke skill asset:** <BR /> The consumer invokes the skill by calling the agents API at its own EDC connector. The partner's EDC connector 
+address must be known. To resolve this address is up to the use case. A prognosis function result type and a component or vehicle id (e.g. VIN) is set as parameter for the skill.
 
-  -> skill goes to the component+data provider
+2. **Request skill asset:** <BR /> The skill is invoked by requesting the skill asset at the data provider via EDC connectors.
 
-  -> skill resolves component instance for given parameters (e.g. VIN, serial number, ...)
+3. **Resolve prognosis function assets by requested result type:** <BR /> The Knowledge Agent resolves all prognosis function assets from the federated catalog that matches the desired result type.
 
-  -> skill resolves appropriate service (and it's provider) with desired result type for component
+4. **Resolve prognosis data assets by function parameter types:** <BR /> The Knowledge Agent resolves all data assets by the parameter types of the previously matched prognosis function(s).
 
-  -> skill fetches required input data
+5. **Fetch data:** <BR /> The data (parameter for prognosis functions) are fetched from the data provider's bound data source. They are transferred into graph representation by a provisioning agent (data binding agent).
 
-  -> skill invokes service with fetched data
+6. **Transfer data and deploy sub-skill:** <BR /> The fetched data and a sub-skill (logic for calling the calculation service) are transferred to the calculation service provider's Knowledge Agent via EDC connectors.
 
-  -> skill transfers result to consumer
-  
-  -> result is transfered back to consumer.
+7. **Calls service and fetch result:** <BR /> The calculation service (prognosis functions) is called. The data (parameter for the prognosis function) are translated into the format the service requires. This is automatically done by an remoting agent (service binding agent), which is statically configured by service bindings. The result of the service then is translated back into graph format by the remoting agent.
 
-federated catalog / ontology
+8. **Return result:** <BR /> The result is transferred to the invoker of the sub-skill (here, it is the data provider) via EDC connectors.
 
-{TODO}{sequence diagram, ...}
+9. **Delegate result:** <BR /> The result is delegated to the consumer via EDC connectors.
 
-## DETAILED ARCHITECTURE
+To have a common understanding of how to interpret and translate elements in the graph, common ontologies and taxonomies must be used. These are also needed for the interpretation of skills and sub-skills as there is e.g. inheritance in ontologies which must be known by the Knowledge Agent to resolve relations.
 
-### BUILDING BLOCK VIEW
+### BUILDING BLOCK COMPONENTS
 
-{TODO}
-
-### COMPONENTS
-
-#### BEHAVIOUR TWIN COMPONENTS
+#### USE CASE SPECIFIC COMPONENTS
 
 |Subsystem|Description|
 |---------|-----------|
-|Data Consuming App| This component is the app that is hosted at the Consumer and provides the end user interface. The end user can enter a vehicle identifier number (VIN) and gets back a calculated RuL value. <BR/> The returned value from the calculation services is SAMM specified. The app can provide another representation.|
-|Loading Data | A data source at the Data Provider that provides the loading data and other vehicle data that are needed for the RuL calculation. <BR/> It can be accessed by the knowledge agent via data bindings.|
-|RuL Service| A RuL calculation service at the Service Provider. It accepts input data from the Data Provider, calculates the RuL value and returns it.|
+|Data Consuming App|This component is the app that is hosted at the *consumer* and provides the end user interface.|
+|Usage Data|A data source at the *data provider* that provides usage data that are required for prognosis services. <BR/> It can be accessed by the Knowledge Agent via data bindings.|
+|Calculation Service|A calculation service at the *service provider*. It accepts input data from federated data sources, calculates the result values and returns them.|
 
 #### KNOWLEDGE AGENT COMPONENTS
 
 |Subsystem|Description|
 |---------|-----------|
-|Matchmaking Agent|This component supports SparQL to traverse the federated data space as a large data structure. It interacts with the EDC. <UL><LI>The provider's Matchmaking Agent will be activated by its EDC. Therefore, the EDC must offer a Graph Asset (variant of ordinary data assets in the Catena-X EDC standard).</LI><LI> The consumer's Matchmaking Agent interacts with its EDC to negotiate and perform the transfer of Sub-Skills to other dataspace participants.</LI></UL> The Matchmaking Agents are matching the (sub)graphs and negotiate appropriated graph assets with the partner EDCs.|
-|Binding Agent| The Binding Agent is a restricted version of the Matchmaking Agent (subset of OWL/SparQL, e.g., without federation) which is just focused on translating Sub-Skills of a particular business domain (Bill-Of-Material, Chemical Materials, Production Sites, etc.)  into proper SQL- or REST based backend system calls. <BR/> Implementation details: For data bindings, OnTop is used. For service bindings, RDF4J is used.|
-|Ontology|The ontology is a formal representation of knowledge that captures concepts, relationships, and properties. It allows a shared understanding and reasoning about the respective domain. <BR/> It must be hosted in a way that all participants can access it. Currently, the ontology is hosted at GitHub.|
-|Skill/Sub-Skill| The Skill describes, what to do (which data have to be connected, transferred and so on).|
+|Matchmaking Agent|This component supports SparQL (skills/sub-skills) to traverse the federated data space as a large data structure. It interacts with the EDC connector. <BR /> A **provider's Matchmaking Agent** will be activated by its EDC connector. Therefore, the EDC must offer a Graph Asset (variant of ordinary data assets in the related Catena-X standards). <BR /> A **consumer's Matchmaking Agent** interacts with its EDC to negotiate and perform the transfer of sub-skills to other dataspace participants. <BR /> The Matchmaking Agents are matching the (sub-)graphs and negotiate appropriated graph assets with the partner EDCs.|
+|Binding Agent|The Binding Agent is a restricted version of the Matchmaking Agent (subset of OWL/SparQL, e.g., without federation) which is just focused on translating Sub-Skills of a particular business domain (Bill-Of-Material, Chemical Materials, Production Sites, etc.) into proper SQL- or REST based backend system calls. <BR />Binding agents for data bindings are called **Provisioning Agent**. <BR />Binding agents for service bindings are called **Remoting Agent**. |
+|Binding|A Binding is part of the configuration of a Binding Agent. It defines the binding (translation form/into graph representation) for specific data/service instances.|
+|Ontology|The ontology is a formal representation of knowledge that captures concepts, relationships, and properties. It allows a shared understanding and reasoning about the respective domain. <BR/> It must be hosted in a way that all participants can access it.|
+|Skill/Sub-Skill|The Skill describes, what to do (which data have to be connected, transferred, processed ...).|
 
 #### CATENA-X CORE SERVICES (EXCEPT KNOWLEDGE AGENT COMPONENTS)
 
 |Subsystem|Description|
 |---------|-----------|
-|Eclipse Dataspace Components (EDC)|The Connector of the Eclipse Dataspace Components provides a framework for sovereign, inter-organizational data exchange. It implements the International Data Spaces standard (IDS) as well as relevant protocols associated with GAIA-X. The connector is designed in an extensible way in order to support alternative protocols and integrate in various ecosystems.|
+|EDC connector|The Connector of the Eclipse Dataspace Components (EDC) provides a framework for sovereign, inter-organizational data exchange. It implements the International Data Spaces standard (IDS) as well as relevant protocols associated with GAIA-X. The connector is designed in an extensible way in order to support alternative protocols and integrate in various ecosystems.|
 
 A more detailed a more detailed view of how the Knowledge Agent works is given in the section [Knowledge Agent](./knowledge-agent) (which comes next to this section).
 
@@ -110,21 +105,25 @@ A more detailed a more detailed view of how the Knowledge Agent works is given i
 
 In general view, use cases can be categorized dependent on specific criteria:
 
+- general use case type
+- origin of query
+- origin of data-processing logic
+
+Depending on these criteria, the use case architecture, graph assets and skills must be adapted. Detailed information about how to write dedicated skills can be found in the [Agents KIT](../../knowledge-agents/adoption-view/intro).
+
 ### GENERAL USE CASE TYPES
 
-- Data proivder is also consumer and wants result (must implement logic),  starts logic.
-- External consumer wants result (must implement logic), first address is data provider.
-- Third party implements logic and offers it to consumer.
+- The *data provider* is also *consumer*. It must implement and invoke the logic (skill).
+- An *external consumer* wants to invoke the logic (skill). It can – if granted by a *framework agreement* – implement and invoke its own logic (skill) on foreign data and services.
+- A *third part*y implements the logic (skill) and offers it to a *consumer*. A *framework agreement* must exist that allows the execution of such a skill.
 
-#### ORIGIN OF QUERY
+### ORIGIN OF QUERY
 
-- Usage data provider (like OEMs) query a calculation services of IP owners (like suppliers) along the supplier chain.
-- Service providers (like automobile clubs) gather data or insights along the supplier chain in behalf of their customers.
+- *Usage data provider* (like OEMs) query calculation services of IP owners (like suppliers) along the supplier chain.
+- *Third party providers of an end-user service* (like automobile clubs) gather data or insights along the supplier chain in behalf of their customers.
 
-#### ORIGIN OF DATA-PROCESSING LOGIC
+### ORIGIN OF DATA-PROCESSING LOGIC
 
-- The querying party knows how to process data, e.g. how to accumulate acquired data.
-- The data processing party knows how to process data, e.g. which simulation model to chose.
-- A third party offers logic for processing data.
-
-{TODO}{images/roles}
+- The querying party utilizes its own processing logic (calculation service). It wants to query input data from a *data provider*.
+- The querying party wants to process its own data with a calculation service at a *calculation service provider*.
+- The querying party has no (or not all) data and calculation services. It wants to utilize data and services form *data* and *calculation service providers*.

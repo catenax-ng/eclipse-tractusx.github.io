@@ -2,13 +2,12 @@
 id: versioning
 title: Versioning
 description: Behaviour Twin KIT
-sidebar_position: 7
 ---
 
 <div style={{display:'block'}}>
   <div style={{display:'inline-block', verticalAlign:'top'}}>
 
-![Behaviour Twin KIT banner](../../../../static/img/kit-icons/behaviour-twin-kit-icon-mini.png)
+![Behaviour Twin KIT banner](@site/static/img/kit-icons/behaviour-twin-kit-icon-mini.png)
 
   </div>
   <div style={{display:'inline-block', fontSize:17, color:'rgb(255,166,1)', marginLeft:7, verticalAlign:'top', paddingTop:6}}>
@@ -42,7 +41,7 @@ This release procedure may affect you only if you have breaking changes within y
 
 ## VERSIONING ASSETS
 
-All EDC assets must be decorated by the `cx-common:version` within the `properties` list of the asset definitions. This is required by the standard {TODO}. This applies to graph assets (data and service binding assets) as well as to skill assets.
+All EDC assets must be decorated by the `cx-common:version` within the `properties` list of the asset definitions. This applies to graph assets (data and service binding assets) as well as to skill assets.
 
 ## ONTOLOGY CHANGES
 
