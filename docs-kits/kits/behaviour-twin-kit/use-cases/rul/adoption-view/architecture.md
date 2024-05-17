@@ -44,25 +44,27 @@ The first addressee of a RuL skill must be the OEM since it has access to its su
 
 ![business-process](assets/business-process.drawio.svg)
 
-0. **0.1 Register skill asset, 0.2 sync federated catalog:** <br/> The predefined skill is registered as an asset at the data provider's EDC connector. The federated catalogs are synchronized periodically.
+0. **sync federated catalog:** <br/> The federated catalogs are synchronized periodically. As a result, the OEM can resolve RuL prognosis function assets at the supplier.
 
-1. **Invoke skill asset:** <br/> The consumer invokes the skill by calling the agents API at its own EDC connector. The partner's EDC connector address must be known. To resolve this address is up to the use case. A prognosis function result type and a component or vehicle id (e.g. VIN) is set as parameter for the skill.
+1. **Invoke RuL skill:** <br/> The consumer invokes the skill by calling the agents API at its own EDC connector (ad hoc or as predefined asset). The OEM's EDC connector address must be known. Resolving this address is up to the consumer. The vehicle id (VIN) is set as parameter for the skill.
 
-2. **Request skill asset:** <br/> The skill is invoked by requesting the skill asset at the data provider via EDC connectors.
+2. **Delegate sub-skill:** <br/> The skill is delegated to the OEM via EDC connectors.
 
-3. **Resolve prognosis function assets by requested result type:** <br/> The Knowledge Agent resolves all prognosis function assets from the federated catalog that matches the desired result type.
+3. **Resolve vehicle part of interest:** <br/> The Knowledge Agent resolves the vehicle part for which the RuL value should be calculated.
 
-4. **Resolve prognosis data assets by function parameter types:** <br/> The Knowledge Agent resolves all data assets by the parameter types of the previously matched prognosis function(s).
+4. **Resolve load data assets:** <br/> The Knowledge Agent resolves the usage data asset for the vehicle part of interest.
 
-5. **Fetch data:** <br/> The data (parameter for prognosis functions) are fetched from the data provider's bound data source. They are transferred into graph representation by a provisioning agent (data binding agent).
+5. **Resolve RuL prognosis function assets:** <br/> The Knowledge Agent resolves all prognosis function assets from the federated catalog with type `RemainingUsefulLife` and the correct input type of load spectra. This type is infered by the usage data asset.
 
-6. **Transfer data and deploy sub-skill:** <br/> The fetched data and a sub-skill (logic for calling the calculation service) are transferred to the calculation service provider's Knowledge Agent via EDC connectors.
+6. **Fetch data:** <br/> The data (parameter for the RuL prognosis functions) are fetched from the data provider's bound data source. They are translated into graph representation by a provisioning agent (data binding agent).
 
-7. **Calls service and fetch result:** <br/> The calculation service (prognosis functions) is called. The data (parameter for the prognosis function) are translated into the format the service requires. This is automatically done by an remoting agent (service binding agent), which is statically configured by service bindings. The result of the service then is translated back into graph format by the remoting agent.
+7. **Transfer data and deploy sub-skill:** <br/> The fetched data and a sub-skill (logic for calling the RuL calculation service) are transferred to the RuL calculation service provider's Knowledge Agent via EDC connectors.
 
-8. **Return result:** <br/> The result is transferred to the invoker of the sub-skill (here, it is the data provider) via EDC connectors.
+8. **Calls service and fetch result:** <br/> The RuL calculation service (prognosis functions) is called. The data (parameters) are translated into the format the service requires. This is automatically done by an remoting agent (service binding agent), which is statically configured by service bindings. The result of the service then is translated back into graph representation by the remoting agent.
 
-9. **Delegate result:** <br/> The result is delegated to the consumer via EDC connectors.
+9. **Return result:** <br/> The result is transferred to the OEM via EDC connectors.
+
+10. **Delegate result:** <br/> The result is delegated to the consumer via EDC connectors.
 
 To have a common understanding of how to interpret and translate elements in the graph, common ontologies and taxonomies must be used. These are also needed for the interpretation of skills and sub-skills as there is e.g. inheritance in ontologies which must be known by the Knowledge Agent to resolve relations.
 

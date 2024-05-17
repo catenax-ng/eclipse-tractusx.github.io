@@ -24,4 +24,4 @@ For terminology that is not related to the Remaining useful Life use case, see t
 |Term|Description|Comment|
 |---|---|---|
 |RuL|Remaining Useful Life||
-|remaining useful life value|estimated amount of time or usage (e.g., operating hours, miles, cycles) that a technical component or system can continue to function before it needs to be repaired or replaced.| utilizes condition monitoring, predictive analytics, and calculation via usage-data-driven models to assess the current state and project the future performance and degradation|
+|remaining useful life value|Estimated amount of time or usage (e.g., operating hours, miles, cycles) that a technical component or system can continue to function before it needs to be repaired or replaced.|utilizes condition monitoring, predictive analytics, and calculation via usage-data-driven models to assess the current state and project the future performance and degradation|
