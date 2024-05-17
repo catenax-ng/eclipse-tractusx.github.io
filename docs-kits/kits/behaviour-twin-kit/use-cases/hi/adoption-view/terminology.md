@@ -15,8 +15,8 @@ Behaviour Twin KIT -- Health Indicator
   </div>
 </div>
 
-## NON USE CASE SPECIFIC
+## NON USE CASE-SPECIFIC
 
 For terminology that is not related to the Health Indicator use case, see the general [Terminology](../../../adoption-view/terminology) section.
 
-## USE CASE SPECIFIC
+## USE CASE-SPECIFIC

@@ -27,7 +27,7 @@ Based on the calculation of health indicators, the performance and condition of 
 
 ### MISSION
 
-This use-case-specific part of the *Behavior Twin KIT* aims further to facilitate the development of scalable and interoperable
+This use case-specific part of the *Behaviour Twin KIT* aims further to facilitate the development of scalable and interoperable
 solutions for *health monitoring* of products by connecting the data providers, typically OEMs, and service providers, typically supplier
 within the supply chain in a generic way. It guides business and software developers
 by explaining key concepts and by directing them to relevant technical resources and code examples.

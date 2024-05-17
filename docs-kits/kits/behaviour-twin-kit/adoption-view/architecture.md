@@ -44,6 +44,19 @@ Each participant in a Behaviour Twin use cases applies to one or more of the fol
 
 ## DETAILED ARCHITECTURE
 
+### KNOWLEDGE AGENT
+
+The architecture is based on so called Knowledge Agents that consists of:
+
+- Matchmaking Agent
+- Binding Agents (Provisioning Agent/Remoting Agent)
+- Federated Catalog
+- Bindings (configurations of binding agents)
+
+The components are federated over all participants. All data (and services) are representated together as a federated knowledge graph. The processing logic for the agents is defined in so called *skills*. All communication is handled by EDC connectors.
+
+A detailed view of how a Knowledge Agent works is given in the section [Knowledge Agent](./knowledge-agent) (which comes next to this section).
+
 ### BUSINESS PROCESS
 
 In Behaviour Twin use cases, the fist step into the federated logic is usually the data provider. There, dependencies of the targeted vehicle or component are known. Therefore, registring predefined skills at the data provider is preferred. Such skills then can be initiated by external partners as well as internally.
@@ -52,8 +65,7 @@ In Behaviour Twin use cases, the fist step into the federated logic is usually t
 
 0. **0.1 Register skill asset, 0.2 sync federated catalog:** <BR /> The predefined skill is registered as an asset at the data provider's EDC connector. The federated catalogs are synchronized periodically.
 
-1. **Invoke skill asset:** <BR /> The consumer invokes the skill by calling the agents API at its own EDC connector. The partner's EDC connector 
-address must be known. To resolve this address is up to the use case. A prognosis function result type and a component or vehicle id (e.g. VIN) is set as parameter for the skill.
+1. **Invoke skill asset:** <BR /> The consumer invokes the skill by calling the agents API at its own EDC connector. The partner's EDC connector address must be known. To resolve this address is up to the use case. A prognosis function result type and a component or vehicle id (e.g. VIN) is set as parameter for the skill.
 
 2. **Request skill asset:** <BR /> The skill is invoked by requesting the skill asset at the data provider via EDC connectors.
 
@@ -75,7 +87,7 @@ To have a common understanding of how to interpret and translate elements in the
 
 ### BUILDING BLOCK COMPONENTS
 
-#### USE CASE SPECIFIC COMPONENTS
+#### USE CASE-SPECIFIC COMPONENTS
 
 |Subsystem|Description|
 |---------|-----------|
@@ -98,8 +110,6 @@ To have a common understanding of how to interpret and translate elements in the
 |Subsystem|Description|
 |---------|-----------|
 |EDC connector|The Connector of the Eclipse Dataspace Components (EDC) provides a framework for sovereign, inter-organizational data exchange. It implements the International Data Spaces standard (IDS) as well as relevant protocols associated with GAIA-X. The connector is designed in an extensible way in order to support alternative protocols and integrate in various ecosystems.|
-
-A more detailed a more detailed view of how the Knowledge Agent works is given in the section [Knowledge Agent](./knowledge-agent) (which comes next to this section).
 
 ## USE CASE TYPES
 

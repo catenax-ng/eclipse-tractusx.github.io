@@ -24,3 +24,7 @@ The former KITs for those use cases (Remaining useful Life KIT and Health Indica
 
 - [Remaining useful Life](rul/overview)
 - [Health Indicator](hi/overview)
+
+Another special Behaviour Twin use case the exchange of simulation models as well as the approach of distributed simulation. 
+
+- [Model Based Development and Data Processing KIT](../../Behaviour%20Twin%20MDP%20Kit/page_adoption-view)

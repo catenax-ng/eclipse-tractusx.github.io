@@ -25,7 +25,7 @@ Aggregating real-world usage data of technical products is state-of-the-art. But
 
 ### MISSION
 
-The Behavior Twin KIT aims to facilitate the development of scalable and interoperable solutions for connecting service customers, data providers and service providers across organizational boundaries in a generic way. It guides business and software developers by explaining key concepts and by directing them to relevant technical resources and examples.
+The Behaviour Twin KIT aims to facilitate the development of scalable and interoperable solutions for connecting service customers, data providers and service providers across organizational boundaries in a generic way. It guides business and software developers by explaining key concepts and by directing them to relevant technical resources and examples.
 
 ## STATUS QUO & CHALLENGE
 
