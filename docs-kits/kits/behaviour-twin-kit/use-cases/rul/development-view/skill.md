@@ -35,7 +35,7 @@ A reference (sample) RuL Agent-Skill for a Gearbox is implemented in the followi
 The query is a federated query, which means that the query is split into two parts, one for the OEM and one for the Supplier.
 In the first part, the OEM-owned reliability asset is queried, to collect the load spectrum data of the vehicle with the given VIN's and in the second part, the gathered data is fed back into the respective supplier connector/agent to perform a RuL calculation.
 
-For more information regarding the RuL Skill see [Agents KIT](https://bit.ly/tractusx-agents).
+For more information regarding the RuL Skill and its registration and invocation options see [Agents KIT](https://bit.ly/tractusx-agents).
 
 ```sparql
 ################################################################
