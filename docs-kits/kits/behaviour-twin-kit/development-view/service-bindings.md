@@ -15,6 +15,12 @@ Behaviour Twin KIT
   </div>
 </div>
 
+<br/><br/><br/><br/>
+
+<big><big><big>FROM FORMER RUL KIT, MUST BE REVISED</big></big></big>
+
+<br/><br/><br/><br/>
+
 Applies to: *RuL calculation service provider*
 
 ### Overview

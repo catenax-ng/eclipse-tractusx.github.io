@@ -63,25 +63,25 @@ In Behaviour Twin use cases, the fist step into the federated logic is usually t
 
 ![business-process](assets/business-process.drawio.svg)
 
-0. **0.1 Register skill asset, 0.2 sync federated catalog:** <BR /> The predefined skill is registered as an asset at the data provider's EDC connector. The federated catalogs are synchronized periodically.
+0. **0.1 Register skill asset, 0.2 sync federated catalog:** <br/> The predefined skill is registered as an asset at the data provider's EDC connector. The federated catalogs are synchronized periodically.
 
-1. **Invoke skill asset:** <BR /> The consumer invokes the skill by calling the agents API at its own EDC connector. The partner's EDC connector address must be known. To resolve this address is up to the use case. A prognosis function result type and a component or vehicle id (e.g. VIN) is set as parameter for the skill.
+1. **Invoke skill asset:** <br/> The consumer invokes the skill by calling the agents API at its own EDC connector. The partner's EDC connector address must be known. To resolve this address is up to the use case. A prognosis function result type and a component or vehicle id (e.g. VIN) is set as parameter for the skill.
 
-2. **Request skill asset:** <BR /> The skill is invoked by requesting the skill asset at the data provider via EDC connectors.
+2. **Request skill asset:** <br/> The skill is invoked by requesting the skill asset at the data provider via EDC connectors.
 
-3. **Resolve prognosis function assets by requested result type:** <BR /> The Knowledge Agent resolves all prognosis function assets from the federated catalog that matches the desired result type.
+3. **Resolve prognosis function assets by requested result type:** <br/> The Knowledge Agent resolves all prognosis function assets from the federated catalog that matches the desired result type.
 
-4. **Resolve prognosis data assets by function parameter types:** <BR /> The Knowledge Agent resolves all data assets by the parameter types of the previously matched prognosis function(s).
+4. **Resolve prognosis data assets by function parameter types:** <br/> The Knowledge Agent resolves all data assets by the parameter types of the previously matched prognosis function(s).
 
-5. **Fetch data:** <BR /> The data (parameter for prognosis functions) are fetched from the data provider's bound data source. They are transferred into graph representation by a provisioning agent (data binding agent).
+5. **Fetch data:** <br/> The data (parameter for prognosis functions) are fetched from the data provider's bound data source. They are transferred into graph representation by a provisioning agent (data binding agent).
 
-6. **Transfer data and deploy sub-skill:** <BR /> The fetched data and a sub-skill (logic for calling the calculation service) are transferred to the calculation service provider's Knowledge Agent via EDC connectors.
+6. **Transfer data and deploy sub-skill:** <br/> The fetched data and a sub-skill (logic for calling the calculation service) are transferred to the calculation service provider's Knowledge Agent via EDC connectors.
 
-7. **Calls service and fetch result:** <BR /> The calculation service (prognosis functions) is called. The data (parameter for the prognosis function) are translated into the format the service requires. This is automatically done by an remoting agent (service binding agent), which is statically configured by service bindings. The result of the service then is translated back into graph format by the remoting agent.
+7. **Calls service and fetch result:** <br/> The calculation service (prognosis functions) is called. The data (parameter for the prognosis function) are translated into the format the service requires. This is automatically done by an remoting agent (service binding agent), which is statically configured by service bindings. The result of the service then is translated back into graph format by the remoting agent.
 
-8. **Return result:** <BR /> The result is transferred to the invoker of the sub-skill (here, it is the data provider) via EDC connectors.
+8. **Return result:** <br/> The result is transferred to the invoker of the sub-skill (here, it is the data provider) via EDC connectors.
 
-9. **Delegate result:** <BR /> The result is delegated to the consumer via EDC connectors.
+9. **Delegate result:** <br/> The result is delegated to the consumer via EDC connectors.
 
 To have a common understanding of how to interpret and translate elements in the graph, common ontologies and taxonomies must be used. These are also needed for the interpretation of skills and sub-skills as there is e.g. inheritance in ontologies which must be known by the Knowledge Agent to resolve relations.
 
@@ -99,8 +99,8 @@ To have a common understanding of how to interpret and translate elements in the
 
 |Subsystem|Description|
 |---------|-----------|
-|Matchmaking Agent|This component supports SparQL (skills/sub-skills) to traverse the federated data space as a large data structure. It interacts with the EDC connector. <BR /> A **provider's Matchmaking Agent** will be activated by its EDC connector. Therefore, the EDC must offer a Graph Asset (variant of ordinary data assets in the related Catena-X standards). <BR /> A **consumer's Matchmaking Agent** interacts with its EDC to negotiate and perform the transfer of sub-skills to other dataspace participants. <BR /> The Matchmaking Agents are matching the (sub-)graphs and negotiate appropriated graph assets with the partner EDCs.|
-|Binding Agent|The Binding Agent is a restricted version of the Matchmaking Agent (subset of OWL/SparQL, e.g., without federation) which is just focused on translating Sub-Skills of a particular business domain (Bill-Of-Material, Chemical Materials, Production Sites, etc.) into proper SQL- or REST based backend system calls. <BR />Binding agents for data bindings are called **Provisioning Agent**. <BR />Binding agents for service bindings are called **Remoting Agent**. |
+|Matchmaking Agent|This component supports SparQL (skills/sub-skills) to traverse the federated data space as a large data structure. It interacts with the EDC connector. <br/> A **provider's Matchmaking Agent** will be activated by its EDC connector. Therefore, the EDC must offer a Graph Asset (variant of ordinary data assets in the related Catena-X standards). <br/> A **consumer's Matchmaking Agent** interacts with its EDC to negotiate and perform the transfer of sub-skills to other dataspace participants. <br/> The Matchmaking Agents are matching the (sub-)graphs and negotiate appropriated graph assets with the partner EDCs.|
+|Binding Agent|The Binding Agent is a restricted version of the Matchmaking Agent (subset of OWL/SparQL, e.g., without federation) which is just focused on translating Sub-Skills of a particular business domain (Bill-Of-Material, Chemical Materials, Production Sites, etc.) into proper SQL- or REST based backend system calls. <br/>Binding agents for data bindings are called **Provisioning Agent**. <br/>Binding agents for service bindings are called **Remoting Agent**. |
 |Binding|A Binding is part of the configuration of a Binding Agent. It defines the binding (translation form/into graph representation) for specific data/service instances.|
 |Ontology|The ontology is a formal representation of knowledge that captures concepts, relationships, and properties. It allows a shared understanding and reasoning about the respective domain. <BR/> It must be hosted in a way that all participants can access it.|
 |Skill/Sub-Skill|The Skill describes, what to do (which data have to be connected, transferred, processed ...).|
@@ -110,6 +110,32 @@ To have a common understanding of how to interpret and translate elements in the
 |Subsystem|Description|
 |---------|-----------|
 |EDC connector|The Connector of the Eclipse Dataspace Components (EDC) provides a framework for sovereign, inter-organizational data exchange. It implements the International Data Spaces standard (IDS) as well as relevant protocols associated with GAIA-X. The connector is designed in an extensible way in order to support alternative protocols and integrate in various ecosystems.|
+
+## MANDATORY COMPONENTS
+
+You always need access to your **running connector (EDC) with knowledge agent components** and
+the (extensible) **ontologies of Catena-X**. In most cases, you can use them as they are.  
+
+Depending on your role, you need a combination of the following components:
+
+- EDC connector + knowledge agent
+- ontologies (semantic models)
+- usage data
+- calculation services
+- matchmaking agent: Mapping ontology to knowledge graph, integrated into KA-dataplane
+- binding agents:
+  - provisioning agent: provide data
+  - remoting agent: bind service to graph
+
+| | service provider | delegator | data provider | consumer | skill provider |
+| ---------------------------------- | :---: | :---: | :---: | :---: | :---: |
+| EDC connector <br/> + agent plane / matchmaking agent  | x | x | x | x | x |
+| ontologies                                             | x | x | x | x | x |
+| skill-access                                           |   |   |   | x | x |
+| usage data                                             |   |   | x |   |   |
+| provisioning agent                                     |   |   | x |   |   |
+| calculation service                                    | x |   |   |   |   |
+| remoting agent                                         | x |   |   |   |   |
 
 ## USE CASE TYPES
 

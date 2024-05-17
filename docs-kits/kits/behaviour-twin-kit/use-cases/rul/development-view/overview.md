@@ -15,11 +15,21 @@ Behaviour Twin KIT -- Remaining useful Life
   </div>
 </div>
 
-## DISCLAIMER
-
 ## CONTENTS
 
-- [Architecture](./architecture)
 - [Data Bindings](./data-bindings)
+  - configuring data bindings
+  - registering graph asset for data bindings
+
+<br/>
+
 - [Service Bindings](./service-bindings)
+  - configuring a service binding
+  - registering a graph asset for a service binding
+
+<br/>
+
 - [Skill](./skill)
+  - configuring a service binding
+  - registering a skill assets
+  - invoke skills
