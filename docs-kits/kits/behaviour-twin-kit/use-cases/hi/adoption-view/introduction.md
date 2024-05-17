@@ -34,7 +34,7 @@ by explaining key concepts and by directing them to relevant technical resources
 
 ## STATUS QUO & CHALLENGES
 
-see [*Status quo & challenges in general part of the KIT*](../../../adoption-view/introduction.md#status-quo--challenge)
+see [*Status quo & challenges in general section of the KIT*](../../../adoption-view/introduction#status-quo--challenge)
 
 ## USE CASES
 
@@ -43,3 +43,7 @@ see [*Status quo & challenges in general part of the KIT*](../../../adoption-vie
 **Tier-X**: The overall product range becomes more attractive in the offer phase, when the definition of health indicators as a product-related service is included.
 
 **Workshops**: In case of failure analysis and repair, workshops benefit from an extended range of data on vehicle condition and its components. In return, service providers can standardize and facilitate access to the OEM.
+
+## BENEFITS
+
+Taking this use case specific template for the development of similiar or new use cases is an ideal starting point to enable the [*benefits described in the general part of the KIT*](../../../adoption-view/introduction#benefits)

@@ -34,7 +34,7 @@ by explaining key concepts and by directing them to relevant technical resources
 
 ## STATUS QUO & CHALLENGES
 
-see [*Status quo & challenges in general part of the KIT*](../../../adoption-view/introduction.md#status-quo--challenge)
+see [*Status quo & challenges in general section of the KIT*](../../../adoption-view/introduction#status-quo--challenge)
 
 ## USE CASES
 
@@ -45,3 +45,7 @@ see [*Status quo & challenges in general part of the KIT*](../../../adoption-vie
 **OEMs, car dealers and automotive clubs**: During usage phase they can further interpret the Remaining Useful Life calculation for a vehicle evaluation and offer it as vehicle-related services for their end customers and fleet operators.
 
 **Automotive clubs, car dealers, insurers, fleet operators and recyclers**: Even during the usage phase, but particularly during the recycling phase, they all benefit from precise residual value analyses of the entire vehicle and its components on the basis of component-specific damage calculation.
+
+## BENEFITS
+
+Taking this use case specific template for the development of similiar or new use cases is an ideal starting point to enable the [*benefits described in the general part of the KIT*](../../../adoption-view/introduction#benefits)
