@@ -15,9 +15,11 @@ Behaviour Twin KIT
   </div>
 </div>
 
-## DISCLAIMER
-
 ## CONTENTS
+
+- [Contracts and Policies](./contracts-and-policies) (applies to roles *data provider*, *calculation service provider* and *delegator*)
+  - policies for graph assets
+  - contracts for graph assets
 
 - [Data Bindings](./data-bindings) (applies to roles *data provider* and *delegator*)
   - configuring data bindings

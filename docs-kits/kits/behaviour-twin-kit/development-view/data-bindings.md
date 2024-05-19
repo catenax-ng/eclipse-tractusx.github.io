@@ -23,7 +23,7 @@ The usage data for different use cases like [*Health Indicator*](../use-cases/hi
 
 ### OVERVIEW
 
-In most cases, data are provided in relational form (relational databases, data lakes, ...). To provide such data as part of the knowledge graph, you have to bind/map them to the underlying ontologies.
+In most cases, data are provided in relational form (relational databases, data lakes, ...). To provide such data as part of the knowledge graph, you have to bind/map them.
 
 ### DATA MAPPING TOOL
 
@@ -127,23 +127,23 @@ source    SELECT "catenaXId", "targetComponentId", "metadata_projectDescription"
 
 To enable the knowledge agent's matchmaking agent to utilize the data bindings, a graph asset has to be registered at the data provider's EDC connector. This asset must have a property `rdfs:isDefinedBy` for ontology references and a property `sh:shapesGraph` that defines the shape of the provided graph.
 
-All assets, including graph assets, must have a related policy and contract definition. For more information see the Knowledge [Agents KIT](../../knowledge-agents/operation-view/provider).
+All assets, including graph assets, must have a related policy and contract definition. All assets, including graph assets, must have a related policy and contract definition. These are described in the section [Contracts And Policies](contracts-and-policies).
 
-### GRAPH ASSET DEFINITION
+#### GRAPH ASSET DEFINITION
 
 The following example is a full asset description, that can be registered at the EDC connector.
 
 ```json
 {
   "@context": {
-    "@vocab": "https://w3id.org/edc/v0.0.1/ns/",
-    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-    "cx-common": "https://w3id.org/catenax/ontology/common#",
-    "xsd": "http://www.w3.org/2001/XMLSchema#",
-    "sh": "http://www.w3.org/ns/shacl#",
-    "cs-taxo": "https://w3id.org/catenax/taxonomy#",
-    "dct": "https://purl.org/dc/terms/"
+   "@vocab": "https://w3id.org/edc/v0.0.1/ns/",
+   "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+   "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+   "cx-common": "https://w3id.org/catenax/ontology/common#",
+   "xsd": "http://www.w3.org/2001/XMLSchema#",
+   "sh": "http://www.w3.org/ns/shacl#",
+   "cs-taxo": "https://w3id.org/catenax/taxonomy#",
+   "dct": "https://purl.org/dc/terms/"
   },
   "@id": "GraphAsset?me=BehaviourTwinReliability",
   "properties": {
@@ -156,7 +156,7 @@ The following example is a full asset description, that can be registered at the
     "dct:type": "cx-taxo:GraphAsset",
     "rdfs:isDefinedBy": "<https://w3id.org/catenax/ontology/common>,<https://w3id.org/catenax/ontology/core>,<https://w3id.org/catenax/taxonomy>,<https://w3id.org/catenax/ontology/core>,<https://w3id.org/catenax/ontology/behaviour>",
     "cx-common:implementsProtocol": "cx-common:Protocol?w3c:http:SPARQL",
-    "sh:shapesGraph": "@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix schema: <http://schema.org/> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix edc: <https://w3id.org/edc/v0.0.1/ns/> .\n@prefix cx-common: <https://w3id.org/catenax/ontology/common#> .\n@prefix cx-core: <https://w3id.org/catenax/ontology/core#> .\n@prefix cx-vehicle: <https://w3id.org/catenax/ontology/vehicle#> .\n@prefix cx-fx: <https://w3id.org/catenax/ontology/function#> .\n@prefix cx-behaviour: <https://w3id.org/catenax/ontology/behaviour#> .\n@prefix cx-reliability: <https://w3id.org/catenax/ontology/reliability#> .\n@prefix cx-sh: <https://w3id.org/catenax/ontology/schema#> .\n@prefix cx-taxo: <https://w3id.org/catenax/taxonomy#> .\n@prefix : <https://w3id.org/catenax/taxonomy#GraphAsset?me=BehaviourTwinReliability&shapeObject=> .\n\n:LoadSpectrumShape a sh:NodeShape ;\n    sh:targetClass  cx-reliability:LoadSpectrum;\n    sh:property :observationOfShape, \n                :countingValueShape, \n                :countingUnitShape, \n                :countingMethodShape, \n                :channelsShape, \n                :classesShape, \n                :valuesShape.\n\n:observationOfShape a sh:PropertyShape;\n    sh:path cx-reliability:observationOf;\n    sh:in (cx-taxo:GearOil cx-taxo:GearSet cx-taxo:Clutch).\n\n:countingValueShape a sh:PropertyShape;\n    sh:path cx-reliability:countingValue.\n\n:countingUnitShape a sh:PropertyShape;\n    sh:path cx-reliability:countingUnit.\n\n:countingMethodShape a sh:PropertyShape;\n    sh:path cx-reliability:countingMethod.\n\n:countingMethodShape a sh:PropertyShape;\n    sh:path cx-reliability:countingMethod.\n\n:channelsShape a sh:PropertyShape;\n    sh:path cx-reliability:channels.\n\n:classesShape a sh:PropertyShape;\n    sh:path cx-reliability:classes.\n\n:valuesShape a sh:PropertyShape;\n    sh:path cx-reliability:values.",
+    "sh:shapesGraph": "@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix schema: <http://schema.org/> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix edc: <https://w3id.org/edc/v0.0.1/ns/> .\n@prefix cx-common: <https://w3id.org/catenax/ontology/common#> .\n@prefix cx-core: <https://w3id.org/catenax/ontology/core#> .\n@prefix cx-vehicle: <https://w3id.org/catenax/ontology/vehicle#> .\n@prefix cx-fx: <https://w3id.org/catenax/ontology/function#> .\n@prefix cx-behaviour: <https://w3id.org/catenax/ontology/behaviour#> .\n@prefix cx-reliability: <https://w3id.org/catenax/ontology/reliability#> .\n@prefix cx-sh: <https://w3id.org/catenax/ontology/schema#> .\n@prefix cx-taxo: <https://w3id.org/catenax/taxonomy#> .\n@prefix : <https://w3id.org/catenax/taxonomy#GraphAsset?me=BehaviourTwinReliability&shapeObject=> .\n\n:LoadSpectrumShape a sh:NodeShape ;\n    sh:targetClass  cx-reliability:LoadSpectrum ;\n    sh:property :observationOfShape, \n                :countingValueShape, \n                :countingUnitShape, \n                :countingMethodShape, \n                :channelsShape, \n                :classesShape, \n                :valuesShape .\n\n:observationOfShape a sh:PropertyShape ;\n    sh:path cx-reliability:observationOf ;\n    sh:in (cx-taxo:GearOil cx-taxo:GearSet cx-taxo:Clutch) .\n\n:countingValueShape a sh:PropertyShape ;\n    sh:path cx-reliability:countingValue .\n\n:countingUnitShape a sh:PropertyShape ;\n    sh:path cx-reliability:countingUnit .\n\n:countingMethodShape a sh:PropertyShape ;\n    sh:path cx-reliability:countingMethod .\n\n:countingMethodShape a sh:PropertyShape ;\n    sh:path cx-reliability:countingMethod .\n\n:channelsShape a sh:PropertyShape ;\n    sh:path cx-reliability:channels .\n\n:classesShape a sh:PropertyShape ;\n    sh:path cx-reliability:classes .\n\n:valuesShape a sh:PropertyShape ;\n    sh:path cx-reliability:values .",
     "cx-common:isFederated": "true^^xsd:boolean"
   },
   "privateProperties": {
@@ -181,8 +181,8 @@ The property `sh:shapesGraph` contains the graph shape of the offered data, writ
 
 ```shacl
 <https://w3id.org/catenax/ontology/common>,<https://w3id.org/catenax/ontology/core>,<https://w3id.org/catenax/taxonomy>,<https://w3id.org/catenax/ontology/core>,<https://w3id.org/catenax/ontology/behaviour>",
-        "cx-common:implementsProtocol": "cx-common:Protocol?w3c:http:SPARQL",
-        "sh:shapesGraph": "@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+    "cx-common:implementsProtocol": "cx-common:Protocol?w3c:http:SPARQL",
+    "sh:shapesGraph": "@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
@@ -199,91 +199,43 @@ The property `sh:shapesGraph` contains the graph shape of the offered data, writ
 @prefix : <https://w3id.org/catenax/taxonomy#GraphAsset?me=BehaviourTwinReliability&shapeObject=> .
 
 :LoadSpectrumShape a sh:NodeShape ;
-    sh:targetClass  cx-reliability:LoadSpectrum;
+    sh:targetClass  cx-reliability:LoadSpectrum ;
     sh:property :observationOfShape, 
                 :countingValueShape, 
                 :countingUnitShape, 
                 :countingMethodShape, 
                 :channelsShape, 
                 :classesShape, 
-                :valuesShape.
+                :valuesShape .
 
-:observationOfShape a sh:PropertyShape;
-    sh:path cx-reliability:observationOf;
-    sh:in (cx-taxo:GearOil cx-taxo:GearSet cx-taxo:Clutch).
+:observationOfShape a sh:PropertyShape ;
+    sh:path cx-reliability:observationOf ;
+    sh:in (cx-taxo:GearOil cx-taxo:GearSet cx-taxo:Clutch) .
 
-:countingValueShape a sh:PropertyShape;
-    sh:path cx-reliability:countingValue.
+:countingValueShape a sh:PropertyShape ;
+    sh:path cx-reliability:countingValue .
 
-:countingUnitShape a sh:PropertyShape;
-    sh:path cx-reliability:countingUnit.
+:countingUnitShape a sh:PropertyShape ;
+    sh:path cx-reliability:countingUnit .
 
-:countingMethodShape a sh:PropertyShape;
-    sh:path cx-reliability:countingMethod.
+:countingMethodShape a sh:PropertyShape ;
+    sh:path cx-reliability:countingMethod .
 
-:countingMethodShape a sh:PropertyShape;
-    sh:path cx-reliability:countingMethod.
+:countingMethodShape a sh:PropertyShape ;
+    sh:path cx-reliability:countingMethod .
 
-:channelsShape a sh:PropertyShape;
-    sh:path cx-reliability:channels.
+:channelsShape a sh:PropertyShape ;
+    sh:path cx-reliability:channels .
 
-:classesShape a sh:PropertyShape;
-    sh:path cx-reliability:classes.
+:classesShape a sh:PropertyShape ;
+    sh:path cx-reliability:classes .
 
-:valuesShape a sh:PropertyShape;
-    sh:path cx-reliability:values.
+:valuesShape a sh:PropertyShape ;
+    sh:path cx-reliability:values .
 ```
 
-### GRAPH ASSET POLICY
+In this description, the load spectrum type can be either `cx-taxo:GearOil`, `cx-taxo:GearSet` or `cx-taxo:Clutch`. All types are provided through this asset in one step.
 
-The graph asset policy can be used by more than one graph asset. There may be more requirements for a complete policy.
+#### POLICY AND CONTRACT FOR THE GRAPH ASSET
 
-```json
-{
-  "@context": [
-    "http://www.w3.org/ns/odrl.jsonld", 
-    {
-      "edc": "https://w3id.org/edc/v0.0.1/ns/"
-    },
-    {
-      "cx-policy": "https://w3id.org/catenax/policy/"
-    }
-  ],
-  "@type": "PolicyDefinitionRequestDto",
-  "@id": "GraphAsset?me=Policy&useCase=BehaviourTwin",
-  "edc:policy": {
-    "@type": "Set",
-    "profile": "cx-policy:profile2405",
-    "permission": [{
-      "action": "use",
-      "constraint": {
-        "leftOperand": "cx-policy:FrameworkAgreement",
-        "operator": "eq",
-        "rightOperand": "behaviourtwin:1.0"
-      }
-    }]
-  }
-}
-```
-
-### GRAPH ASSET CONTRACT
-
-The following contract referes to the previous defined policy:
-
-```json
-{
-  "@context": {
-    "cx-common": "https://w3id.org/catenax/ontology/common#"
-  },
-  "@id": "Contract?me=Graph",
-  "@type": "ContractDefinition",
-  "accessPolicyId": "Policy?me=Graph",
-  "contractPolicyId": "Policy?me=Graph",
-  "assetsSelector" : {
-    "@type" : "CriterionDto",
-    "operandLeft": "https://w3id.org/catenax/ontology/common#publishedUnderContract",
-    "operator": "=",
-    "operandRight": "Contract?me=Graph"
-  }
-}
-```
+Policy and contract are described in the section [Contracts And Policies](./contracts-and-policies).

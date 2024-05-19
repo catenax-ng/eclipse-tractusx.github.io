@@ -128,6 +128,7 @@ const sidebars = {
                          id: 'kits/behaviour-twin-kit/development-view/overview',
                     },
                     items: [
+                        'kits/behaviour-twin-kit/development-view/contracts-and-policies',                        
                         'kits/behaviour-twin-kit/development-view/data-bindings',
                         'kits/behaviour-twin-kit/development-view/service-bindings',
                         'kits/behaviour-twin-kit/development-view/skill',
