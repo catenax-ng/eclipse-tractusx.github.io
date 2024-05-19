@@ -53,13 +53,15 @@ The architecture is based on so called Knowledge Agents that consists of:
 - Federated Catalog
 - Bindings (configurations of binding agents)
 
-The components are federated over all participants. All data (and services) are representated together as a federated knowledge graph. The processing logic for the agents is defined in so called *skills*. All communication is handled by EDC connectors.
+The components are federated over all participants. All data (and services) are represented together as a federated knowledge graph. The processing logic for the agents is defined in so called *skills*. All communication is handled by EDC connectors.
 
 A detailed view of how a Knowledge Agent works is given in the section [Knowledge Agent](./knowledge-agent) (which comes next to this section).
 
 ### BUSINESS PROCESS
 
-In Behaviour Twin use cases, the fist step into the federated logic is usually the data provider. There, dependencies of the targeted vehicle or component are known. Therefore, registring predefined skills at the data provider is preferred. Such skills then can be initiated by external partners as well as internally.
+In Behaviour Twin use cases, the fist step into the federated logic is usually the data provider. There, dependencies of the targeted vehicle or component are known. Therefore, registering predefined skills at the data provider is a common option. Such skills then can be initiated by external partners as well as internally. As an alternative, skills can be hosted externally (at the consumer or a third party). In every case, especially if the skill is not located at the data provider, the skill must be written in a way that the relation between the usage data and the calculation services is resolved at the data provider or any other party, that has all the required information in its federated catalog (see [To Be Considered](./to-be-considered.md#data-sovereignty)).
+
+The following business process is only an example. Depending on how the skill is written, the process can vary.
 
 ![business-process](assets/business-process.drawio.svg)
 
@@ -73,21 +75,25 @@ In Behaviour Twin use cases, the fist step into the federated logic is usually t
 
 4. **Resolve prognosis data assets by function parameter types:** <br/> The Knowledge Agent resolves all data assets by the parameter types of the previously matched prognosis function(s).
 
-5. **Fetch data:** <br/> The data (parameter for prognosis functions) are fetched from the data provider's bound data source. They are transferred into graph representation by a provisioning agent (data binding agent).
+5. **Resolve actual usage data and service provider by component id:** <br/> The Knowledge Agent resolves the sub-component of interest, its supplier and the actual related data by the component's id.
 
-6. **Transfer data and deploy sub-skill:** <br/> The fetched data and a sub-skill (logic for calling the calculation service) are transferred to the calculation service provider's Knowledge Agent via EDC connectors.
+6. **Fetch data:** <br/> The data (parameter for prognosis functions) are fetched from the data provider's bound data source. They are transferred into graph representation by a provisioning agent (data binding agent).
 
-7. **Calls service and fetch result:** <br/> The calculation service (prognosis functions) is called. The data (parameter for the prognosis function) are translated into the format the service requires. This is automatically done by an remoting agent (service binding agent), which is statically configured by service bindings. The result of the service then is translated back into graph format by the remoting agent.
+7. **Transfer data and deploy sub-skill:** <br/> The fetched data and a sub-skill (logic for calling the calculation service) are transferred to the calculation service provider's Knowledge Agent via EDC connectors.
 
-8. **Return result:** <br/> The result is transferred to the invoker of the sub-skill (here, it is the data provider) via EDC connectors.
+8. **Calls service and fetch result:** <br/> The calculation service (prognosis functions) is called. The data (parameter for the prognosis function) are translated into the format the service requires. This is automatically done by an remoting agent (service binding agent), which is statically configured by service bindings. The result of the service then is translated back into graph format by the remoting agent.
 
-9. **Delegate result:** <br/> The result is delegated to the consumer via EDC connectors.
+9. **Return result:** <br/> The result is transferred to the invoker of the sub-skill (here, it is the data provider) via EDC connectors.
+
+10. **Delegate result:** <br/> The result is delegated to the consumer via EDC connectors.
+
+11. **Get result:** <br/> The result is delegated to the consumer's application.
 
 To have a common understanding of how to interpret and translate elements in the graph, common ontologies and taxonomies must be used. These are also needed for the interpretation of skills and sub-skills as there is e.g. inheritance in ontologies which must be known by the Knowledge Agent to resolve relations.
 
 ### BUILDING BLOCK COMPONENTS
 
-#### USE CASE-SPECIFIC COMPONENTS
+#### USE-CASE-SPECIFIC COMPONENTS
 
 |Subsystem|Description|
 |---------|-----------|
@@ -139,27 +145,64 @@ Depending on your role, you need a combination of the following components:
 
 ## USE CASE TYPES
 
-In general view, use cases can be categorized dependent on specific criteria:
+Depending on how roles coincide and where skills are executed, the use case architecture, graph assets and skills must be adapted. Detailed information about how to write dedicated skills can be found in the [Agents KIT](../../knowledge-agents/adoption-view/intro).
 
-- general use case type
-- origin of query
-- origin of data-processing logic
+### COMBINATION OF ROLES
 
-Depending on these criteria, the use case architecture, graph assets and skills must be adapted. Detailed information about how to write dedicated skills can be found in the [Agents KIT](../../knowledge-agents/adoption-view/intro).
+The use cases can be divided depending on which roles coincide. When writing a skill, you always have to keep in mind who has access to whose resources and how to write the skill correctly and safely.
 
-### GENERAL USE CASE TYPES
+The roles *data provider* and *calculation service provider* can occur more than once. There are many combinations of the roles possible, but following are the more common ones.
 
-- The *data provider* is also *consumer*. It must implement and invoke the logic (skill).
-- An *external consumer* wants to invoke the logic (skill). It can – if granted by a *framework agreement* – implement and invoke its own logic (skill) on foreign data and services.
-- A *third part*y implements the logic (skill) and offers it to a *consumer*. A *framework agreement* must exist that allows the execution of such a skill.
+#### CONSUMER IS SKILL PROVIDER
 
-### ORIGIN OF QUERY
+Often the consumer is also the skill provider. It knows what to ask for and how to process the data to get the desired results.
 
-- *Usage data provider* (like OEMs) query calculation services of IP owners (like suppliers) along the supplier chain.
-- *Third party providers of an end-user service* (like automobile clubs) gather data or insights along the supplier chain in behalf of their customers.
+#### DATA PROVIDER IS CALCULATION SERVICE PROVIDER
 
-### ORIGIN OF DATA-PROCESSING LOGIC
+If the *data provider* is also the *calculation service provider*, from the caller's point of view, it's like they're different entities that have full access to each other.
 
-- The querying party utilizes its own processing logic (calculation service). It wants to query input data from a *data provider*.
-- The querying party wants to process its own data with a calculation service at a *calculation service provider*.
-- The querying party has no (or not all) data and calculation services. It wants to utilize data and services form *data* and *calculation service providers*.
+#### DATA PROVIDER IS SKILL PROVIDER
+
+In some cases, *data provider* provides a skill that can process its data in a data sovereign way. Through this, it has the full control over how its data can be processed.
+
+#### CALCULATION SERVICE PROVIDER IS SKILL PROVIDER
+
+If the *calculation service provider* provides a skill, from the caller's point of view, it's like a data asset that can be parameterized.
+
+#### CONSUMER IS SKILL PROVIDER AND IS DATA PROVIDER
+
+With this combination, a *consumer* can utilize its own data in any way it wants to by using external calculation services.
+
+#### CONSUMER IS SKILL PROVIDER AND IS CALCULATION SERVICE PROVIDER
+
+With this combination, a *consumer* can parameterize its own calculation service with data of partners in any way it wants to.
+
+#### CONSUMER IS SKILL PROVIDER AND DATA PROVIDER IS CALCULATION SERVICE PROVIDER
+
+If the *data provider* is also the *calculation service provider*, from the caller's point of view, it's like they're different entities that have full access to each other. When using its own skill, the consumer has control over how the data is processed.
+
+#### ALL ROLES COINCIDE
+
+With this combination, a *consumer* can utilize its own data in any way it wants to.
+
+#### MORE COMBINATIONS
+
+All combinations above may be extendet by additional, separate data and/or calculation service providers.
+
+#### SKILL PROVIDER IS NEUTRAL ENTITY
+
+There may be reasons why the *skill provider* is not the consumer, as well as not one of the other roles:
+
+- The skill provider invents new skills and offers them.
+- The skill provider is a trustee, it has knowledge over relations that others don't have.
+
+### SKILL EXECUTION
+
+There are different options where and how the skill is executed initially:
+
+- at consumer side or at provider side
+- ad hoc or as a registered skill
+
+Allowed variants may be dependent of a *framework agreement*.
+
+For more information, see [Agents KIT](../../knowledge-agents/adoption-view/intro).
