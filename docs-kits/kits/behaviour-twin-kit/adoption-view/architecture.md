@@ -59,7 +59,7 @@ A detailed view of how a Knowledge Agent works is given in the section [Knowledg
 
 ### BUSINESS PROCESS
 
-In Behaviour Twin use cases, the fist step into the federated logic is usually the data provider. There, dependencies of the targeted vehicle or component are known. Therefore, registering predefined skills at the data provider is a common option. Such skills then can be initiated by external partners as well as internally. As an alternative, skills can be hosted externally (at the consumer or a third party). In every case, especially if the skill is not located at the data provider, the skill must be written in a way that the relation between the usage data and the calculation services is resolved at the data provider or any other party, that has all the required information in its federated catalog (see [To Be Considered](./to-be-considered.md#data-sovereignty)).
+In Behaviour Twin use cases, the fist step into the federated logic is usually the data provider. There, dependencies of the targeted vehicle or component are known. Therefore, registering predefined skills at the data provider is a common option. Such skills then can be initiated by external partners as well as internally. As an alternative, skills can be hosted externally (at the consumer or a third party). In every case, especially if the skill is not located at the data provider, the skill must be written in a way that the relation between the usage data and the calculation services is resolved at the data provider or any other party, that has all the required information in its federated catalog (see [To Be Considered](./to-be-considered#data-sovereignty)).
 
 The following business process is only an example. Depending on how the skill is written, the process can vary.
 

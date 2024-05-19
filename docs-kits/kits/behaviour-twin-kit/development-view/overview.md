@@ -19,7 +19,7 @@ Behaviour Twin KIT
 
 ## CONTENTS
 
-- [Data Bindings](./data-bindings) (applies to role *data provider*)
+- [Data Bindings](./data-bindings) (applies to roles *data provider* and *delegator*)
   - configuring data bindings
   - registering graph asset for data bindings
 

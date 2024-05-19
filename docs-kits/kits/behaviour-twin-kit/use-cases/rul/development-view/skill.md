@@ -15,9 +15,9 @@ Behaviour Twin KIT -- Remaining useful Life
   </div>
 </div>
 
-## SKILL DEFINITION
-
 Applies to roles: *RuL skill provider* and *RuL consumer*
+
+## SKILL DEFINITION
 
 For the RuL calculation of a vehicle part, we have three different "roles" involved:
 
@@ -81,10 +81,10 @@ PREFIX supplier:        <GraphAsset?supplier=>
 # (c) 2023 Catena-X assocation
 ################################################################
 
-SELECT DISTINCT ?vehicle ?van ?aggregate ?assembly ?supplier ?distanceKm ?timeHours WHERE {
+SELECT DISTINCT ?vehicle ?vin ?aggregate ?assembly ?supplier ?distanceKm ?timeHours WHERE {
 
-  VALUES (?van ?aggregate) {
-      ("@van"^^xsd:string "Differential Gear"^^xsd:string)
+  VALUES (?vin ?aggregate) {
+      ("@vin"^^xsd:string "Differential Gear"^^xsd:string)
   }
 
   VALUES (?ls_type) {
@@ -97,7 +97,7 @@ SELECT DISTINCT ?vehicle ?van ?aggregate ?assembly ?supplier ?distanceKm ?timeHo
   SERVICE ?oemEDC {
       GRAPH ?reliabilityAssetId {
         ?vehicle rdf:type cx-vehicle:Vehicle;
-            cx-vehicle:vehicleIdentificationNumber ?van.
+            cx-vehicle:vehicleIdentificationNumber ?vin.
 
         ?assembly rdf:type cx-vehicle:Part;
             cx-vehicle:name ?aggregate;
@@ -177,23 +177,23 @@ The registered skill is available over Agent Plane API by the SkillAsset name (e
 curl --location '{{consumerAgentPlane}}/api/agent?asset=SkillAsset?consumer=RemainingUsefulLife' \
 --header 'Content-Type: application/sparql-results+json' \
 --data '{
-    "head": { "vars": [ "van" ]},
+    "head": { "vars": [ "vin" ] },
     "results": { "bindings": [
-            {   "van": { "type": "literal", "value": "FNLQNRVCOFLHAQ"}},
-            {   "van": { "type": "literal", "value": "FGPTXINYZAVJYK"}}
+            { "vin": { "type": "literal", "value": "FNLQNRVCOFLHAQ" } },
+            { "vin": { "type": "literal", "value": "FGPTXINYZAVJYK" } }
         ]
     }
 }'
 ```
 
-The RuL results for the given VAN's are provided as bindings for the requested variables in the Skill itself and looks like:
+The RuL results for the given VIN's are provided as bindings for the requested variables in the Skill itself and looks like:
 
 ```json
 {
   "head": {
     "vars": [
       "vehicle",
-      "van",
+      "vin",
       "aggregate",
       "assembly",
       "supplier",
@@ -208,7 +208,7 @@ The RuL results for the given VAN's are provided as bindings for the requested v
           "type": "uri",
           "value": "urn:uuid:8d6e2e3f-6798-4e1d-8eae-eb4318a7d487"
         },
-        "van": {
+        "vin": {
           "type": "literal",
           "value": "RGZCDKEJHDSNCB"
         },
@@ -240,7 +240,7 @@ The RuL results for the given VAN's are provided as bindings for the requested v
           "type": "uri",
           "value": "urn:uuid:79d19614-b699-4716-b232-ef250e1c1772"
         },
-        "van": {
+        "vin": {
           "type": "literal",
           "value": "FNLQNRVCOFLHAQ"
         },
@@ -272,14 +272,14 @@ The RuL results for the given VAN's are provided as bindings for the requested v
 }
 ```
 
-If the given VAN is not found on OEM side, then we get an empty binding result:
+If the given VIN is not found on OEM side, then we get an empty binding result:
 
 ```json
 {
     "head": {
         "vars": [
             "vehicle",
-            "van",
+            "vin",
             "aggregate",
             "assembly",
             "supplier",

@@ -23,6 +23,8 @@ Behaviour Twin KIT -- Health Indicator
 
 Applies to role: *HI skill provider* and *HI consumer*
 
+## SKILL DEFINITION
+
 For the RuL calculation of a vehicle part, we have three different "roles" involved:
 
 - consumer: which request the RuL value by VIN.
@@ -33,7 +35,7 @@ A reference (sample) Agent-Skill for a Gearbox is implemented,
 
 For more information regarding the RuL Skill see [Agents KIT](https://bit.ly/tractusx-agents).
 
-``` sparql
+```sparql
 ################################################################
 # Copyright (c) 2022,2023 T-Systems International GmbH
 # Copyright (c) 2022,2023 Bayerische Motoren Werke Aktiengesellschaft (BMW AG) 
@@ -80,10 +82,10 @@ PREFIX supplier:        <GraphAsset?supplier=>
 # (c) 2023 Catena-X assocation
 ################################################################
 
-SELECT DISTINCT ?vehicle ?van ?aggregate ?assembly ?supplier ?distanceKm ?timeHours WHERE {
+SELECT DISTINCT ?vehicle ?vin ?aggregate ?assembly ?supplier ?distanceKm ?timeHours WHERE {
 
-  VALUES (?van ?aggregate) { 
-      ("@van"^^xsd:string "Differential Gear"^^xsd:string) 
+  VALUES (?vin ?aggregate) { 
+      ("@vin"^^xsd:string "Differential Gear"^^xsd:string) 
   }
 
   VALUES (?ls_type) { 
@@ -96,7 +98,7 @@ SELECT DISTINCT ?vehicle ?van ?aggregate ?assembly ?supplier ?distanceKm ?timeHo
   SERVICE ?oemEDC {  
       GRAPH ?reliabilityAssetId {
         ?vehicle rdf:type cx-vehicle:Vehicle;
-            cx-vehicle:vehicleIdentificationNumber ?van.
+            cx-vehicle:vehicleIdentificationNumber ?vin.
 
         ?assembly rdf:type cx-vehicle:Part;
             cx-vehicle:name ?aggregate;
@@ -161,22 +163,22 @@ The registered skill is available over Agent Plane API and can be called also fo
 curl --location 'agentPlaneEdcUrl/api/agent?asset=SkillAsset%3Fconsumer%3DRemainingUsefulLife' \
 --header 'Content-Type: application/sparql-results+json' \
 --data '{
-    "head": { "vars": [ "van" ]},
+    "head": { "vars": [ "vin" ]},
     "results": { "bindings": [
-            {   "van": { "type": "literal", "value": "FNLQNRVCOFLHAQ"}}
+            { "vin": { "type": "literal", "value": "FNLQNRVCOFLHAQ" } }
         ]
     }
 }'
 ```
 
-The RuL results for the given VAN's is provided are provided as bindings for the requested variables in the Skill itself and looks like:
+The RuL results for the given VIN's is provided are provided as bindings for the requested variables in the Skill itself and looks like:
 
 ```json
 {
    "head": {
       "vars": [
          "vehicle",
-         "van",
+         "vin",
          "aggregate",
          "assembly",
          "supplier",
@@ -191,7 +193,7 @@ The RuL results for the given VAN's is provided are provided as bindings for the
                "type": "uri",
                "value": "urn:uuid:4cf8b668-0f27-4f39-b986-36423d81d222"
             },
-            "van": {
+            "vin": {
                "type": "literal",
                "value": "FNLQNRVCOFLHAQ"
             },
@@ -223,14 +225,14 @@ The RuL results for the given VAN's is provided are provided as bindings for the
 }
 ```
 
-If the given VAN is not found on OEM side, then we get an empty binding result:
+If the given VIN is not found on OEM side, then we get an empty binding result:
 
 ```json
 {
     "head": {
         "vars": [
             "vehicle",
-            "van",
+            "vin",
             "aggregate",
             "assembly",
             "supplier",
