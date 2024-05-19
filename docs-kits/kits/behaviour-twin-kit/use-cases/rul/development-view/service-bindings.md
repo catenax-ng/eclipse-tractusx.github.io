@@ -21,7 +21,7 @@ Behaviour Twin KIT -- Remaining useful Life
 
 <br/><br/><br/><br/>
 
-Applies to: *RuL calculation service provider*
+Applies to role: *RuL calculation service provider*
 
 ### Overview
 

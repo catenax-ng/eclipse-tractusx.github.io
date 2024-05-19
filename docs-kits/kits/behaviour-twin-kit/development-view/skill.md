@@ -21,7 +21,7 @@ Behaviour Twin KIT
 
 <br/><br/><br/><br/>
 
-Applies to: *RuL Skill provider*
+Applies to role: *skill provider* and *consumer*
 
 For the RuL calculation of a vehicle part, we have three different "roles" involved:
 

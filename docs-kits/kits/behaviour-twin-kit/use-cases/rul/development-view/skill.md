@@ -15,14 +15,9 @@ Behaviour Twin KIT -- Remaining useful Life
   </div>
 </div>
 
-<br/><br/><br/><br/>
-
-<big><big><big>FROM FORMER RUL KIT, MUST BE REVISED</big></big></big>
-
-<br/><br/><br/><br/>
-
 ## SKILL DEFINITION
-Applies to: *RuL Skill provider*
+
+Applies to roles: *RuL skill provider* and *RuL consumer*
 
 For the RuL calculation of a vehicle part, we have three different "roles" involved:
 
@@ -67,13 +62,13 @@ PREFIX cx-core:         <https://w3id.org/catenax/ontology/core#>
 PREFIX cx-vehicle:      <https://w3id.org/catenax/ontology/vehicle#>
 PREFIX cx-reliability:  <https://w3id.org/catenax/ontology/reliability#>
 PREFIX cx-behaviour:    <https://w3id.org/catenax/ontology/behaviour#>
-PREFIX cx-taxo: <https://w3id.org/catenax/taxonomy#>
-PREFIX owl:    <http://www.w3.org/2002/07/owl#>
+PREFIX cx-taxo:         <https://w3id.org/catenax/taxonomy#>
+PREFIX owl:             <http://www.w3.org/2002/07/owl#>
 PREFIX rdf:             <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs:            <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX xsd:             <http://www.w3.org/2001/XMLSchema#>
 PREFIX json:            <https://json-schema.org/draft/2020-12/schema#>
-PREFIX bpnl:		    <bpn:legal:>
+PREFIX bpnl:            <bpn:legal:>
 PREFIX oem:             <GraphAsset?oem=>
 PREFIX supplier:        <GraphAsset?supplier=>
 
@@ -163,6 +158,7 @@ SELECT DISTINCT ?vehicle ?van ?aggregate ?assembly ?supplier ?distanceKm ?timeHo
 ```
 
 ### SKILL REGISTRATION
+
 After the implementation of the RuL Skill, the Skill has to be registered over the Agent Plane API. The registration is done by posting the parametrized SPARQL query as a string, as defined above, and the Skill name.
 
 ```curl
@@ -174,6 +170,7 @@ curl --location '{{consumerAgentPlane}}/api/agent/skill?asset=SkillAsset?consume
 ```
 
 ### SKILL INVOCATION
+
 The registered skill is available over Agent Plane API by the SkillAsset name (e.g.RemainingUsefulLife) and can be called also for a list of input variables:
 
 ```curl

@@ -19,19 +19,20 @@ Behaviour Twin KIT
 
 ## CONTENTS
 
-- [Data Bindings](./data-bindings)
+- [Data Bindings](./data-bindings) (applies to role *data provider*)
   - configuring data bindings
   - registering graph asset for data bindings
 
 <br/>
 
-- [Service Bindings](./service-bindings)
+- [Service Bindings](./service-bindings) (applies to role *calculation service provider*)
   - configuring a service binding
   - registering a graph asset for a service binding
 
 <br/>
 
-- [Skill](./skill)
+- [Skill](./skill) (applies to roles *skill provider* and *consumer*)
   - configuring a service binding
   - registering a skill assets
   - invoke skills
+  

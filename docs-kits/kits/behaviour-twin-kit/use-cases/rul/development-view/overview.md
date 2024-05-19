@@ -17,19 +17,19 @@ Behaviour Twin KIT -- Remaining useful Life
 
 ## CONTENTS
 
-- [Data Bindings](./data-bindings)
+- [Data Bindings](./data-bindings) (applies to role *RuL data provider*)
   - configuring data bindings
   - registering graph asset for data bindings
 
 <br/>
 
-- [Service Bindings](./service-bindings)
+- [Service Bindings](./service-bindings) (applies to role *RuL calculation service provider*)
   - configuring a service binding
   - registering a graph asset for a service binding
 
 <br/>
 
-- [Skill](./skill)
+- [Skill](./skill) (applies to roles *RuL skill provider* and *RuL consumer*)
   - configuring a service binding
   - registering a skill assets
   - invoke skills

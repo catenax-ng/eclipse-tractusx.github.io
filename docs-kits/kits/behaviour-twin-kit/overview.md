@@ -22,7 +22,7 @@ This KIT is a part of the Tractus-X community, the official open-source project 
 - [Change Log](./changelog)
 - [Adoption View](adoption-view/overview) - Understand & Decide
 - [Development View](development-view/overview) - Develop & Operate
-- [Use Cases](use-cases/overview) - Templates for *Health Indicator* and *Remaining useful Life*
+- [Use Cases](use-cases/overview) - Templates for use cases *Health Indicator* and *Remaining useful Life*
 
 ## NOTICE
 

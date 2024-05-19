@@ -21,7 +21,7 @@ Behaviour Twin KIT -- Health Indicator
 
 <br/><br/><br/><br/>
 
-Applies to: *RuL calculation service provider*
+Applies to role: *HI calculation service provider*
 
 ### Overview
 

@@ -23,7 +23,7 @@ Behaviour Twin KIT -- Health Indicator
 
 ## Data bindings for relational data
 
-Applies to: *RuL data provider* and *delegator*
+Applies to role: *HI data provider* and *delegator*
 
 ### Overview
 

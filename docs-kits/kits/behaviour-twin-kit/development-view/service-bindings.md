@@ -21,7 +21,7 @@ Behaviour Twin KIT
 
 <br/><br/><br/><br/>
 
-Applies to: *RuL calculation service provider*
+Applies to role: *calculation service provider*
 
 ### Overview
 

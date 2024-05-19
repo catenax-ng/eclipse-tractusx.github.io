@@ -23,7 +23,7 @@ Behaviour Twin KIT
 
 ## Data bindings for relational data
 
-Applies to: *RuL data provider* and *delegator*
+Applies to role: *data provider* and *delegator*
 
 ### Overview
 

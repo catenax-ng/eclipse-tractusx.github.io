@@ -23,7 +23,7 @@ Behaviour Twin KIT -- Remaining useful Life
 
 ## Data bindings for relational data
 
-Applies to: *RuL data provider* and *delegator*
+Applies to role: *RuL data provider* and *delegator*
 
 ### Overview
 
