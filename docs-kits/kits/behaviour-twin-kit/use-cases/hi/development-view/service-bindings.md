@@ -19,7 +19,7 @@ Applies to role: *HI calculation service provider*
 
 ### OVERVIEW
 
-For general information about service bindings, have a look at the [generalized Service Bindings section](../../../development-view/service-bindings) and the [Agents KIT](../../../../knowledge-agents/operation-view/provider). In the current section, only a dedicated example is shown.
+For general information about service bindings, have a look at the [generalized Service Bindings section](../../../development-view/service-bindings) and the [Agents KIT's Operation View](../../../../knowledge-agents/operation-view/provider). In the current section, only a dedicated example is shown.
 
 ### SERVICE MAPPING CONFIGURATION (FULL EXAMPLE)
 
@@ -32,7 +32,7 @@ In this example, an asynchronous calculation service for gearbox HI values is bo
 # Copyright (c) 2022,2023 T-Systems International GmbH
 # Copyright (c) 2022,2023 Bayerische Motoren Werke Aktiengesellschaft (BMW AG) 
 # Copyright (c) 2022,2023 ZF Friedrichshafen AG
-# Copyright (c) 2023 Allgemeine Deutsche Automobil-Club (ADAC) e.V
+# Copyright (c) 2023 Allgemeiner Deutscher Automobil-Club e.V. (ADAC)
 # Copyright (c) 2022,2023 Mercedes-Benz AG
 # Copyright (c) 2022,2023 Contributors to the Catena-X Association
 #
@@ -224,7 +224,7 @@ cx-behaviour:statusMileage rdf:type cx-fx:Argument ;
 
 cx-behaviour:countingUnit rdf:type cx-fx:Argument ;
   dcterms:description "Counting Unit of Load Spectrum."@en ;
-  dcterms:title "Loadspectrum Counting Unit";
+  dcterms:title "Loadspectrum Counting Unit" ;
   cx-fx:dataType xsd:string ;
   cx-fx:argumentName "content.endurancePredictorInputs.0.classifiedLoadSpectrum{https://w3id.org/catenax/ontology/behaviour#observationType}.header.countingUnit" .
 

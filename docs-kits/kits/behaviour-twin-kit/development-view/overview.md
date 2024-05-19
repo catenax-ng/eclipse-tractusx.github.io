@@ -17,9 +17,11 @@ Behaviour Twin KIT
 
 ## CONTENTS
 
-- [Contracts and Policies](./contracts-and-policies) (applies to roles *data provider*, *calculation service provider* and *delegator*)
+- [Contracts and Policies](./contracts-and-policies) (applies to roles *skill provider*, *data provider*, *calculation service provider* and *delegator*)
   - policies for graph assets
   - contracts for graph assets
+  - policies for skill assets
+  - contracts for skill assets
 
 - [Data Bindings](./data-bindings) (applies to roles *data provider* and *delegator*)
   - configuring data bindings

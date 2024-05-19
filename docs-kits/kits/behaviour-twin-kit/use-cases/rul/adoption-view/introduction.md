@@ -15,7 +15,7 @@ Behaviour Twin KIT -- Remaining useful Life
   </div>
 </div>
 
-## VISION & MiSSION
+## VISION & MISSION
 
 ### VISION
 
@@ -48,4 +48,4 @@ see [*Status quo & challenges in general section of the KIT*](../../../adoption-
 
 ## BENEFITS
 
-Taking this use-case specific template for the development of similiar or new use cases is an ideal starting point to enable the [*benefits described in the general part of the KIT*](../../../adoption-view/introduction#benefits)
+Taking this use-case specific template for the development of similar or new use cases is an ideal starting point to enable the [*benefits described in the general part of the KIT*](../../../adoption-view/introduction#benefits).

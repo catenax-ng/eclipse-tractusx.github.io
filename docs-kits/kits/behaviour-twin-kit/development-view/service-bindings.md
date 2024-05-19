@@ -19,7 +19,7 @@ Applies to role: *calculation service provider*
 
 ### OVERVIEW
 
-In many cases, services are provided via REST APIs and are using JSON as input and output format. In this expample for the HI use case, the input and output formats are JSON. To include those services into the knowledge graph, you have to bind/map them.
+In many cases, services are provided via REST APIs and are using JSON as input and output format. In this example for the HI use case, the input and output formats are JSON. To include those services into the knowledge graph, you have to bind/map them.
 
 ### SERVICE MAPPING TOOL
 
@@ -27,7 +27,7 @@ To bind a service to the knowledge graph, you must use a **remoting agent**, als
 
 ### SERVICE MAPPING CONFIGURATION
 
-To configure the service mapping, a configuration must be provided that formally describes the mapping. The configuration is written in the [Terse RDF Triple Language ![(external link)](../assets/external-link.svg)](https://www.w3.org/TR/turtle/), also known as *Turtle*. For some detailed information, have a look at the [Agents KIT](../../knowledge-agents/operation-view/provider).
+To configure the service mapping, a configuration must be provided that formally describes the mapping. The configuration is written in the [Terse RDF Triple Language ![(external link)](../assets/external-link.svg)](https://www.w3.org/TR/turtle/), also known as *Turtle*. For some detailed information, have a look at the [Agents KIT's Operation View](../../knowledge-agents/operation-view/provider).
 
 In this example, an asynchronous calculation service for gearbox RuL values is bound. It uses the Catena-X notification format as a container for the input data. The content of the notification is a JSON structure with a list of load spectra in it. The input format provides more than one Element (batch processing), but the HI logic always requires exact one input per calculation. Therefore, always the first (and only the first) item of the input list is bound.
 
@@ -38,7 +38,7 @@ In this example, an asynchronous calculation service for gearbox RuL values is b
 # Copyright (c) 2022,2023 T-Systems International GmbH
 # Copyright (c) 2022,2023 Bayerische Motoren Werke Aktiengesellschaft (BMW AG) 
 # Copyright (c) 2022,2023 ZF Friedrichshafen AG
-# Copyright (c) 2023 Allgemeine Deutsche Automobil-Club (ADAC) e.V
+# Copyright (c) 2023 Allgemeiner Deutscher Automobil-Club e.V. (ADAC)
 # Copyright (c) 2022,2023 Mercedes-Benz AG
 # Copyright (c) 2022,2023 Contributors to the Catena-X Association
 #
@@ -97,7 +97,7 @@ The RDF4J repository is the basic configuration that refers to the service objec
   ] .
 ```
 
-The function type that will be invoked by this binding is definde by the property `cx-fx:supportsInvocation`. In this example, the bound function is of type `cx-behaviour:RemainingUsefulLife`.
+The function type that will be invoked by this binding is defined by the property `cx-fx:supportsInvocation`. In this example, the bound function is of type `cx-behaviour:RemainingUsefulLife`.
 
 #### FUNCTION DECLARATION
 
@@ -251,23 +251,23 @@ The property `sh:shapesGraph` contains the graph shape of the offered data, writ
     sh:property [
         cx-sh:hasAsArgument cx-reliability:countingMethod ;
         sh:path cx-behaviour:countingMethod ;
-    ];
+    ] ;
     sh:property [
         cx-sh:hasAsArgument cx-reliability:countingValue ;
         sh:path cx-behaviour:countingValue ;
-    ];
+    ] ;
     sh:property [
         cx-sh:hasAsArgument cx-reliability:countingUnit ;
         sh:path cx-behaviour:countingUnit ;
-    ];
+    ] ;
     sh:property [
         cx-sh:hasAsArgument cx-reliability:channels ;
         sh:path cx-behaviour:headerChannels ;
-    ];
+    ] ;
     sh:property [
         cx-sh:hasAsArgument cx-reliability:classes ;
         sh:path cx-behaviour:bodyClasses ;
-    ].
+    ] .
 
 :RemainingUsefulLifeShape rdf:type sh:NodeShape ;
     cx-sh:extensionOf :PrognosisFunctionShape ;
@@ -276,7 +276,7 @@ The property `sh:shapesGraph` contains the graph shape of the offered data, writ
         cx-sh:hasAsArgument cx-reliability:observationOf ;
         sh:path cx-behaviour:observationType ;
         sh:in ( cx-taxo:GearSet cx-taxo:GearOil ) ;
-    ];
+    ] ;
     sh:property :RemainingUsefulLifeResultShape .
 
 :RemainingUsefulLifeResult rdf:type sh:PropertyShape ;

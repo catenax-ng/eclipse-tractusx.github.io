@@ -27,15 +27,15 @@ In most cases, data are provided in relational form (relational databases, data 
 
 ### DATA MAPPING TOOL
 
-To bind the relational data to the knowledge graph, you can use a **provisioning agent**, also called the **data binding agent**. The [Agents KIT](../../knowledge-agents/operation-view/provider) therefore provides a software based on [OnTop ![(external link)](../assets/external-link.svg)](https://ontop-vkg.org/).  
+To bind the relational data to the knowledge graph, you can use a **provisioning agent**, also called the **data binding agent**. The [Agents KIT's Operation View](../../knowledge-agents/operation-view/provider) therefore provides a software based on [OnTop ![(external link)](../assets/external-link.svg)](https://ontop-vkg.org/).  
   
 ### DATA MAPPING CONFIGURATION
 
-To configure the bindings, a config file for the provisioning agent software has to be created. The file is written in the [OBDA Mapping Language ![(external link)](../assets/external-link.svg)](https://ontop-vkg.org/tutorial/mapping/). For some detailed information, have a look at the Knowledge [Agents KIT](../../knowledge-agents/operation-view/provider).
+To configure the bindings, a config file for the provisioning agent software has to be created. The file is written in the [OBDA Mapping Language ![(external link)](../assets/external-link.svg)](https://ontop-vkg.org/tutorial/mapping/). For some detailed information, have a look at the Knowledge [Agents KIT's Operation View](../../knowledge-agents/operation-view/provider).
 
 #### CONSTRUCTION OF A SINGLE DATA BINDING
 
-Each data binding consists of 3 lines in the config file. The first line defines a unique mapping id (arbitrarily selectable). The second line lists one or more RDF triplets (target). The third line is a SQL statement on the relational data source.
+Each data binding consists of 3 lines in the config file. The first line defines a unique mapping ID (arbitrarily selectable). The second line lists one or more RDF triplets (target). The third line is a SQL statement on the relational data source.
 
 A simple example:
 
@@ -53,7 +53,7 @@ A little more complex example:
 
 ```obda
   mappingId   vehicles
-  target      <{vehicle_id}> rdf:type cx-vehicle:Vehicle ; cx-vehicle:vehicleIdentificationNumber {vin}^^xsd:string; cx-vehicle:worldManufaturerId bpnl:{oem_bpnl}; cx-vehicle:productionDate {production_date}^^xsd:date.
+  target      <{vehicle_id}> rdf:type cx-vehicle:Vehicle ; cx-vehicle:vehicleIdentificationNumber {vin}^^xsd:string ; cx-vehicle:worldManufaturerId bpnl:{oem_bpnl} ; cx-vehicle:productionDate {production_date}^^xsd:date.
   source      SELECT vehicle_id, vin, oem_bpnl, production_date FROM vehicles
 ```
 
@@ -90,7 +90,7 @@ rdfs:            http://www.w3.org/2000/01/rdf-schema#
 
 [MappingDeclaration] @collection [[
 mappingId vehicles
-target    uuid:{catenaXId} rdf:type cx-vehicle:Vehicle ; cx-vehicle:vehicleIdentificationNumber {localIdentifiers_van}^^xsd:string; cx-vehicle:manufacturer bpnl:{localIdentifiers_manufacturerId}; cx-vehicle:productionDate {manufacturingInformation_date}^^xsd:date.
+target    uuid:{catenaXId} rdf:type cx-vehicle:Vehicle ; cx-vehicle:vehicleIdentificationNumber {localIdentifiers_van}^^xsd:string ; cx-vehicle:manufacturer bpnl:{localIdentifiers_manufacturerId} ; cx-vehicle:productionDate {manufacturingInformation_date}^^xsd:date.
 source    SELECT "catenaXId", "localIdentifiers_van", "localIdentifiers_manufacturerId", "manufacturingInformation_date" FROM "HI_TEST_OEM"."CX_RUL_SerialPartTypization_Vehicle" vehicles
 
 mappingId partsvehicle
@@ -102,7 +102,7 @@ target    uuid:{catenaXId} cx-vehicle:hasPart uuid:{childCatenaXId}.
 source    SELECT "catenaXId", "childCatenaXId" FROM  "HI_TEST_OEM"."CX_RUL_AssemblyPartRelationship" vehicleparts
 
 mappingId parts
-target    uuid:{catenaXId} rdf:type cx-vehicle:Part ; cx-vehicle:id {localIdentifiers_partInstanceId}^^xsd:string; cx-vehicle:name {partTypeInformation_nameAtManufacturer}^^xsd:string; cx-vehicle:number {partTypeInformation_manufacturerPartId}^^xsd:string; cx-vehicle:supplier bpnl:{localIdentifiers_manufacturerId}; cx-vehicle:productionDate {manufacturingInformation_date}^^xsd:date .
+target    uuid:{catenaXId} rdf:type cx-vehicle:Part ; cx-vehicle:id {localIdentifiers_partInstanceId}^^xsd:string ; cx-vehicle:name {partTypeInformation_nameAtManufacturer}^^xsd:string ; cx-vehicle:number {partTypeInformation_manufacturerPartId}^^xsd:string ; cx-vehicle:supplier bpnl:{localIdentifiers_manufacturerId} ; cx-vehicle:productionDate {manufacturingInformation_date}^^xsd:date .
 source    SELECT "catenaXId", "localIdentifiers_partInstanceId", "partTypeInformation_nameAtManufacturer", "partTypeInformation_manufacturerPartId", "localIdentifiers_manufacturerId", "manufacturingInformation_date" FROM "HI_TEST_OEM"."CX_RUL_SerialPartTypization_Component" parts 
 
 mappingId partAnalysis
@@ -110,7 +110,7 @@ target    uuid:{catenaXId}/{targetComponentId} cx-reliability:analysedObject uui
 source    SELECT "catenaXId", "targetComponentId" FROM "HI_TEST_OEM"."CX_RUL_Analysis" analysis
 
 mappingId analysisInformation
-target    uuid:{catenaXId}/{targetComponentId} rdf:type cx-reliability:Analysis; cx-reliability:operatingHoursOfVehicle {metadata_status_operatingHours_avg}^^xsd:float; cx-core:startDateTime {metadata_status_date_min}^^xsd:dateTime; cx-core:endDateTime {metadata_status_date_max}^^xsd:dateTime; cx-reliability:mileageOfVehicle {metadata_status_mileage_avg}^^xsd:int.
+target    uuid:{catenaXId}/{targetComponentId} rdf:type cx-reliability:Analysis ; cx-reliability:operatingHoursOfVehicle {metadata_status_operatingHours_avg}^^xsd:float ; cx-core:startDateTime {metadata_status_date_min}^^xsd:dateTime ; cx-core:endDateTime {metadata_status_date_max}^^xsd:dateTime ; cx-reliability:mileageOfVehicle {metadata_status_mileage_avg}^^xsd:int.
 source    SELECT "catenaXId", "targetComponentId", "metadata_status_operatingHours_avg", "metadata_status_date_min", "metadata_status_date_max", "metadata_status_mileage_avg" FROM "HI_TEST_OEM"."CX_RUL_Analysis" loadspectrum
 
 mappingId analysisResult
@@ -118,7 +118,7 @@ target    uuid:{catenaXId}/{targetComponentId} cx-reliability:result uuid:{caten
 source    SELECT "catenaXId", "targetComponentId", "metadata_componentDescription" FROM "HI_TEST_OEM"."CX_RUL_LoadCollective" loadspectrum
 
 mappingId loadspectrum
-target    uuid:{catenaXId}/{targetComponentId}/{metadata_componentDescription} rdf:type cx-reliability:LoadSpectrum; cx-core:id cx-taxo:{metadata_componentDescription}; cx-core:name {metadata_projectDescription}^^xsd:string; cx-reliability:description {metadata_routeDescription}^^xsd:string; cx-reliability:countingValue {header_countingValue}^^xsd:string; cx-reliability:countingUnit {header_countingUnit}^^xsd:string; cx-reliability:countingMethod {header_countingMethod}^^xsd:string; cx-reliability:channels {header_channels}^^json:Object; cx-reliability:classes {body_classes}^^json:Object; cx-reliability:values {body_counts_countsList}^^json:Object .
+target    uuid:{catenaXId}/{targetComponentId}/{metadata_componentDescription} rdf:type cx-reliability:LoadSpectrum ; cx-core:id cx-taxo:{metadata_componentDescription} ; cx-core:name {metadata_projectDescription}^^xsd:string ; cx-reliability:description {metadata_routeDescription}^^xsd:string ; cx-reliability:countingValue {header_countingValue}^^xsd:string ; cx-reliability:countingUnit {header_countingUnit}^^xsd:string ; cx-reliability:countingMethod {header_countingMethod}^^xsd:string ; cx-reliability:channels {header_channels}^^json:Object ; cx-reliability:classes {body_classes}^^json:Object ; cx-reliability:values {body_counts_countsList}^^json:Object .
 source    SELECT "catenaXId", "targetComponentId", "metadata_projectDescription", "metadata_componentDescription", "metadata_routeDescription", "metadata_status_date", "header_countingValue", "header_countingUnit", "header_countingMethod", "header_channels", "body_counts_countsList", "body_classes" FROM "HI_TEST_OEM"."CX_RUL_LoadCollective" loadspectrum
 ]]
 ```

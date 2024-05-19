@@ -32,7 +32,7 @@ Each participant in the Remaining useful Life (RuL) Behaviour Twin use case appl
 - **data provider** (OEM, provider of usage data)
 - **RuL service provider** (a component supplier, e.g. a gearbox supplier)
 
-One of the specal cases would be that the data provider is also the RuL consumer and/or RuL service provider and/or skill provider.
+One of the special cases would be that the data provider is also the RuL consumer and/or RuL service provider and/or skill provider.
 
 ## DETAILED ARCHITECTURE
 
@@ -46,7 +46,7 @@ The first addressee of a RuL skill must be the OEM since it has access to its su
 
 0. **sync federated catalog:** <br/> The federated catalogs are synchronized periodically. As a result, the OEM can resolve RuL prognosis function assets that are located at the supplier.
 
-1. **Invoke RuL skill:** <br/> The consumer invokes the skill by calling the agents API at its own EDC connector (ad hoc or as predefined asset). The OEM's EDC connector address must be known. Resolving this address is up to the consumer. The vehicle id (VIN) is set as parameter for the skill.
+1. **Invoke RuL skill:** <br/> The consumer invokes the skill by calling the agents API at its own EDC connector (ad hoc or as predefined asset). The OEM's EDC connector address must be known. Resolving this address is up to the consumer. The vehicle ID (VIN) is set as parameter for the skill.
 
 2. **Delegate sub-skill:** <br/> The skill is delegated to the OEM via EDC connectors.
 

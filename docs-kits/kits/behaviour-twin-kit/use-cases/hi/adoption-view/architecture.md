@@ -50,11 +50,11 @@ The skill is initially executed at the OEM. There it may be registered as an ass
    **sync federated catalog: (0.2)** <br/> The federated catalogs are synchronized periodically. As a result, the OEM can resolve HI calculation function assets that are located at the supplier.
 
 1. **Invoke HI skill:** <br/> The consumer invokes the skill by calling the agents API at its own EDC connector (ad hoc or as predefined asset). There are three parameters that must be set:
-   - **vehicle id** (VIN)
+   - **vehicle ID** (VIN)
    - **component type** (type of component for which the HI values should be calculated)
    - **result type** (For HI, the result type may always be `HealthIndicationResult`. Note: The exact same skill could be used to calculate Remaining useful Life values by using result type `RemainingUsefulLifeResult`.)
 
-2. **Resolve HI calculation function assets by result type HealthIndicatorResut:** <br/> The Knowledge Agent resolves all calculation functions by the given result type `HealthIndicationResult`. These can be located at different suppliers and is independent of the vehicle id and the component of interest.
+2. **Resolve HI calculation function assets by result type HealthIndicatorResut:** <br/> The Knowledge Agent resolves all calculation functions by the given result type `HealthIndicationResult`. These can be located at different suppliers and is independent of the vehicle ID and the component of interest.
 
 3. **Resolve load data assets of required type for arguments of resolved HI calculation functions:** <br/> The Knowledge Agent resolves all usage data assets (for load data), that are required as arguments by the resolved calculation functions, by load data type.
 

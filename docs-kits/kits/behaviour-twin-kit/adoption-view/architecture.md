@@ -67,7 +67,7 @@ The following business process is only an example. Depending on how the skill is
 
 0. **0.1 Register skill asset, 0.2 sync federated catalog:** <br/> The predefined skill is registered as an asset at the data provider's EDC connector. The federated catalogs are synchronized periodically.
 
-1. **Invoke skill asset:** <br/> The consumer invokes the skill by calling the agents API at its own EDC connector. The partner's EDC connector address must be known. To resolve this address is up to the use case. A prognosis function result type and a component or vehicle id (e.g. VIN) is set as parameter for the skill.
+1. **Invoke skill asset:** <br/> The consumer invokes the skill by calling the agents API at its own EDC connector. The partner's EDC connector address must be known. To resolve this address is up to the use case. A prognosis function result type and a component or vehicle ID (e.g. VIN) is set as parameter for the skill.
 
 2. **Request skill asset:** <br/> The skill is invoked by requesting the skill asset at the data provider via EDC connectors.
 
@@ -75,7 +75,7 @@ The following business process is only an example. Depending on how the skill is
 
 4. **Resolve prognosis data assets by function parameter types:** <br/> The Knowledge Agent resolves all data assets by the parameter types of the previously matched prognosis function(s).
 
-5. **Resolve actual usage data and service provider by component id:** <br/> The Knowledge Agent resolves the sub-component of interest, its supplier and the actual related data by the component's id.
+5. **Resolve actual usage data and service provider by component ID:** <br/> The Knowledge Agent resolves the sub-component of interest, its supplier and the actual related data by the component's ID.
 
 6. **Fetch data:** <br/> The data (parameter for prognosis functions) are fetched from the data provider's bound data source. They are transferred into graph representation by a provisioning agent (data binding agent).
 
@@ -105,8 +105,8 @@ To have a common understanding of how to interpret and translate elements in the
 
 |Subsystem|Description|
 |---------|-----------|
-|Matchmaking Agent|This component supports SparQL (skills/sub-skills) to traverse the federated data space as a large data structure. It interacts with the EDC connector. <br/> A **provider's Matchmaking Agent** will be activated by its EDC connector. Therefore, the EDC must offer a Graph Asset (variant of ordinary data assets in the related Catena-X standards). <br/> A **consumer's Matchmaking Agent** interacts with its EDC to negotiate and perform the transfer of sub-skills to other dataspace participants. <br/> The Matchmaking Agents are matching the (sub-)graphs and negotiate appropriated graph assets with the partner EDCs.|
-|Binding Agent|The Binding Agent is a restricted version of the Matchmaking Agent (subset of OWL/SparQL, e.g., without federation) which is just focused on translating Sub-Skills of a particular business domain (Bill-Of-Material, Chemical Materials, Production Sites, etc.) into proper SQL- or REST based backend system calls. <br/>Binding agents for data bindings are called **Provisioning Agent**. <br/>Binding agents for service bindings are called **Remoting Agent**. |
+|Matchmaking Agent|This component supports SPARQL (skills/sub-skills) to traverse the federated data space as a large data structure. It interacts with the EDC connector. <br/> A **provider's Matchmaking Agent** will be activated by its EDC connector. Therefore, the EDC must offer a Graph Asset (variant of ordinary data assets in the related Catena-X standards). <br/> A **consumer's Matchmaking Agent** interacts with its EDC to negotiate and perform the transfer of sub-skills to other dataspace participants. <br/> The Matchmaking Agents are matching the (sub-)graphs and negotiate appropriated graph assets with the partner EDCs.|
+|Binding Agent|The Binding Agent is a restricted version of the Matchmaking Agent (subset of OWL/SPARQL, e.g., without federation) which is just focused on translating Sub-Skills of a particular business domain (Bill-Of-Material, Chemical Materials, Production Sites, etc.) into proper SQL- or REST based backend system calls. <br/>Binding agents for data bindings are called **Provisioning Agent**. <br/>Binding agents for service bindings are called **Remoting Agent**. |
 |Binding|A Binding is part of the configuration of a Binding Agent. It defines the binding (translation form/into graph representation) for specific data/service instances.|
 |Ontology|The ontology is a formal representation of knowledge that captures concepts, relationships, and properties. It allows a shared understanding and reasoning about the respective domain. <BR/> It must be hosted in a way that all participants can access it.|
 |Skill/Sub-Skill|The Skill describes, what to do (which data have to be connected, transferred, processed ...).|
@@ -145,7 +145,7 @@ Depending on your role, you need a combination of the following components:
 
 ## USE CASE TYPES
 
-Depending on how roles coincide and where skills are executed, the use case architecture, graph assets and skills must be adapted. Detailed information about how to write dedicated skills can be found in the [Agents KIT](../../knowledge-agents/adoption-view/intro).
+Depending on how roles coincide and where skills are executed, the use case architecture, graph assets and skills must be adapted. Detailed information about how to write dedicated skills can be found in the [Agents KIT's Operation View](knowledge-agents/operation-view/agent_edc).
 
 ### COMBINATION OF ROLES
 
@@ -187,7 +187,7 @@ With this combination, a *consumer* can utilize its own data in any way it wants
 
 #### MORE COMBINATIONS
 
-All combinations above may be extendet by additional, separate data and/or calculation service providers.
+All combinations above may be extended by additional, separate data and/or calculation service providers.
 
 #### SKILL PROVIDER IS NEUTRAL ENTITY
 
@@ -205,4 +205,4 @@ There are different options where and how the skill is executed initially:
 
 Allowed variants may be dependent of a *framework agreement*.
 
-For more information, see [Agents KIT](../../knowledge-agents/adoption-view/intro).
+For more information, see [Agents KIT's Operation View](knowledge-agents/operation-view/agent_edc).
