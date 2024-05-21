@@ -25,7 +25,7 @@ Semantic models are instantiated by semantic triplets. Those triplets are consis
 
 ![triplet](assets/triplet.drawio.svg)
 
-Classes, properties and relations may be can be instantiated zero, once or multiple times. All instances of triplets together form the **knowledge graph**.
+Classes, properties and relations can be instantiated zero, once or multiple times. All instances of triplets together form the **knowledge graph**.
 
 The shape of the knowledge graph depends on its triplet instances. Shapes can also be described formally and can be enriched with constraints. This can be used to find matching instances of the described shape (sub-graphs). In federated graphs, this can also be used to describe the shape of queryable sub-graphs outside the current scope (graph assets that are hosted at other EDC connectors than the current one).
 
