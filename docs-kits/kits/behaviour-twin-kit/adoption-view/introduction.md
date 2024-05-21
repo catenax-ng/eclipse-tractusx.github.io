@@ -21,17 +21,17 @@ Behaviour Twin KIT
 
 ### VISION
 
-Aggregating real-world usage data of technical products is state-of-the-art. But only by combining this data with digital twins, simulation models and specialized calculation services, new business opportunities and operational efficiencies become possible across the entire product lifecycle. The key to successfully enabling these opportunities is the scalability of digital solutions, their extension across business boundaries and handling data protection and governance.
+Aggregating real-world usage data of technical products is state-of-the-art. But only by combining this data with digital twins, simulation models and specialized calculation services, new business opportunities and operational efficiencies become possible across the entire product lifecycle. The key to successfully enabling these opportunities is the efficient scalability of digital solutions, their extension across business boundaries and handling data protection and governance.
 
 ### MISSION
 
-The Behaviour Twin KIT aims to facilitate the development of scalable and interoperable solutions for connecting service customers, data providers and service providers across organizational boundaries in a generic way. It guides business and software developers by explaining key concepts and by directing them to relevant technical resources and examples.
+The Behaviour Twin KIT aims to facilitate the development of scalable and interoperable solutions for connecting service customers, data providers and service providers across organizational boundaries in a generic way. The KIT allows a Behaviour-Twin-oriented entry to state-of-the-art Knowledge Agent technology. It guides business and software developers by explaining key concepts and by directing them to relevant technical resources and examples. 
 
 ## STATUS QUO & CHALLENGE
 
 ### STATUS QUO
 
-Within company limits, the aggregation of usage data, monitoring them, e.g. by calculation of health indicators or component damage based on internally available data and models, is already state of the art. However, across company boundaries, there are only individual, complex and not generally available solutions.
+Within company limits, the aggregation of usage data, monitoring them, e.g. by calculation of health indicators or component damage based on internally available data and models, is already state of the art. However, across company boundaries, there are only individual, complex and not generally available solutions. Often, additional use cases or  participants require repetitive efforts to implement instances for connecting data and calculation services.
 
 ### TODAY'S CHALLENGE
 
@@ -42,6 +42,7 @@ Thus, the following challenges must be addressed:
 - enabling secure data sharing while respecting IP and governance
 - fulfill high data sovereignty standards
 - facilitating flexible customization for diverse use cases
+- reduce effort for additional use cases and participants
 
 ## USE CASE EXAMPLES
 
@@ -70,5 +71,7 @@ Benefits in more detail:
 - Facilitates the development of solutions for aggregating real-world usage data of technical products and combining it with digital twins, simulation models, and specialized calculation services. This unlocks new business opportunities and operational efficiencies.
 
 - Supports handling data protection, governance, IP rights, and high data sovereignty standards when enabling secure data sharing across complex supply chains. This ensures compliance and builds trust.
+
+- Offers guidance to Knowledge Agent technology. This enables efficient scalability for additional use cases and participants. 
 
 - Guides business and software developers by explaining key concepts and directing them to relevant technical resources and examples. This speeds up understanding and development.
