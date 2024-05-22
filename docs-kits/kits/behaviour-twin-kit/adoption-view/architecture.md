@@ -46,16 +46,16 @@ Each participant in a Behaviour Twin use cases applies to one or more of the fol
 
 ### KNOWLEDGE AGENT
 
-The architecture is based on so called Knowledge Agents that consists of:
+The architecture is based on so-called Knowledge Agents that consists of:
 
 - Matchmaking Agent
 - Binding Agents (Provisioning Agent/Remoting Agent)
 - Federated Catalog
 - Bindings (configurations of binding agents)
 
-The components are federated over all participants. All data (and services) are represented together as a federated knowledge graph. The processing logic for the agents is defined in so called *skills*. All communication is handled by EDC connectors.
+The components are federated over all participants. All data (and services) are represented together as a federated knowledge graph. The processing logic for the agents is defined in so-called *skills*. All communication is handled by EDC connectors.
 
-A detailed view of how a Knowledge Agent works is given in the section [Knowledge Agent](./knowledge-agent) (which comes next to this section).
+A detailed view of how *Knowledge Agents* and *skills* work is given in the section [Knowledge Agent](./knowledge-agent) (which comes next to this section).
 
 ### BUSINESS PROCESS
 

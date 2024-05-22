@@ -62,7 +62,7 @@ Typical scenarios comprise stakeholders acting during a certain phase in the pro
 
 In summary, building a use case upon the Behavior Twin KIT accelerates development, ensures compliance, facilitates collaboration, unlocks business value, and creates business benefits across the product lifecycle.
 
-Benefits in more detail:
+### BENEFITS IN MORE DETAILS
 
 - Enables scalable and interoperable solutions for connecting different stakeholders like service customers, data providers, and service providers across organizational boundaries. This allows for collaboration and data sharing.
 
@@ -75,3 +75,34 @@ Benefits in more detail:
 - Offers guidance to Knowledge Agent technology. This enables efficient scalability for additional use cases and participants. 
 
 - Guides business and software developers by explaining key concepts and directing them to relevant technical resources and examples. This speeds up understanding and development.
+
+### REDUCING AND SHIFTING COMPLEXITY
+
+#### APPROACH WITHOUT KNOWLEDGE AGENT
+
+Many Behaviour Twin use cases start with collecting usage data and send them to a calculation service. Without generalized components, there would be a huge effort:
+
+![complexity in dataspaces without knowledge agent technology](./assets/complex-dataspace.drawio.svg)
+
+**For each use case at each participating *data provider***, a dedicated and complex *Coordination Service* must be developed, deployed and maintained. This service contains the overarching logic (how to link usage data and calculation services to produce the desired results), fetches usage data, negotiates contracts over EDC and calls (different) APIs of calculation services at the the *Service Providers*. For this process, negotiation of contracts over EDC must also be handled by the Coordination Services. Because of different input parameters of different calculation services, for every link there must be a dedicated implementation.
+
+There are a big varey of compinations. For small use cases, the efford wourd be to high to establisch those complex Coordination Services.
+
+Even more complexity comes in when there are more use cases, more than one data source for one calculation or more than one calculation services to get one result (for one request).
+
+#### APPROACH WITH KNOWLEDGE AGENT
+
+A generalization with the help of the *Knowledge Agent* technology leads to a lower complexity:
+
+![complexity in dataspaces with knowledge agent technology](./assets/dataspace-knowledge-agent.drawio.svg)
+
+This approach shifts complexity to the Knowledge Agent (KA-EDC), which is a well developed set of components and deployed only once for a set of use cases. All the Coordination Services, API calls and explicit negotiations can be omitted. Instead, data and calculation services are bound to the *Knowledge Graph* and formal described in *graph assets* at the EDCs. By defining usage policies for those graph assets, the *Knowledge Agent* negotioates contracts and organizes data exchange automatically. This has not to be implemented by a separate services any more.
+
+#### COMPARISON
+
+| without Knowledge Agent | with Knowledge Agent |
+| --- | --- |
+| *Consumers* must negotiate contracts with the *data providers*. | Negotiation is done by the *Knowledge Agent*. |
+| *Consumers* call the logic at data provider through APIs of the *Coordination Services*. *Data providers* define/implement the logic per use case. | *Consumer* define the logic (*skills*) and invoke it. |
+| *Data providers* maintain *Coordination Services* to dispatch the consumers' requests. This services are fetching data, negotiationg constracts with the *service providers*, calling the service providers' APIs and delegating the results back to the requesting *consumers*. | *Data providers* bind their data to the *knowledge graph* through static configuration files. The rest is done by the *Knowledge Agent*. |
+| *Service providers* expose their services' APIs. | *Service providers* dont expose their services' APIs, but bind the services  to the *knowledge graph* through static configuration fils. The input and output parameters are formally described, so that the *Knowledge Agent* can do the rest. |
