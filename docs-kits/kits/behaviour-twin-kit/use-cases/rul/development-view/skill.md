@@ -182,7 +182,7 @@ The OEM's business partner number (BPNL) is known. A entity can have only one BP
 
 #### RESOLVING VEHICLE, PART OF INTEREST, ITS SUPPLIER AND THE RELATED LOAD DATA
 
-At the OEM's EDC connector, the graph asset of the usage data is requested. Doing so, a sub-skill is transferred to the OEM's Knowledge Agent. At the OEM, the vehicle is resolved by its VIN. Then, the part of interrest (assembly) and its supplier are resolved by the parts name. At the end, the load for that part can be resolved.
+At the OEM's EDC connector, the graph asset of the usage data is requested. Doing so, a sub-skill is transferred to the OEM's Knowledge Agent. At the OEM, the vehicle is resolved by its VIN. Then, the part of interrest (assembly) and its supplier are resolved by the part's name. At the end, the load for that part can be resolved.
 
 ```sparql
   SERVICE ?oemEDC {

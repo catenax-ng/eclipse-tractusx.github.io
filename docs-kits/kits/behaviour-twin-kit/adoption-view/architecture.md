@@ -81,7 +81,7 @@ The following business process is only an example. Depending on how the skill is
 
 7. **Transfer data and deploy sub-skill:** <br/> The fetched data and a sub-skill (logic for calling the calculation service) are transferred to the calculation service provider's Knowledge Agent via EDC connectors.
 
-8. **Call service and fetch result:** <br/> The calculation service (prognosis function) is called. The data (parameter for the prognosis function) are translated into the format the service requires. This is automatically done by an remoting agent (service binding agent), which is statically configured by service bindings. The result of the service then is translated back into graph format by the remoting agent.
+8. **Call service and fetch result:** <br/> The calculation service (prognosis function) is called. The data (parameters for the prognosis function) are translated into the format the service requires. This is automatically done by an remoting agent (service binding agent), which is statically configured by service bindings. The result of the service then is translated back into graph format by the remoting agent.
 
 9. **Return result:** <br/> The result is transferred to the invoker of the sub-skill (here, it is the data provider) via EDC connectors.
 
