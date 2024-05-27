@@ -102,7 +102,7 @@ The FMU Interoperability Checker shall support the following two use cases.
 
 ### Workflow
 
-The FMU FMU Interoperability Checker shall implement the following workflow.
+The FMU Interoperability Checker shall implement the following workflow.
 
 1. The Guideline “Guideline for Assigning Asset Properties to FMU and Services” (see above) has been provided to and accepted by the partners exchanging models .
 2. The partners agree upon a meta data model for the FMU asset properties, preferably either MIC or AAS “Provision of Simulation Models”.
