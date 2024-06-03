@@ -341,6 +341,13 @@ Currently, even if more than one digital twin is returned in a lookup, these dig
 
 The next section describes to modify the lookup to additionally restrict the results to digital twins with a specific submodel type based on it's semanticId.
 
+#### Implicit connection between a part type twin and corresponding part instance twins
+To find the corresponding part instance twins to a given part type twin, it is possible to use the lookup functionality. Searching for the specific asset IDs <code>manufacturerId</code> and <code>manufacturerPartId</code> and <code>digitalTwinType = "PartInstance"</code> of the given part type twin will find all corresponding part instance twins.
+
+To find the corresponding part type twin to a given part instance twin, it is possible to search for the specific asset IDs <code>manufacturerId</code>, <code>manufacturerPartId</code> and <code>digitalTwinType = "PartType"</code> of the given part instance twin.
+
+To find the corresponding part instance twins to a given part instance twin, it is possible to search for the specific asset IDs <code>manufacturerId</code>, <code>manufacturerPartId</code> and <code>digitalTwinType = "PartInstance"</code> of the given part instance twin. 
+
 ### Unique ID Push
 
 Once the digital twin was created, optionally a Unique ID Push notification can be send by the manufacturer of the part to the customer of the serialized part of batch to inform the customer that information about a serialized part or batch is available as a digital twin. This is an optional process and both, the manufacturer of a part as well as the customer of the part must support Unique ID Push notifications.
